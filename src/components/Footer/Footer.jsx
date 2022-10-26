@@ -59,7 +59,7 @@ const Footer = () => {
                     <ul className="ft-legal-list">
                         <li><a href="#">Terms &amp; Conditions</a></li>
                         <li><a href="#">Privacy Policy</a></li>
-                        <li>&copy; 2021 by Meow Media, LLC</li>
+                        <li>&copy; 2022 by Lidiettes</li>
                     </ul>
                 </section>
             </footer>
