@@ -17,9 +17,9 @@ const Footer = () => {
                             <ul ClassName="pages">
                                 <li><a href="#">bueno </a></li>
                                 <li><a href="#">asda</a></li>
-                                <li><a href="#">lalfaddafala</a></li>
-                                <li><a href="#">vccc</a></li>
-                                <li><a href="#">dsds</a></li>
+                                <li><a href="#">534</a></li>
+                                <li><a href="#">5345335</a></li>
+                                <li><a href="#">534435534</a></li>
                             </ul>
                         </div>
                         <div ClassName="col-md-6">
