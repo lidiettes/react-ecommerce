@@ -15,8 +15,8 @@ footer{
 	padding-left: 0;
   }
   footer {
-	background-color: #555;
-	color: #bbb;
+	background-color: rgb(154, 172, 172);
+	color: rgb(119, 118, 118);
 	line-height: 1.5;
   }
   footer a {
