@@ -16,10 +16,10 @@ const Footer = () => {
                         <div ClassName="col-md-6">
                             <ul ClassName="pages">
                                 <li><a href="#">bueno </a></li>
-                                <li><a href="#">adfafafddafafa</a></li>
-                                <li><a href="#">lalfadfafafala</a></li>
-                                <li><a href="#">fadfafafa</a></li>
-                                <li><a href="#">fafafafa</a></li>
+                                <li><a href="#">asda</a></li>
+                                <li><a href="#">lalfaddafala</a></li>
+                                <li><a href="#">vccc</a></li>
+                                <li><a href="#">dsds</a></li>
                             </ul>
                         </div>
                         <div ClassName="col-md-6">
