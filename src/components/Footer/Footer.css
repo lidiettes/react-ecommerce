@@ -1,5 +1,5 @@
 footer{
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	width: 100%;
 }
@@ -21,7 +21,7 @@ footer{
   }
   footer a {
 	text-decoration: none;
-	color: #eee;
+	color: rgb(80, 77, 77);
   }
   a:hover {
 	text-decoration: underline;
@@ -97,16 +97,18 @@ footer{
   /* Footer legal */
   .ft-legal {
 	padding: 0.9375rem 1.875rem;
-	background-color: #333;
+	background-color:  #ebd79c;
   }
   .ft-legal-list {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
+	
   }
   .ft-legal-list li {
 	margin: 0.125rem 0.625rem;
 	white-space: nowrap;
+	color:rgb(152, 148, 148);
   }
   /* one before the last child */
   .ft-legal-list li:nth-last-child(2) {

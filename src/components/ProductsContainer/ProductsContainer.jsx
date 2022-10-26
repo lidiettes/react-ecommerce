@@ -5,13 +5,23 @@ import ProductCard from '../ProductCard/ProductCard';
 
 
 const ProductsContainer = () => {
-    console.log(ProductsInfo);
+    
     return (
     <>
             
             <div className="ContainerCard">
                 
-            <ProductCard />
+            {ProductsInfo.map((card) =>{
+            return(
+                <ProductCard 
+                key = {card.id}
+                name = {card.name} 
+                description = {card.description} 
+                price = {card.price} 
+                img = {card.img} 
+                />
+            )
+            })}
 
             </div>
 
@@ -20,4 +30,4 @@ const ProductsContainer = () => {
             )
 };
 
-                    export default ProductsContainer;
+export default ProductsContainer;

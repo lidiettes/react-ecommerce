@@ -5,7 +5,7 @@ return (
     <>
         <header>
 		<div className="wrapper">
-			<div className="logo">Soy un header to tocho</div>
+			<div className="logo">Söy</div>
 			
 			<nav>
 				<a href="#">Home</a>

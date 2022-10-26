@@ -1,6 +1,9 @@
 .ContainerCard {
-    background-color: #ffffff;
-    
-    
+    /* background-color: #ffffff; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    background-color: bisque;
   }
   

@@ -1,21 +1,25 @@
-import React from 'react'
 import './ProductCard.css';
+import * as photos from '../../assets/img';
 
-const ProductCard = () => {
-  return (
+
+const ProductCard = ({name,description, price, img}) => {
+
+const productImage = photos[`photo${img}`];
+console.log(photos);
+return (
     <>
     <div className="wrapperProducts">
                     <div className="product-img">
-                        <img src="Lamp1" height="420" width="327" />
+                        <img src={img} height="420" width="327" />
                     </div>
                     <div className="product-info">
                         <div className="product-text">
-                            <h1>Flowerpot</h1>
+                            <h1>{name}</h1>
                             <h2>by Verner Panton</h2>
-                            <p>Flowerpot VP9 Table Lamp Mustard is a portable version of Verner Panton’s popular Flowerpot table lamp. </p>
+                            <p>{description} </p>
                             </div>
                                 <div className="product-price-btn">
-                                    <p><span>278</span>€</p>
+                                    <p><span>{price}</span>€</p>
                                     <button type="button">buy now</button>
                                 </div>
                             </div>
@@ -24,7 +28,7 @@ const ProductCard = () => {
 
     
     </>
-  )
-}
+);
+};
 
-export default ProductCard
+export default ProductCard;
