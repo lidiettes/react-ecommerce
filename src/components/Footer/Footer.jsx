@@ -15,11 +15,11 @@ const Footer = () => {
                         <h4>Menu —</h4>
                         <div ClassName="col-md-6">
                             <ul ClassName="pages">
-                                <li><a href="#">que pasa</a></li>
-                                <li><a href="#">adios</a></li>
-                                <li><a href="#">hola</a></li>
-                                <li><a href="#">hola</a></li>
-                                <li><a href="#">Advice</a></li>
+                                <li><a href="#">bueno </a></li>
+                                <li><a href="#">adfafafddafafa</a></li>
+                                <li><a href="#">lalfadfafafala</a></li>
+                                <li><a href="#">fadfafafa</a></li>
+                                <li><a href="#">fafafafa</a></li>
                             </ul>
                         </div>
                         <div ClassName="col-md-6">
