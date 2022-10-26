@@ -1,63 +1,68 @@
-import React from 'react'
+// import React from 'react'
 import './Footer.css';
 
 const Footer = () => {
     return (
         <>
-            <footer ClassName="footer-bs">
-                <div ClassName="row">
-                    <div ClassName="col-md-3 footer-brand animated fadeInLeft">
-                        <h2>Logo</h2>
-                        <p>Suspendisse hendrerit tellus laoreet luctus pharetra. Aliquam porttitor vitae orci nec ultricies. Curabitur vehicula, libero eget faucibus faucibus, purus erat eleifend enim, porta pellentesque ex mi ut sem.</p>
-                        <p>© 2014 BS3 UI Kit, All rights reserved</p>
-                    </div>
-                    <div ClassName="col-md-4 footer-nav animated fadeInUp">
-                        <h4>Menu —</h4>
-                        <div ClassName="col-md-6">
-                            <ul ClassName="pages">
-                                <li><a href="#">bueno </a></li>
-                                <li><a href="#">asda</a></li>
-                                <li><a href="#">534</a></li>
-                                <li><a href="#">5345335</a></li>
-                                <li><a href="#">534435534</a></li>
-                            </ul>
-                        </div>
-                        <div ClassName="col-md-6">
-                            <ul ClassName="list">
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Contacts</a></li>
-                                <li><a href="#">Terms & Condition</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div ClassName="col-md-2 footer-social animated fadeInDown">
-                        <h4>Follow Us</h4>
+            <footer>
+                <section className="ft-main">
+                    <div className="ft-main-item">
+                        <h2 className="ft-title">About</h2>
                         <ul>
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">RSS</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Customers</a></li>
+                            <li><a href="#">Careers</a></li>
                         </ul>
                     </div>
-                    <div ClassName="col-md-3 footer-ns animated fadeInRight">
-                        <h4>Newsletter</h4>
-                        <p>A rover wearing a fuzzy suit doesn't alarm the real penguins</p>
-                        <p>
-                            <div ClassName="input-group">
-                                <input type="text" ClassName="form-control" placeholder="Search for..."/>
-                                    <span ClassName="input-group-btn">
-                                        <button ClassName="btn btn-default" type="button"><span ClassName="glyphicon glyphicon-envelope"></span></button>
-                                    </span>
-                            </div>
-                        </p>
+                    <div className="ft-main-item">
+                        <h2 className="ft-title">Resources</h2>
+                        <ul>
+                            <li><a href="#">Docs</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">eBooks</a></li>
+                            <li><a href="#">Webinars</a></li>
+                        </ul>
                     </div>
-                </div>
-            </footer>
-        
+                    <div className="ft-main-item">
+                        <h2 className="ft-title">Contact</h2>
+                        <ul>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Sales</a></li>
+                            <li><a href="#">Advertise</a></li>
+                        </ul>
+                    </div>
+                    <div className="ft-main-item">
+                        <h2 className="ft-title">Stay Updated</h2>
+                        <p>Get free updates before others do!</p>
+                        <form>
+                            <input type="email" name="email" placeholder="Enter email address" />
+                            <input type="submit" value="Subscribe" />
+                        </form>
+                    </div>
+                </section>
 
-        
-        
+
+                <section className="ft-social">
+                    <ul className="ft-social-list">
+                        <li><a href="#"><i className="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i className="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i className="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i className="fab fa-github"></i></a></li>
+                        <li><a href="#"><i className="fab fa-linkedin"></i></a></li>
+                        <li><a href="#"><i className="fab fa-youtube"></i></a></li>
+                    </ul>
+                </section>
+
+                <section className="ft-legal">
+                    <ul className="ft-legal-list">
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li>&copy; 2021 by Meow Media, LLC</li>
+                    </ul>
+                </section>
+            </footer>
         </>
     )
 };

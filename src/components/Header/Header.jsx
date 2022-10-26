@@ -8,7 +8,7 @@ return (
 			<div className="logo">Soy un header to tocho</div>
 			
 			<nav>
-				<a href="#">Homesss</a>
+				<a href="#">Home</a>
 				<a href="#">Shop</a>
 				<a href="#">About us</a>
 				<a href="#">Contact</a>
