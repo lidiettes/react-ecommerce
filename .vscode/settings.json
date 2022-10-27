@@ -1,5 +1,8 @@
 {
     "files.autoSave": "afterDelay",
     "scm.alwaysShowActions": true,
-    "scm.alwaysShowRepositories": true
+    "scm.alwaysShowRepositories": true,
+    "cSpell.words": [
+        "substract"
+    ]
 }
