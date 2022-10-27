@@ -31,13 +31,13 @@
 }
 
 .product-text {
-    height: 300px;
+    height: 250px;
     width: 327px;
 }
 
 .product-text h1 {
     margin: 0 0 0 38px;
-    padding-top: 52px;
+    padding-top: 22px;
     font-size: 34px;
     color: #474747;
 }
@@ -66,7 +66,7 @@
     font-size: 15px;
     font-weight: lighter;
     overflow: hidden;
-    padding: 5px;
+    padding: 2px;
 }
 
 .product-price-btn {
@@ -83,7 +83,7 @@
     height: 50px;
     font-family: 'Trocchi', serif;
     margin: 0 0 0 38px;
-    font-size: 28px;
+    font-size: 18px;
     font-weight: lighter;
     color: #474747;
 }
@@ -92,7 +92,7 @@ span {
     display: inline-block;
     height: 50px;
     font-family: 'Suranna', serif;
-    font-size: 34px;
+    font-size: 24px;
 }
 
 .product-price-btn button {
