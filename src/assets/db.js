@@ -3,7 +3,7 @@ import * as photos from './img';
 
 const { photo01, photo02, photo03} = photos;
 
-export const ProductsInfo = [
+export const Items = [
     {
         productId: 1,
         name:'Pendant Lamp',
@@ -21,7 +21,7 @@ export const ProductsInfo = [
 
     },
     {
-        productId: 3,
+        id: 3,
         name:'Tripod HM9',
         price: '366',
         img: photo03,
@@ -29,4 +29,4 @@ export const ProductsInfo = [
     }
 ]
 
-export default ProductsInfo;
+export default Items;

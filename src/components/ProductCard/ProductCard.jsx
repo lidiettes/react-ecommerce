@@ -1,11 +1,17 @@
 import './ProductCard.css';
 import * as photos from '../../assets/img';
 import CounterApp from '../CounterApp/CounterApp';
+import CartNav from '../CartNav/CartNav';
 
 
 const ProductCard = ({name,description, price, img}) => {
 
 const productImage = photos[`photo${img}`];
+
+
+
+
+
 
 return (
     <>
@@ -23,7 +29,7 @@ return (
                             <div className='counterContainer'>  <CounterApp /> </div>
                             <div className="product-price-btn">
                                     <p><span>{price}</span>€</p>
-                                    <button type="submit">buy now</button>
+                                    {/* <button type="submit" value='add' onClick={()=> addToCart(el)}>buy now</button> */}
                             </div>
                         </div>
     </div>

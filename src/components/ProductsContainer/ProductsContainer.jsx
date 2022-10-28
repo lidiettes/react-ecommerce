@@ -1,6 +1,6 @@
 import React from 'react'
 import './ProductsContainer.css';
-import ProductsInfo from "../../assets/db";
+import Items from "../../assets/db";
 import ProductCard from '../ProductCard/ProductCard';
 
 
@@ -11,10 +11,10 @@ const ProductsContainer = () => {
             
             <div className="ContainerCard">
                 
-            {ProductsInfo.map(({productId,name, description, price, img}) =>{
+            {Items.map(({id,name, description, price, img}) =>{
             return (
                 <ProductCard 
-                key = {productId}
+                key = {id}
                 name = {name} 
                 description = {description} 
                 price = {price} 

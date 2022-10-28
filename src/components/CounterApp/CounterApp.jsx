@@ -4,7 +4,7 @@ import './CounterApp.css';
 const CounterApp = ({value = 0}) => {
 
 const[counter, setCounter]= useState(value);
-console.log(counter);
+
 
     const increaseValue = () => {
         setCounter(counter + 1); 
