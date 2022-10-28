@@ -1,0 +1,26 @@
+
+.buttonCounter{
+    background-color: rgb(224, 229, 229);
+    border-radius: 8px;
+    border: none;
+    
+    font-family: 'Bentham', serif;
+    font-size: 12px;
+    padding: 2px;
+    margin: px;
+    width: 35px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.counterContainer{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.counter{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}

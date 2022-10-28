@@ -11,14 +11,14 @@ const ProductsContainer = () => {
             
             <div className="ContainerCard">
                 
-            {ProductsInfo.map((card) =>{
-            return(
+            {ProductsInfo.map(({productId,name, description, price, img}) =>{
+            return (
                 <ProductCard 
-                key = {card.id}
-                name = {card.name} 
-                description = {card.description} 
-                price = {card.price} 
-                img = {card.img} 
+                key = {productId}
+                name = {name} 
+                description = {description} 
+                price = {price} 
+                img = {img} 
                 />
             )
             })}

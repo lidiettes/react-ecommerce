@@ -1,6 +1,6 @@
 import './ProductCard.css';
 import * as photos from '../../assets/img';
-import CounterApp from '../CounterApp';
+import CounterApp from '../CounterApp/CounterApp';
 
 
 const ProductCard = ({name,description, price, img}) => {
@@ -20,11 +20,11 @@ return (
                             <p>{description} </p>
                             
                             </div>
-                            <p> Nº articulos: <CounterApp /> </p>
-                                <div className="product-price-btn">
+                            <div className='counterContainer'>  <CounterApp /> </div>
+                            <div className="product-price-btn">
                                     <p><span>{price}</span>€</p>
-                                    <button type="button">buy now</button>
-                                </div>
+                                    <button type="submit">buy now</button>
+                            </div>
                         </div>
     </div>
 

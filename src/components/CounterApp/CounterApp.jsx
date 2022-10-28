@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import './CounterApp.css';
 
 const CounterApp = ({value = 0}) => {
 
@@ -14,15 +15,13 @@ console.log(counter);
     }
 
 
-
-
     return (
     <>
-        <div>{counter}</div>
-        <button onClick={ increaseValue }>+</button>
-        <button onClick={ substractValue }>-</button>
-
-
+        <div className='counterContainer'>
+            <button className="buttonCounter"onClick={ increaseValue }>+</button>
+            <button className="buttonCounter"onClick={ substractValue }>-</button>
+            <div className='counter'>{counter}</div>
+        </div>
     </>
     );
 };

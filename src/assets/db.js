@@ -1,7 +1,6 @@
 
 import * as photos from './img';
 
-
 const { photo01, photo02, photo03} = photos;
 
 export const ProductsInfo = [
