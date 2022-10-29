@@ -6,6 +6,8 @@ import ProductsContainer from './components/ProductsContainer/ProductsContainer'
 import CartNav from './components/CartNav/CartNav';
 
 function App() {
+  
+
   return (
   <>
   <Header />

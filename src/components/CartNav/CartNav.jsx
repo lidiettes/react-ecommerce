@@ -3,11 +3,7 @@ import Items from '../../assets/db';
 import './CartNav.css';
 
 const CartNav = () => {
-
-
   const [cart, setCart] = useState([]);
-  
-  // aqui estaría los items
 
   const addToCart = (el) => {
     setCart([...cart, el]);
@@ -32,16 +28,13 @@ const CartNav = () => {
       <button type="submit" value='add' onClick={() => removeFromCart(el)}>remove</button>
     </div>
   );
-console.log(cartItems);
-
-
-
 
   return (
     <>
       <div className='cartContainer'>
-        <h2>Lista de articulos</h2>
-        <div>{listItems}</div>
+        <h2>Stock</h2> 
+         <div>{listItems}</div>
+        <br></br>
         <h2>Carrito</h2>
         <div>{cartItems}</div>
       </div>

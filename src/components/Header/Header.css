@@ -1,52 +1,57 @@
 header {
-	width:100%; /* Establecemos que el header abarque el 100% del documento */
-	overflow:hidden; /* Eliminamos errores de float */
-	background:#5988f5c5;
-	margin-bottom:20px;
+	width: 100%;
+	/* Establecemos que el header abarque el 100% del documento */
+	overflow: hidden;
+	/* Eliminamos errores de float */
+	background: #5988f5c5;
+	margin-bottom: 20px;
 	height: 55px;
 }
 
 .wrapper {
-	width:90%; /* Establecemos que el ancho sera del 90% */
-	max-width:2050px; /* Aqui le decimos que el ancho máximo sera de 1000px */
-	margin-left: 50px; /* Centramos los elementos */
-	overflow:hidden;
- /* Eliminamos errores de float */
+	width: 90%;
+	/* Establecemos que el ancho sera del 90% */
+	max-width: 2050px;
+	/* Aqui le decimos que el ancho máximo sera de 1000px */
+	margin-left: 50px;
+	/* Centramos los elementos */
+	overflow: hidden;
+	/* Eliminamos errores de float */
 }
 
 header .logo {
-	color:#f2f2f2;
-	font-size:20px;
-	line-height:50px;
+	color: #f2f2f2;
+	font-size: 20px;
+	line-height: 50px;
 	margin-right: 100px;
-	float:left;
-	
+	float: left;
+
 }
 
 header nav {
-	float:right;
-	line-height:50px;
-	
+	float: right;
+	line-height: 50px;
+
 }
 
 header nav a {
-	display:inline-block;
-	color:#fff;
-	text-decoration:none;
-	padding:5px 40px;
-	line-height:normal;
-	font-size:20px;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 40px;
+	line-height: normal;
+	font-size: 20px;
 
-	-webkit-transition:all 500ms ease;
-	-o-transition:all 500ms ease;
-	transition:all 500ms ease;
+	-webkit-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
 }
 
 header nav a:hover {
-	background:#d3d495;
-	border-radius:20px;
+	background: #d3d495;
+	border-radius: 20px;
 }
 
-.bag{
+.bag {
 	color: #f2f2f2;
 }
