@@ -4,7 +4,7 @@ import Items from "../../assets/db";
 import ProductCard from '../ProductCard/ProductCard';
 
 
-const ProductsContainer = () => {
+const ProductsContainer = (onAdd, Items) => {
     
     return (
     <>
@@ -18,7 +18,8 @@ const ProductsContainer = () => {
                 name = {name} 
                 description = {description} 
                 price = {price} 
-                img = {img} 
+                img = {img}
+                onAdd={onAdd} 
                 />
             )
             })}

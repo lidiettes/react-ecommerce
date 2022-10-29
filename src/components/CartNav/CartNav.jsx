@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Items from '../../assets/db';
 import './CartNav.css';
 
+
 const CartNav = () => {
   const [cart, setCart] = useState([]);
 
