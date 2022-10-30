@@ -4,21 +4,24 @@ import Items from "../../assets/db";
 import ProductCard from '../ProductCard/ProductCard';
 
 
-const ProductsContainer = () => {
+const ProductsContainer = ({cart, setCart}) => {
     
     return (
     <>
             
             <div className="ContainerCard">
                 
-            {Items.map(({id,name, description, price, img}) =>{
+            {Items.map((item) =>{
             return (
                 <ProductCard 
-                key = {id}
-                name = {name} 
-                description = {description} 
-                price = {price} 
-                img = {img} 
+                key = {item.id}
+                
+                name = {item.name} 
+                description = {item.description} 
+                price = {item.price} 
+                img = {item.img} 
+                cart = {item.cart}
+                setCart = {item.setCart}
                 />
             )
             })}

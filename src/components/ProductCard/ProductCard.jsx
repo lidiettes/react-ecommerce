@@ -5,37 +5,54 @@ import CartNav from '../CartNav/CartNav';
 import Items from '../../assets/db';
 
 
-const ProductCard = ({id,name,description, price, img}) => {
+const ProductCard = (item) => {
 
-const productImage = photos[`photo${img}`];
+    const productImage = photos[`photo${item.img}`];
 
+    // const cambiarValor = (e) => {
+    //     setCart("notas");
+    // console.log(cart);
+    // }
+
+    const saveProducts = (item) => {
+        let elements = JSON.parse(localStorage.getItem("items")); //conseguir elementos ls
+      
+        if (Array.isArray(elements)) {
+            elements.push(item);
+        } else {
+            elements = [item];
+        }
+     //es una array?
+    localStorage.setItem("items", JSON.stringify(elements)) //guardarlos en ls
+    
+}
 
 return (
     <>
-    <div className="wrapperProducts">
-                    <div className="product-img">
-                        <img src={img} height="420" width="327" />
-                    </div>
-                    <div className="product-info">
-                        <div className="product-text">
-                            <h1>{name}</h1>
-                            <h2>by Verner Panton</h2>
-                            <p>{description} </p>
-                            
-                            </div>
-                            <div className='counterContainer'>  <CounterApp /> </div>
-                            <div className="product-price-btn">
-                                    <p><span>{price}</span>€</p>
-                                    {/* <button  type="submit" value='add' >buy now</button> */}
+        <div className="wrapperProducts">
+            <div className="product-img">
+                <img src={item.img} height="420" width="327" />
+            </div>
+            <div className="product-info">
+                <div className="product-text">
+                    <h1>{item.name}</h1>
+                    <h2>by Verner Panton</h2>
+                    <p>{item.description} </p>
 
-                                    <button key={id} type="submit" value='add' onClick={(cart, setCart)=> <CartNav />}>buy now</button>
-                                    
-                            </div>
-                        </div>
-    </div>
+                </div>
+                <div className='counterContainer'>  <CounterApp /> </div>
+                <div className="product-price-btn">
+                    <p><span>{item.price}</span>€</p>
+                    {/* <button  type="submit" value='add' >buy now</button> */}
+
+                    <button key={item.id} type="submit" value='add' onClick={e => { saveProducts(item) }}>buy now</button>
+
+                </div>
+            </div>
+        </div>
 
 
-    
+
     </>
 );
 };
