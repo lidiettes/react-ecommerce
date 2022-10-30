@@ -12,15 +12,15 @@ const CartNav = ({cart}) => {
   
   return (
     <>
+    <div className='cartContainer' > <h2>CART</h2>
     {cartTotal && cartTotal.map((item) => {
       return (
 
-        <div className='cartContainer' key = {item.id}>
-          <h2>Carrito</h2> 
           <p>{item.name} {item.price} €</p>
-        </div>
+        
       )
     })}
+    </div>
     </>
   )
 }

@@ -10,12 +10,15 @@ function App() {
 
 const [cart, setCart]= useState([]);
 console.log(cart);
+
+const[bag, setBag]= useState(0);
+
   return (
   <>
   <Header />
-  <ProductsContainer cart={cart} setCart={setCart}/>
+  <ProductsContainer cart={cart} setCart={setCart} bag={bag} setBag={setBag}/>
   <CartNav cart={cart}/>
-  <Footer />
+  <Footer bag={bag}/>
   
   </>
   );

@@ -5,7 +5,7 @@ const { photo01, photo02, photo03} = photos;
 
 export const Items = [
     {
-        productId: 1,
+        id: 1,
         name:'Pendant Lamp',
         price: '350',
         img: photo01,
@@ -13,7 +13,7 @@ export const Items = [
 
     },
     {
-        productId: 2,
+        id: 2,
         name:'Shuffle Table MH1',
         price: '557',
         img: photo02,
