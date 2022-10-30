@@ -1,0 +1,21 @@
+.searchContainer{
+    display: inline-block;
+    line-height: normal;
+    padding: auto;
+    width: 350px;
+    
+}
+
+input{
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 150px;
+
+}
+.buttonSearch{
+    width: 65px;
+    margin-left: 5px;
+    margin-top: 15px;
+}
