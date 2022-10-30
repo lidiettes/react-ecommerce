@@ -16,7 +16,7 @@ const CartNav = ({cart}) => {
     {cartTotal && cartTotal.map((item) => {
       return (
 
-          <p>{item.name} {item.price} €</p>
+          <p>{item.name}  {item.price} €</p>
         
       )
     })}
