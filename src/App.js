@@ -9,7 +9,7 @@ import { useState } from 'react';
 function App() {
 
 const [cart, setCart]= useState([]);
-
+console.log(cart);
   return (
   <>
   <Header />

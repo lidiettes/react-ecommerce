@@ -2,10 +2,36 @@ import React, { useState, useEffect } from 'react';
 import Items from '../../assets/db';
 import './CartNav.css';
 
-const CartNav = ({}) => {
 
-  let carritoTotal = JSON.parse(localStorage.getItem("items"));
-  console.log(carritoTotal);
+
+const CartNav = ({cart}) => {
+
+  let cartTotal = JSON.parse(localStorage.getItem("items"));
+  console.log(cartTotal);
+
+  
+  return (
+    <>
+    {cartTotal && cartTotal.map((item) => {
+      return (
+
+        <div className='cartContainer' key = {item.id}>
+          <h2>Carrito</h2> 
+          <p>{item.name} {item.price} €</p>
+        </div>
+      )
+    })}
+    </>
+  )
+}
+
+export default CartNav;
+
+
+
+
+
+
 
   // const [cart, setCart] = useState([]);
   // const addToCart = (el) => {
@@ -29,21 +55,3 @@ const CartNav = ({}) => {
   //   </div>
   // );
   
-  
-  
-  return (
-    <>
-    {carritoTotal && carritoTotal.map((item) => {
-      return (
-
-        <div className='cartContainer' key = {item.id}>
-          <h2>Carrito</h2> 
-          <p>{item.name} {item.price} €</p>
-        </div>
-      )
-    })}
-    </>
-  )
-}
-
-export default CartNav;

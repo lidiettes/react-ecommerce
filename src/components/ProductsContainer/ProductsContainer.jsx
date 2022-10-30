@@ -7,29 +7,22 @@ import ProductCard from '../ProductCard/ProductCard';
 const ProductsContainer = ({cart, setCart}) => {
     
     return (
-    <>
-            
+
             <div className="ContainerCard">
-                
-            {Items.map((item) =>{
-            return (
-                <ProductCard 
-                key = {item.id}
-                
-                name = {item.name} 
-                description = {item.description} 
-                price = {item.price} 
-                img = {item.img} 
-                cart = {item.cart}
-                setCart = {item.setCart}
-                />
-            )
-            })}
-
+                {Items.map((item) => {
+                return (
+                    <ProductCard 
+                    key = {item.id}
+                    name = {item.name} 
+                    description = {item.description} 
+                    price = {item.price} 
+                    img = {item.img} 
+                    // cart = {item.cart}
+                    // setCart = {item.setCart}
+                    />
+                )
+                })}
             </div>
-
-
-            </>
             )
 };
 
