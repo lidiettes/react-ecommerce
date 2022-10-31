@@ -9,13 +9,15 @@ import { useState } from 'react';
 function App() {
 
 const [cart, setCart]= useState([]);
+
+
 // console.log(cart);
 
   return (
   <>
   <Header />
   <ProductsContainer cart={cart} setCart={setCart}/>
-  <CartNav cart={cart}/>
+  <CartNav  cart={cart}/>
   <Footer />
   
   </>

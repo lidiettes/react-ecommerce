@@ -6,22 +6,29 @@ import './CartNav.css';
 
 const CartNav = ({cart}) => {
 
-  let cartTotal = JSON.parse(localStorage.getItem("items"));
+  
   // console.log(cartTotal);
 
-  // useEffect()=> cartTotal();
+ let getCartLocalStorage= JSON.parse(localStorage.getItem("items"));
+
+const listCart = getCartLocalStorage && getCartLocalStorage.map((item) => {
+  return (
+      <p key={item.id}>{item.name} {item.price} €</p>
+         )
+}) || "no hay elementos" ;
+
+// const [listCart, setListCart]= useState[cart]; 
+//   useEffect(()=> {
+//   listCart()
   
+// },[]);
+
+
   return (
     <>
-    <div className='cartContainer' > <h2>CART</h2>
-    {cartTotal && cartTotal.map((item) => {
-      return (
-        
-
-          <p key={item.id}>{item.name} {item.price} €</p>
-        
-      )
-    }) || "no hay elementos" }
+    <div className='cartContainer'> 
+    <h2>CART</h2> 
+    {listCart}
     </div>
     </>
   )
