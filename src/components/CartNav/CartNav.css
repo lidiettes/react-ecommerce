@@ -1,13 +1,17 @@
 .cartContainer{
 
 justify-content: center;
-padding: 15px;
+padding: 14px;
 position: absolute;
 top: 55px;
 color: azure;
 background-color: rgb(218, 167, 167);
-width: 250px;
+width: 280px;
 height: 300vh;
 right:0px;
+
 }
 
+.buttonDelete {
+    margin-left: 15px;
+}

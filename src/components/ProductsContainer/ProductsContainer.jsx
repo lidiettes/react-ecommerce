@@ -10,7 +10,7 @@ const ProductsContainer = ({cart, setCart}) => {
 
             <div className="ContainerCard">
                 {Items.map((item) => {
-                    console.log(item);
+                    
                 return (
                     <ProductCard 
                     key = {item.id}

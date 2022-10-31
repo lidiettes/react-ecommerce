@@ -7,30 +7,27 @@ import './CartNav.css';
 const CartNav = ({cart}) => {
 
   let cartTotal = JSON.parse(localStorage.getItem("items"));
-  console.log(cartTotal);
+  // console.log(cartTotal);
 
+  // useEffect()=> cartTotal();
   
   return (
     <>
     <div className='cartContainer' > <h2>CART</h2>
     {cartTotal && cartTotal.map((item) => {
       return (
+        
 
-          <p>{item.name}  {item.price} €</p>
+          <p key={item.id}>{item.name} {item.price} €</p>
         
       )
-    })}
+    }) || "no hay elementos" }
     </div>
     </>
   )
 }
 
 export default CartNav;
-
-
-
-
-
 
 
   // const [cart, setCart] = useState([]);

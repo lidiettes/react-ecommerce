@@ -9,7 +9,8 @@ const ProductCard = (item) => {
 
     const productImage = photos[`photo${item.img}`];
 
-    const buyProduct = (item) => {
+
+    const saveProducts = (item) => {
         let elements = JSON.parse(localStorage.getItem("items")); //conseguir elementos ls
         if (Array.isArray(elements)) {
             elements.push(item);
@@ -17,6 +18,7 @@ const ProductCard = (item) => {
             elements = [item];
         }
         localStorage.setItem("items", JSON.stringify(elements)) //guardarlos en ls
+    
     }
 
     return (
@@ -35,21 +37,14 @@ const ProductCard = (item) => {
                     <div className='counterContainer'>  <CounterApp /> </div>
                     <div className="product-price-btn">
                         <p><span>{item.price}</span>€</p>
-                        <button key={item.id} type="submit" value='add' onClick={e => {buyProduct(item)}}>buy now</button>
+
+                        <button key={item.id} type="submit" value='add' onClick={e => {saveProducts(item)}}>buy now</button>
+
                     </div>
                 </div>
             </div>
         </>
 );
 };
+
 export default ProductCard;
-
-
-
-
-
-
-    // const cambiarValor = (e) => {
-    //     setCart("notas");
-    // console.log(cart);
-    // }
