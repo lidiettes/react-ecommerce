@@ -17,7 +17,8 @@ const ProductCard = (item) => {
         } else {
             elements = [item];
         }
-        localStorage.setItem("items", JSON.stringify(elements)) //guardarlos en ls
+        localStorage.setItem("items", JSON.stringify(elements)) ;//guardarlos en ls
+        return item;
     
     }
 

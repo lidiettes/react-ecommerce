@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 function App() {
 
-const [cart, setCart]= useState([]);
+
 
 
 // console.log(cart);
@@ -16,8 +16,8 @@ const [cart, setCart]= useState([]);
   return (
   <>
   <Header />
-  <ProductsContainer cart={cart} setCart={setCart}/>
-  <CartNav  cart={cart}/>
+  <ProductsContainer />
+  <CartNav  />
   <Footer />
   
   </>

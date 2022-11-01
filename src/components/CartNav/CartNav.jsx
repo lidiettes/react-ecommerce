@@ -4,32 +4,30 @@ import './CartNav.css';
 
 
 
-const CartNav = ({cart}) => {
+const CartNav = () => {
 
-  
-  // console.log(cartTotal);
 
- let getCartLocalStorage= JSON.parse(localStorage.getItem("items"));
 
-const listCart = getCartLocalStorage && getCartLocalStorage.map((item) => {
-  return (
+
+
+  let getCartLocalStorage = JSON.parse(localStorage.getItem("items"));
+
+  const listCart = getCartLocalStorage && getCartLocalStorage.map((item) => {
+    return (
       <p key={item.id}>{item.name} {item.price} €</p>
-         )
-}) || "no hay elementos" ;
+    )
+  }) || "no hay elementos";
 
-// const [listCart, setListCart]= useState[cart]; 
-//   useEffect(()=> {
-//   listCart()
-  
-// },[]);
+
 
 
   return (
     <>
-    <div className='cartContainer'> 
-    <h2>CART</h2> 
-    {listCart}
-    </div>
+      <div className='cartContainer'>
+        <h2>CART</h2>
+        {listCart}
+        
+      </div>
     </>
   )
 }
@@ -58,4 +56,3 @@ export default CartNav;
   //     <button type="submit" value='add' onClick={() => removeFromCart(el)}>remove</button>
   //   </div>
   // );
-  
