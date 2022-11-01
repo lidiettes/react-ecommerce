@@ -10,6 +10,7 @@ const ProductCard = (item) => {
     const productImage = photos[`photo${item.img}`];
 
 
+
     const buyProducts = (item) => {
         let elements = JSON.parse(localStorage.getItem("items")); //conseguir elementos ls
         if (Array.isArray(elements)) {
@@ -19,6 +20,7 @@ const ProductCard = (item) => {
         }
         localStorage.setItem("items", JSON.stringify(elements)) //guardarlos en ls
     
+        
     }
 
     return (

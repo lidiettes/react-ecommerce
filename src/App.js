@@ -8,16 +8,17 @@ import { useState } from 'react';
 
 function App() {
 
-const [cart, setCart]= useState([]);
+// const [localStorage, setLocalStorage]= useState();
 
 
-// console.log(cart);
+
+
 
   return (
   <>
   <Header />
-  <ProductsContainer cart={cart} setCart={setCart}/>
-  <CartNav  cart={cart}/>
+  <ProductsContainer />
+  <CartNav  />
   <Footer />
   
   </>

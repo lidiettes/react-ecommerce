@@ -4,10 +4,10 @@ import './CartNav.css';
 
 
 
-const CartNav = ({cart}) => {
+const CartNav = () => {
 
   
-  // console.log(cartTotal);
+
 
  let getCartLocalStorage= JSON.parse(localStorage.getItem("items"));
 
