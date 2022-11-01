@@ -4,24 +4,21 @@ import './CartNav.css';
 
 
 
-const CartNav = () => {
+const CartNav = ({}) => {
 
-  
-
-
- let getCartLocalStorage= JSON.parse(localStorage.getItem("items"));
-
-const listCart = getCartLocalStorage && getCartLocalStorage.map((item) => {
-  return (
-      <p key={item.id}>{item.name} {item.price} €</p>
-         )
-}) || "no hay elementos" ;
 
 // const [listCart, setListCart]= useState[cart]; 
 //   useEffect(()=> {
 //   listCart()
   
 // },[]);
+
+  let getCartLocalStorage = JSON.parse(localStorage.getItem("items"));
+  const listCart = getCartLocalStorage && getCartLocalStorage.map((item) => {
+    return (
+        <p key={item.id}>{item.name} {item.price} €</p>
+        )
+  }) || "no hay elementos" ;
 
 
   return (
@@ -32,6 +29,7 @@ const listCart = getCartLocalStorage && getCartLocalStorage.map((item) => {
     </div>
     </>
   )
+  console.log(listCart);
 }
 
 export default CartNav;
