@@ -6,13 +6,9 @@ import './CartNav.css';
 
 const CartNav = () => {
 
+  let LocalStorage = JSON.parse(localStorage.getItem("items"));
 
-
-
-
-  let getCartLocalStorage = JSON.parse(localStorage.getItem("items"));
-
-  const listCart = getCartLocalStorage && getCartLocalStorage.map((item) => {
+  const addedItem = LocalStorage && LocalStorage.map((item) => {
     return (
       <p key={item.id}>{item.name} {item.price} €</p>
     )
@@ -21,11 +17,18 @@ const CartNav = () => {
 
 
 
+
+  // const [prueba, setPrueba]= useState(() => addedItem);
+  //   useEffect(() => {
+  //     localStorage.setItem("Items", JSON.stringify(prueba));
+  //   }, [prueba]);
+
+
   return (
     <>
       <div className='cartContainer'>
         <h2>CART</h2>
-        {listCart}
+        {addedItem}
         
       </div>
     </>

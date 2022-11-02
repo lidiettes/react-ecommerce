@@ -1,51 +1,45 @@
 import './ProductCard.css';
-import * as photos from '../../assets/img';
+
 import CounterApp from '../CounterApp/CounterApp';
-import CartNav from '../CartNav/CartNav';
-import Items from '../../assets/db';
 
 
-const ProductCard = (item) => {
 
-    const productImage = photos[`photo${item.img}`];
+const ProductCard = ({name, img, description, id, price, buyProducts}) => {
 
-
-    const buyProducts = (item) => {
-        let elements = JSON.parse(localStorage.getItem("items")); //conseguir elementos ls
-        if (Array.isArray(elements)) {
-            elements.push(item);
-        } else {
-            elements = [item];
-        }
-        localStorage.setItem("items", JSON.stringify(elements)) ;//guardarlos en ls
-        return item;
+    // const productImage = photos[`photo${item.img}`];
+    const item = {
+        id: id,
+        name: name,
+        price: price,
+        img: img,
+        description: description
+    };
     
-    }
 
     return (
         <>
             <div className="wrapperProducts">
                 <div className="product-img">
-                    <img src={item.img} height="420" width="327" />
+                    <img src={img} height="420" width="327" />
                 </div>
                 <div className="product-info">
                     <div className="product-text">
-                        <h1>{item.name}</h1>
+                        <h1>{name}</h1>
                         <h2>by Verner Panton</h2>
-                        <p>{item.description} </p>
+                        <p>{description} </p>
 
                     </div>
                     <div className='counterContainer'>  <CounterApp /> </div>
                     <div className="product-price-btn">
-                        <p><span>{item.price}</span>€</p>
-
-                        <button key={item.id} type="submit" value='add' onClick={e => {buyProducts(item)}}>buy now</button>
+                        <p><span>{price}</span>€</p>
+                        <button type="submit" value='add' onClick={()=>{buyProducts(item)}} >buy now</button>
+                        <h2>{}</h2>
 
                     </div>
                 </div>
             </div>
         </>
-);
+    );
 };
 
 export default ProductCard;

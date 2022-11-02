@@ -4,7 +4,7 @@ import Items from "../../assets/db";
 import ProductCard from '../ProductCard/ProductCard';
 
 
-const ProductsContainer = () => {
+const ProductsContainer = ({buyProducts}) => {
     
     return (
 
@@ -14,11 +14,12 @@ const ProductsContainer = () => {
                 return (
                     <ProductCard 
                     key = {item.id}
+                    id = {item.id}
                     name = {item.name} 
                     description = {item.description} 
                     price = {item.price} 
                     img = {item.img} 
-
+                    buyProducts = {buyProducts}
                     />
                 )
                 })}
