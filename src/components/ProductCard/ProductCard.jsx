@@ -4,7 +4,7 @@ import CounterApp from '../CounterApp/CounterApp';
 
 
 
-const ProductCard = ({name, img, description, id, price, buyProducts}) => {
+const ProductCard = ({name, img, description, id, price, addToCart}) => {
 
     // const productImage = photos[`photo${item.img}`];
     const item = {
@@ -32,7 +32,7 @@ const ProductCard = ({name, img, description, id, price, buyProducts}) => {
                     <div className='counterContainer'>  <CounterApp /> </div>
                     <div className="product-price-btn">
                         <p><span>{price}</span>€</p>
-                        <button type="submit" value='add' onClick={()=>{buyProducts(item)}} >buy now</button>
+                        <button type="submit" value='add' onClick={()=>{addToCart(item)}} >buy now</button>
                         <h2>{}</h2>
 
                     </div>

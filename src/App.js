@@ -3,34 +3,44 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import ProductsContainer from './components/ProductsContainer/ProductsContainer';
 import CartNav from './components/CartNav/CartNav';
+import { useEffect, useState } from 'react';
 
 
 function App() {
 
-  function buyProducts(item){
-  
-    let products = JSON.parse(localStorage.getItem("items")); //conseguir elementos ls
-    
-    if (Array.isArray(products)) {
-        products.push(item);
-    } else {
-        products = [item];
-    }
-    localStorage.setItem("items", JSON.stringify(products));//guardarlos en ls
+  const [items, setItems] = useState([]);
 
-}
+  function saveProduct(items) {
+    localStorage.setItem("items", JSON.stringify(items));
+  }
+
+  useEffect(() => {
+    saveProduct((items));
+  }, [items]);
+
+  function addToCart(product) {
+    let listOfCart = JSON.parse(localStorage.getItem("items"));
+    if (Array.isArray(listOfCart)) {  
+      listOfCart.push(product);
+    } else {
+      listOfCart = [product];
+    }
+    setItems(listOfCart);
+    console.log(listOfCart);
+  }
+
 
 
 
 
   return (
-  <>
-  <Header />
-  <ProductsContainer buyProducts={buyProducts}/>
-  <CartNav  />
-  <Footer />
-  
-  </>
+    <>
+      <Header />
+      <ProductsContainer addToCart={addToCart}/>
+      <CartNav items={items}/>
+      <Footer />
+
+    </>
   );
 }
 
