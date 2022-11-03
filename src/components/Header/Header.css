@@ -38,7 +38,7 @@ header nav a {
 	display: inline-block;
 	color: #fff;
 	text-decoration: none;
-	padding: 5px 40px;
+	padding: 5px 20px;
 	line-height: normal;
 	font-size: 20px;
 
@@ -54,4 +54,5 @@ header nav a:hover {
 
 .bag {
 	color: #f2f2f2;
+	
 }

@@ -30,9 +30,6 @@ function App() {
   }
 
 
-
-
-
   return (
     <>
       <Header />
