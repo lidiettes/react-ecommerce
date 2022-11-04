@@ -2,6 +2,8 @@ import { BrowserRouter } from "react-router-dom";
 import './App.css';
 import { useEffect, useState } from 'react';
 import Router from './routes/Router';
+import Footer from "./components/Footer"
+
 
 
 
@@ -31,8 +33,11 @@ function App() {
 
   return (
     <>
+      
       <BrowserRouter>
-      <Router />
+        
+        <Router />
+        <Footer />
       </BrowserRouter>
 
     </>
