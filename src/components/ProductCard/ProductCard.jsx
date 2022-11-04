@@ -1,12 +1,20 @@
 import './ProductCard.css';
+import React,{useContext} from 'react';
+import { LoadItemContext } from '../../contexts/loadItemContext';
 
 import CounterApp from '../CounterApp/CounterApp';
 
 
-
 const ProductCard = ({name, img, description, id, price, addToCart}) => {
+// const ProductCard = ({name, img, description, id, price, addToCart}) => {
 
     // const productImage = photos[`photo${item.img}`];
+
+const contextLoadItem= useContext(LoadItemContext);
+
+
+
+
     const item = {
         id: id,
         name: name,
@@ -32,6 +40,7 @@ const ProductCard = ({name, img, description, id, price, addToCart}) => {
                     <div className='counterContainer'>  <CounterApp /> </div>
                     <div className="product-price-btn">
                         <p><span>{price}</span>€</p>
+                        {/* <button type="submit" value='add' onClick={()=>{addToCart(item)}} >buy now</button> */}
                         <button type="submit" value='add' onClick={()=>{addToCart(item)}} >buy now</button>
                         <h2>{}</h2>
 
