@@ -4,7 +4,15 @@ import {CartContext} from "./CartContext";
 
 const CartProvider = ({children}) => {
 
-    const [items, setItems] = useState([]);
+    let value = [];
+    
+    if (localStorage.getItem('items')) { 
+        value = JSON.parse(localStorage.getItem('items'))
+        }
+
+        const [items, setItems] = useState(value);
+        
+        
 
 
 return (
