@@ -5,7 +5,7 @@ import { CartContext } from '../context/CartContext';
 
 const Home = () => {
 
-  const {items, setItems} = useContext(CartContext);
+  const { items, setItems } = useContext(CartContext);
 
   function saveProduct(items) {
     localStorage.setItem("items", JSON.stringify(items));
@@ -17,7 +17,7 @@ const Home = () => {
 
   function addToCart(product) {
     let listOfCart = JSON.parse(localStorage.getItem("items"));
-    if (Array.isArray(listOfCart)) {  
+    if (Array.isArray(listOfCart)) {
       listOfCart.push(product);
     } else {
       listOfCart = [product];
@@ -25,22 +25,26 @@ const Home = () => {
     setItems(listOfCart);
     console.log(listOfCart);
 
-        //   function CountBag(){
-        //   const[counterbag, setCounterbag]= useState(0);
 
-        //   const increase = () => {
-        //       setCounterbag((prevState) => prevState + 1); 
-        //   };
-        // }
+
+
+    //   function CountBag(){
+    //   const[counterbag, setCounterbag]= useState(0);
+
+    //   const increase = () => {
+    //       setCounterbag((prevState) => prevState + 1); 
+    //   };
+    // }
   }
 
 
 
   return (
-    <ProductsContainer 
-    addToCart={addToCart}
+    <ProductsContainer
+      addToCart={addToCart}
+
     />
-    
+
   )
 }
 

@@ -10,7 +10,7 @@ const ProductCard = ({ name, img, description, id, price, addToCart }) => {
     const item = {
         id: id,
         name: name,
-        price: price, 
+        price: price,
         img: img
     };
 
@@ -26,14 +26,12 @@ const ProductCard = ({ name, img, description, id, price, addToCart }) => {
                         <h1>{name}</h1>
                         <h2>by Verner Panton</h2>
                         <p>{description} </p>
-
                     </div>
                     <div className='counterContainer'>  <CounterApp /> </div>
                     <div className="product-price-btn">
                         <p><span>{price}</span>€</p>
                         <button type="submit" value='add' onClick={() => { addToCart(item) }} >buy now</button>
                         <h2>{ }</h2>
-
                     </div>
                 </div>
             </div>
