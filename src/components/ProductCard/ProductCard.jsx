@@ -10,8 +10,8 @@ const ProductCard = ({ name, img, description, id, price, addToCart }) => {
     const item = {
         id: id,
         name: name,
-        price: price
-
+        price: price, 
+        img: img
     };
 
 

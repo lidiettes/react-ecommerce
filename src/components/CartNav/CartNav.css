@@ -1,17 +1,54 @@
 .cartContainer{
+border-radius: 8px;
+justify-content: right;
+padding: 34px;
+left: 0px;
 
-justify-content: center;
-padding: 14px;
-position: absolute;
+
+/* position: absolute; */
 top: 55px;
-color: azure;
-background-color: rgb(218, 167, 167);
-width: 280px;
-height: 300vh;
+color: rgb(71, 72, 72);
+background-color: rgba(240, 240, 240, 0.846);
+width: 60vw;
+height: 100vh;
 right:0px;
 
+margin: 30px auto;
+border-radius: 7px 7px 7px 7px;
+
+-webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+-moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+margin: auto;
+margin-bottom: 40px;
 }
 
 .buttonDelete {
     margin-left: 15px;
+}
+
+hr {
+    border: 0;
+    /* border-top: 1.5px solid rgb(217, 223, 216);  */
+    border-bottom: 1px solid rgb(170, 168, 168);
+    height:0;
+    margin-top: 10px;
+    }
+.itemC {
+    margin-top: 40px;
+    padding: 20px;
+    display: inline;
+}
+.total{
+
+
+padding: 24px;
+
+margin-top: 560px;
+margin-left: 50px;
+
+
+/* position: absolute; */
+
+
 }

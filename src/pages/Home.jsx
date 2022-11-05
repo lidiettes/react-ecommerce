@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from 'react'
+import { useState } from 'react';
 import ProductsContainer from '../components/ProductsContainer/ProductsContainer'
 import { CartContext } from '../context/CartContext';
 
@@ -23,6 +24,14 @@ const Home = () => {
     }
     setItems(listOfCart);
     console.log(listOfCart);
+
+        //   function CountBag(){
+        //   const[counterbag, setCounterbag]= useState(0);
+
+        //   const increase = () => {
+        //       setCounterbag((prevState) => prevState + 1); 
+        //   };
+        // }
   }
 
 

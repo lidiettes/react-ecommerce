@@ -21,10 +21,11 @@ header {
 
 header .logo {
 	color: #f2f2f2;
-	font-size: 20px;
+	font-size: 42px;
 	line-height: 50px;
 	margin-right: 100px;
 	float: left;
+	text-decoration: none;
 
 }
 
@@ -41,6 +42,7 @@ header nav a {
 	padding: 5px 20px;
 	line-height: normal;
 	font-size: 20px;
+	
 
 	-webkit-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
@@ -48,11 +50,19 @@ header nav a {
 }
 
 header nav a:hover {
-	background: #d3d495;
-	border-radius: 20px;
+	background: #828ac4;
+	border-radius: 10px;
 }
 
 .bag {
 	color: #f2f2f2;
 	
+	
+}
+
+.cartbag{
+display: inline-flex;
+font-size: 18px;
+margin-top: 5px;
+
 }

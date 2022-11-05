@@ -16,7 +16,8 @@ function App() {
     <>
       <CartProvider>
             <BrowserRouter>
-              <Header />
+
+              <Header /> 
               <Router />
               <Footer />
             </BrowserRouter>
