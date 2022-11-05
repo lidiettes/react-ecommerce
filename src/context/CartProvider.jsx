@@ -10,7 +10,7 @@ const CartProvider = ({children}) => {
         value = JSON.parse(localStorage.getItem('items'))
         }
 
-        const [items, setItems] = useState(value);
+        const [items, setItems] = useState(value); // usando el value y el condicional no se eliminan al pulsar f5
         
         
 
