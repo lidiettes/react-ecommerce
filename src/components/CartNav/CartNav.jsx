@@ -15,9 +15,9 @@ const CartNav = ({ items }) => {
       <div className='cartContainer'>
         <h2>MY SHOPPING BAG</h2>
         <ul>
-          {items && items.map((item) => {
+          {items && items.map((item, indice) => {   //incluyendo indice solventamos el error de las key iguales
             return (
-              <li key={item.id} className="itemC">
+              <li key={indice} className="itemC">
                 <p>{item.name}  </p>
                 <p>{item.price} €</p>
                 <hr></hr>
