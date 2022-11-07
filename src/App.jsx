@@ -9,14 +9,10 @@ import CartProvider from "./context/CartProvider";
 
 function App() {
 
-
-
-
   return (
     <>
       <CartProvider>
             <BrowserRouter>
-
               <Header /> 
               <Router />
               <Footer />

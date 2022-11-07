@@ -13,7 +13,6 @@ const Cart = () => {
         setItems(removes);
     }
 
-
     return (
         <>
             <CartNav
@@ -24,6 +23,11 @@ const Cart = () => {
     )
 }
 export default Cart
+
+
+
+
+
 
 
 
