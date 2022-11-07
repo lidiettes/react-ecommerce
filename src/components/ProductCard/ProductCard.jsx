@@ -1,7 +1,5 @@
 import './ProductCard.css';
-
 import CounterApp from '../CounterApp/CounterApp';
-
 
 
 const ProductCard = ({ name, img, description, id, price, addToCart }) => {
@@ -13,7 +11,6 @@ const ProductCard = ({ name, img, description, id, price, addToCart }) => {
         price: price,
         img: img
     };
-
 
     return (
         <>

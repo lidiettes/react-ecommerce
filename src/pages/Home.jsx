@@ -3,6 +3,7 @@ import { useState } from 'react';
 import ProductsContainer from '../components/ProductsContainer/ProductsContainer'
 import { CartContext } from '../context/CartContext';
 
+
 const Home = () => {
 
   const { items, setItems } = useContext(CartContext);
@@ -23,25 +24,31 @@ const Home = () => {
       listOfCart = [product];
     }
     setItems(listOfCart);
-    console.log(listOfCart);
-
-
-
-
-    //   function CountBag(){
-    //   const[counterbag, setCounterbag]= useState(0);
-
-    //   const increase = () => {
-    //       setCounterbag((prevState) => prevState + 1); 
-    //   };
-    // }
   }
 
 
 
+  const [stock, setStock]= useState([]);
+
+const getData = async() => {
+  try {
+  const response = await fetch ("http://localhost:3000/products");
+    const data = await response.json();
+    setStock(data);
+    
+  } catch (error) {
+    console.log(error);
+  }
+    }
+
+  useEffect(() => {
+    getData();
+  }, [])
+
   return (
     <ProductsContainer
       addToCart={addToCart}
+      stock={stock}
 
     />
 

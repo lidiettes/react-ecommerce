@@ -7,16 +7,20 @@ import Header from "./components/Header/Header";
 import CartProvider from "./context/CartProvider";
 
 
+
+
 function App() {
 
   return (
     <>
       <CartProvider>
+
             <BrowserRouter>
               <Header /> 
               <Router />
               <Footer />
             </BrowserRouter>
+
       </CartProvider>
 
     </>

@@ -1,15 +1,20 @@
-import React from 'react'
+
 import './ProductsContainer.css';
-import Items from "../../assets/db";
+// import Items from "../../assets/db";
 import ProductCard from '../ProductCard/ProductCard';
 
 
-const ProductsContainer = ({addToCart}) => {
-    
+
+const ProductsContainer = ({ addToCart,stock }) => {
+
+
     return (
 
-            <div className="ContainerCard">
-                {Items.map((item) => {
+        <div className="ContainerCard">
+
+
+
+                {stock.map((item) => {
                     
                 return (
                     <ProductCard 
@@ -20,11 +25,12 @@ const ProductsContainer = ({addToCart}) => {
                     price = {item.price} 
                     img = {item.img}
                     addToCart={addToCart} 
+
                     />
                 )
-                })}
-            </div>
-            )
+                })} 
+        </div>
+    )
 };
 
 export default ProductsContainer;

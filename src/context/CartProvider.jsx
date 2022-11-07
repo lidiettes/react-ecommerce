@@ -10,8 +10,6 @@ const CartProvider = ({ children }) => {
     }
     const [items, setItems] = useState(value); // usando el value y el condicional no se eliminan al pulsar f5
 
-
-
     return (
         <CartContext.Provider value={{ items, setItems }}>
             {children}
