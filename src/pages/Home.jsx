@@ -26,20 +26,20 @@ const Home = () => {
     setItems(listOfCart);
   }
 
+  //fetch
 
+  const [stock, setStock] = useState([]);
 
-  const [stock, setStock]= useState([]);
+  const getData = async () => {
+    try {
+      const response = await fetch("http://localhost:3000/products");
+      const data = await response.json();
+      setStock(data);
 
-const getData = async() => {
-  try {
-  const response = await fetch ("http://localhost:3000/products");
-    const data = await response.json();
-    setStock(data);
-    
-  } catch (error) {
-    console.log(error);
-  }
+    } catch (error) {
+      console.log(error);
     }
+  }
 
   useEffect(() => {
     getData();
