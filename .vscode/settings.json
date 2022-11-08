@@ -25,6 +25,7 @@
         "eliminan",
         "está",
         "estaría",
+        "firstname",
         "guardarlos",
         "Hamborg",
         "hola",
@@ -32,6 +33,7 @@
         "iguales",
         "incluyendo",
         "indice",
+        "lastname",
         "Mølgaard",
         "mueble",
         "notas",
@@ -42,8 +44,10 @@
         "Prueba",
         "solventamos",
         "substract",
+        "unitedstates",
         "usando",
         "vacio",
-        "Verner"
+        "Verner",
+        "zipcode"
     ]
 }

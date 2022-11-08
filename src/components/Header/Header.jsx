@@ -21,7 +21,7 @@ const Header = () => {
 						<Link to="/">Home</Link>
 						<a href="#">Shop</a>
 
-						<Link >Contact us</Link>
+						<Link to= "/shippingpage">Shipping page</Link>
 
 						<Link className="cartBag" to="/cart">
 
