@@ -1,12 +1,12 @@
 import './ProductCard.css';
 import CounterApp from '../CounterApp/CounterApp';
-// import * as photos from '../../../public/img'; 
-
-
+// import * as photos from '../../img/index';
 
 const ProductCard = ({ name, img, description, id, price, addToCart }) => {
 
+    // const { photo01, photo02, photo03} = photos;
     // const productImage = photos[`photo${item.img}`];
+    
     
     const item = {
         id: id,
@@ -14,12 +14,13 @@ const ProductCard = ({ name, img, description, id, price, addToCart }) => {
         price: price,
         img: img
     };
-
+    
     return (
         <>
             <div className="wrapperProducts">
                 <div className="product-img">
-                    <img src="./../../../public/img/img01.jpeg" alt="lampara" height="420" width="327" />
+                    <img src={img}  alt="lampara" height="420" width="327" />
+                    
                 </div>
                 <div className="product-info">
                     <div className="product-text">

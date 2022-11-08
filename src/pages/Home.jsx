@@ -37,7 +37,7 @@ const Home = () => {
       setStock(data);
 
     } catch (error) {
-      console.log(error);
+     
     }
   }
 
