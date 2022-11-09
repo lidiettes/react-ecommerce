@@ -1,5 +1,6 @@
 import React, { useContext, useEffect } from 'react'
 import { useState } from 'react';
+import getData from '../api/api';
 import ProductsContainer from '../components/ProductsContainer/ProductsContainer'
 import { CartContext } from '../context/CartContext';
 
@@ -30,19 +31,12 @@ const Home = () => {
 
   const [stock, setStock] = useState([]);
 
-  const getData = async () => {
-    try {
-      const response = await fetch("http://localhost:3000/products");
-      const data = await response.json();
-      setStock(data);
-
-    } catch (error) {
-     
+  useEffect(() => { 
+    const prueba = async ()=> {
+    const datos = await getData();
+    setStock(datos);
     }
-  }
-
-  useEffect(() => {
-    getData();
+    prueba();
   }, [])
 
   return (

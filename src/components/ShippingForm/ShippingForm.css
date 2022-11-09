@@ -27,6 +27,7 @@ html {
 body {
     margin: 0;
     background-color: white;
+
 }
 
 h1 {
@@ -47,7 +48,7 @@ hr {
 
 .container {
     max-width: 40rem;
-    padding: 10vw 2rem 0;
+    padding: 4vw 2rem 0;
     margin: 0 auto;
     height: 100vh;
 }
@@ -71,7 +72,7 @@ hr {
     font-size: 0.6rem;
     font-weight: 300;
     text-transform: uppercase;
-    margin-bottom: 0.25rem
+    
 }
 
 .field__input {
@@ -88,8 +89,10 @@ hr {
 }
 
 .field:focus-within {
-    border-color: #000;
+    border-color: rgb(209, 109, 109);
 }
+
+
 
 .fields {
     display: grid;
@@ -105,7 +108,7 @@ hr {
 }
 
 .button {
-    background-color: #000;
+    background-color: rgb(25, 143, 18);
     text-transform: uppercase;
     font-size: 0.8rem;
     font-weight: 600;
@@ -113,12 +116,24 @@ hr {
     color: #fff;
     width: 100%;
     padding: 1rem;
-    border-radius: 0.25rem;
+    border-radius: 0.45rem;
     border: 0;
     cursor: pointer;
     outline: 0;
+    margin-top: 20px;
+}
+.button:hover {
+    background-color: rgb(37, 95, 40);
+ 
 }
 
 .button:focus-visible {
     background-color: #333;
+}
+
+span {
+    display: inline-block;
+    height: 15px;
+    font-family: 'Suranna', serif;
+    font-size: 24px;
 }

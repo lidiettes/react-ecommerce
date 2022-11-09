@@ -7,13 +7,9 @@ import ProductCard from '../ProductCard/ProductCard';
 
 
 const ProductsContainer = ({ addToCart,stock }) => {
-
-
     return (
 
         <div className="ContainerCard">
-
-
 
                 {stock.map((item) => {
                     

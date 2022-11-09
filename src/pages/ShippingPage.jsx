@@ -5,9 +5,6 @@ const ShippingPage = () => {
   return (
     <>
     <ShippingForm />
-    
-    
-    
     </>
     
 
