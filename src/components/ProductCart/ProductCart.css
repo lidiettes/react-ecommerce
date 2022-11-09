@@ -1,0 +1,53 @@
+.buttonDelete{
+    background-color: rgb(231, 78, 31);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: block;
+    color: #fff;
+    width: 70px;
+    padding: 0.5rem;
+    border-radius: 0.45rem;
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+    margin-top: 20px;
+}
+
+.infoProductCart {
+    font-size: 1.1rem;
+    justify-content: center;
+    margin: 20px ;
+    padding: auto;
+    width: 350px;
+    
+    
+}
+
+.imgProductCart{
+    object-fit: cover;
+    width: 148px;
+    height: 200px;
+}
+
+.containerProductCart{
+    display: flex;
+    width: 400px;
+    height: 200px;
+    background-color: rgba(240, 240, 240, 0.846);
+-webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+-moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+border-radius: 7px 7px 7px 7px;
+margin: 10px 40px;
+color: rgb(71, 72, 72);
+}
+
+/* .item {
+display: inline;
+padding: 34px;
+
+height: 100vh;
+min-height: 1000px;
+width: 200px;
+} */

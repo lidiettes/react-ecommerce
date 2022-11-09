@@ -1,41 +1,21 @@
 .cartContainer{
-border-radius: 8px;
-justify-content: right;
-padding: 34px;
-left: 0px;
-height: 100vh;
+margin-left: 40px;
+margin-top: 50px;
+height: 800px;
+width: 80%;
+padding: auto;
 min-height: 1000px;
-/* position: absolute; */
-top: 55px;
-color: rgb(71, 72, 72);
-background-color: rgba(240, 240, 240, 0.846);
-width: 60vw;
-right:0px;
-
-margin: 30px auto;
-border-radius: 7px 7px 7px 7px;
-
--webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
--moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-margin: auto;
-margin-bottom: 40px;
 }
 
 
-hr {
-
-    border: 0;
-    /* border-top: 1.5px solid rgb(217, 223, 216);  */
-    border-bottom: 1px solid rgb(172, 25, 25);
-    height:0;
-    margin-top: 10px;
-    }
-.itemC {
-    margin-top: 20px;
-    
-    display: inline;
+h2{
+    margin-left: 230px;
+    padding: 10px;
+    color:cadetblue ;
+    letter-spacing: 0.1em;
+    font-family: 'Playfair Display', serif;
 }
+
 .total{
 
 margin-top: 10px;
@@ -48,24 +28,6 @@ margin-left: 150px;
 }
 .buttonPay{
     position: relative;
-    bottom: 0px;
+    margin-left: 50px;
     text-decoration: none;
-}
-.buttonDelete{
-    background-color: rgb(231, 78, 31);
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    font-weight: 600;
-    display: block;
-    color: #fff;
-    width: 70px;
-    padding: 0.5rem;
-    border-radius: 0.45rem;
-    border: 0;
-    cursor: pointer;
-    outline: 0;
-    margin-top: 20px;
-}
-li{
-    display: flex;
 }
