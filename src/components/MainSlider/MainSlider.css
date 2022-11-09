@@ -1,4 +1,5 @@
 .mainSliderContainer{
+    
     background: url("https://images.pexels.com/photos/6627105/pexels-photo-6627105.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
     width: 100vw;
     height: 700px;
@@ -7,7 +8,7 @@
 }
 .mainSliderTitle{
 display: flex;
-
+justify-content: center;
 font-weight: 550;
 font-size: 39rem;
 font-family: 'Raleway', sans-serif;
@@ -16,7 +17,7 @@ letter-spacing: 0.2em;
 color: #ffffff;
 margin-top: 20px;
 height: 550px;
-
+padding: 30px;
 
 }
 .mainSliderTitleSecond{
@@ -24,7 +25,8 @@ height: 550px;
     display: flex;
 justify-content: center;
 font-size: 40px;
-margin-bottom: 120px;
-text-shadow: rgb(41, 40, 40) 0.1em 0.1em 0.3em
+margin-bottom: 10px;
+text-shadow: rgb(41, 40, 40) 0.1em 0.1em 0.3em;
+padding: 30px;
 
 }

@@ -24,11 +24,13 @@ const Header = () => {
 
 						<Link to= "/shippingpage">Shipping page</Link>
 
-						<Link className="cartBag" to="/cart">
-
-							<p>CART</p>
-							<p className="notification"> {items.length}</p> 
+						<Link  to="/cart">
+						<i class="fa fa-shopping-cart" aria-hidden="true">{items.length}</i> 
 						</Link>
+
+						<i class="fa fa-heart" aria-hidden="true"></i>
+						<i class="fa fa-user" aria-hidden="true"></i>
+						
 
 
 
