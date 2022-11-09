@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from 'react'
 import { useState } from 'react';
 import getData from '../api/api';
+import MainSlider from '../components/MainSlider/MainSlider';
 import ProductsContainer from '../components/ProductsContainer/ProductsContainer'
 import { CartContext } from '../context/CartContext';
 
@@ -40,12 +41,14 @@ const Home = () => {
   }, [])
 
   return (
+    <>
+    <MainSlider />
     <ProductsContainer
       addToCart={addToCart}
       stock={stock}
 
     />
-
+    </>
   )
 }
 

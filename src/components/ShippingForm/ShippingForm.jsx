@@ -14,7 +14,7 @@ const ShippingForm = () => {
     const validName = address.length > 0 ? true : false;
     const validLastName = lastName.length > 0 ? true : false;
     const validAddress = address.length > 0 ? true : false;
-    const validCountry =country.length > 0 ? true : false;
+    const validCountry = country.length > 0 ? true : false;
     const validPostalCode = postalCode.length > 0 ? true : false;
     const validCity = city.length > 0 ? true : false;
 

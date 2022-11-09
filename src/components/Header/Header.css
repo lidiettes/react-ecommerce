@@ -1,11 +1,11 @@
 header {
 	width: 100%;
 	/* Establecemos que el header abarque el 100% del documento */
-	overflow: hidden;
+	
 	/* Eliminamos errores de float */
-	background: #5988f5c5;
+	/* background: #5988f5c5; */
 	margin-bottom: 20px;
-	height: 65px;
+	height: 45px;
 }
 
 .wrapper {
@@ -21,6 +21,7 @@ header {
 
 header .logo {
 	color: #f2f2f2;
+	color: #5988f5c5;
 	font-size: 40px;
 	line-height: 50px;
 	margin-right: 100px;
@@ -32,12 +33,14 @@ header .logo {
 header nav {
 	float: right;
 	line-height: 50px;
+	font-weight: 600;
+	letter-spacing: 0.2em;
 
 }
 
 header nav a {
 	display: inline-block;
-	color: #fff;
+	color: #5988f5c5;
 	text-decoration: none;
 	padding: 5px 20px;
 	line-height: normal;
@@ -55,7 +58,7 @@ header nav a:hover {
 }
 
 .bag {
-	color: #f2f2f2;
+	color: #5988f5c5;
 	
 	
 }
@@ -64,15 +67,17 @@ header nav a:hover {
 display: inline-flex;
 font-size: 18px;
 font-weight: bold;
+color: #5988f5c5;
 
 
 margin-top: 5px;
-transform: translateY(0.05in);
+/* transform: translateY(-0.1in); */
+
 
 
 }
 .notification{
 margin-left: 1px;
-color: white;
+color: #5988f5c5;
 
 }
