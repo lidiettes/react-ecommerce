@@ -1,14 +1,14 @@
 import React from 'react'
-import { useReducer } from 'react'
-import WishListItemsReducer from './actions'
 
 
-const initialState = [];
 
-const Wishlist = () => {
 
-    const [wishlistItems, dispatch] = useReducer(WishListItemsReducer, initialState);
-    console.log(wishlistItems);
+
+
+const Wishlist = ({handleRemove, initialState}) => {
+
+
+
 
     return (
         <>
@@ -18,8 +18,10 @@ const Wishlist = () => {
                 {(initialState && initialState?.map(({ id, name }) => (
                     <li key={id}>
                         <span>{name}</span>
+                        <button onClick={()=>handleRemove(id)}>Delete</button>
                     </li>
                 ))) || "no items found"}
+
             </ul>
         </>
     );

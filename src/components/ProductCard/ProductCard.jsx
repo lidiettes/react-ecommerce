@@ -1,14 +1,17 @@
 import './ProductCard.css';
 import CounterApp from '../CounterApp/CounterApp';
 import { useState } from 'react';
+import { useReducer } from 'react'
+
 // import * as photos from '../../img/index';
 
-const ProductCard = ({ name, img, description, id, price, addToCart, addWishList }) => {
+const ProductCard = ({ name, img, description, id, price, addToCart, handleAddWished }) => {
 
     // const { photo01, photo02, photo03} = photos;
     // const productImage = photos[`photo${item.img}`];
 
-    const [itemWish, setItemWish]=useState({});
+
+    //-- arriba es parte nueva de wishlist
     
     const item = {
         id: id,
@@ -17,6 +20,8 @@ const ProductCard = ({ name, img, description, id, price, addToCart, addWishList
         img: img
     };
     
+
+
     return (
         <>
             <div className="wrapperProducts">
@@ -27,7 +32,7 @@ const ProductCard = ({ name, img, description, id, price, addToCart, addWishList
 
                 <div className="product-info">
                     <div className='buttonContainer'>
-                        <button className='heartButton' type="submit" value='add' onClick={() => {  }}> 
+                        <button className='heartButton' type="submit" value='add' onClick={(itemWished) => {handleAddWished(itemWished) }}> 
                             <i className="fa fa-heart " aria-hidden="true"></i> 
                         </button>
                         </div>

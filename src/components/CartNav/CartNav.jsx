@@ -20,7 +20,6 @@ const CartNav = ({ items, removeCart, }) => {
   console.log(items.price);
   
   
-  
   return (
 
     <div className='cartContainer'>
