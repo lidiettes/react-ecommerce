@@ -130,3 +130,19 @@ span {
 }
 
 
+.heartButton{
+    margin-left: 260px;
+    justify-content: flex-end;
+text-decoration: none;
+border: none;
+background: white;
+padding: 10px;
+cursor: pointer;
+}
+
+.fa.fa-heart:hover{
+    color: #ebd79c;
+}
+
+
+

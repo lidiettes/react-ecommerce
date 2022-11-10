@@ -1,12 +1,14 @@
 import './ProductCard.css';
 import CounterApp from '../CounterApp/CounterApp';
+import { useState } from 'react';
 // import * as photos from '../../img/index';
 
-const ProductCard = ({ name, img, description, id, price, addToCart }) => {
+const ProductCard = ({ name, img, description, id, price, addToCart, addWishList }) => {
 
     // const { photo01, photo02, photo03} = photos;
     // const productImage = photos[`photo${item.img}`];
-    
+
+    const [itemWish, setItemWish]=useState({});
     
     const item = {
         id: id,
@@ -22,7 +24,13 @@ const ProductCard = ({ name, img, description, id, price, addToCart }) => {
                     <img src={img}  alt="lampara" height="420" width="327" />
                     
                 </div>
+
                 <div className="product-info">
+                    <div className='buttonContainer'>
+                        <button className='heartButton' type="submit" value='add' onClick={() => {  }}> 
+                            <i className="fa fa-heart " aria-hidden="true"></i> 
+                        </button>
+                        </div>
                     <div className="product-text">
                         <h1>{name}</h1>
                         <h2>by Verner Panton</h2>

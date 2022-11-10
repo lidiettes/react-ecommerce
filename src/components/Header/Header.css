@@ -1,22 +1,20 @@
 header {
 	width: 100%;
-	/* Establecemos que el header abarque el 100% del documento */
-	
-	/* Eliminamos errores de float */
-	/* background: #5988f5c5; */
 	margin-bottom: 20px;
 	height: 45px;
+	display:flex;
 }
 
-.wrapper {
-	width: 90%;
+.wrapperHeader {
+	display:flex;
+	width: 100%;
 	/* Establecemos que el ancho sera del 90% */
 	max-width: 2050px;
 	/* Aqui le decimos que el ancho máximo sera de 1000px */
 	margin-left: 50px;
-	/* Centramos los elementos */
+	
 	overflow: hidden;
-	/* Eliminamos errores de float */
+	
 }
 
 header .logo {
@@ -31,10 +29,11 @@ header .logo {
 }
 
 header nav {
-	float: right;
+	justify-content: center;
 	line-height: 60px;
 	font-weight: 600;
 	letter-spacing: 0.2em;
+	margin-left: 350px;
 
 }
 
@@ -64,4 +63,9 @@ i{
 	color: #5988f5c5;
 	margin-left: 15px;
 	
+}
+
+.iconsContainer{
+	padding: 20px;
+	margin-left: 700px;
 }

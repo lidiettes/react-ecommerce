@@ -10,31 +10,32 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Header = () => {
 
 	const { items, setItems } = useContext(CartContext);
-	
+
 
 	return (
 		<>
 			<header>
-				<div className="wrapper">
-					<Link to="/" className="logo">Söd</Link>
+				<div className="wrapperHeader">
+					{/* <Link to="/" className="logo">Söd</Link> */}
 
 					<nav>
 						<Link to="/">Home</Link>
 						<a href="#">Shop</a>
+						<a href="#">About us</a>
+						<a href="#">Contact us</a>
 
-						<Link to= "/shippingpage">Shipping page</Link>
-
-						<Link  to="/cart">
-						<i class="fa fa-shopping-cart" aria-hidden="true">{items.length}</i> 
-						</Link>
-
-						<i class="fa fa-heart" aria-hidden="true"></i>
-						<i class="fa fa-user" aria-hidden="true"></i>
-						
-
+						<Link to="/shippingpage">Shipping page</Link>
 
 
 					</nav>
+					<div className='iconsContainer'>
+						<Link to="/cart">
+							<i className="fa fa-shopping-cart" aria-hidden="true">{items.length}</i>
+						</Link>
+
+						<Link to="/wishlist"><i className="fa fa-heart" aria-hidden="true"></i></Link>
+						<Link to="/login"><i className="fa fa-user" aria-hidden="true"></i></Link>
+					</div>
 				</div>
 			</header>
 

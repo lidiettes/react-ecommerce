@@ -40,12 +40,16 @@ const Home = () => {
     prueba();
   }, [])
 
+// wishLists
+
+
   return (
     <>
     <MainSlider />
     <ProductsContainer
       addToCart={addToCart}
       stock={stock}
+      // addWishList ={addWishList} 
 
     />
     </>

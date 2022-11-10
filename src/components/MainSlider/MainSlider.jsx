@@ -5,7 +5,7 @@ const MainSlider = () => {
   return (
     <div className='mainSliderContainer'>
         <div className='mainSliderTitle'>Söd</div>
-        <div className='mainSliderTitleSecond'>The language of light</div>
+        <div className='mainSliderTitleSecond'>New for Autumn</div>
 
     </div>
   )
