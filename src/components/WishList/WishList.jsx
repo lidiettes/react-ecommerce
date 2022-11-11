@@ -1,24 +1,18 @@
 import React from 'react'
 
 
-
-
-
-
-const Wishlist = ({handleRemove, initialState}) => {
-
-
+const Wishlist = ({removeCart, wishes}) => {
 
 
     return (
         <>
             <div>Wishlist listado </div>
-            <div>name</div>
+            
             <ul>
-                {(initialState && initialState?.map(({ id, name }) => (
-                    <li key={id}>
-                        <span>{name}</span>
-                        <button onClick={()=>handleRemove(id)}>Delete</button>
+                {( wishes && wishes?.map((wish, indice ) => (
+                    <li key={indice}>
+                        <span>{wish.name}</span>
+                        <button onClick={()=>removeCart(indice)}>Delete</button>
                     </li>
                 ))) || "no items found"}
 

@@ -34,80 +34,96 @@ const Home = () => {
 
   const [stock, setStock] = useState([]);
 
-  useEffect(() => { 
-    const prueba = async ()=> {
-    const datos = await getData();
-    setStock(datos);
+  useEffect(() => {
+    const prueba = async () => {
+      const datos = await getData();
+      setStock(datos);
     }
     prueba();
   }, [])
 
-// wishLists
+  // wishLists
+  const init=()=>{
+  return JSON.parse(localStorage.getItem("wishes"))|| [];
+  }
 
-const initialState = [];
-const [wishes, dispatch] = useReducer(wishesReducer, initialState);
-// console.log(wishes);
+  const initialState = [];
+  const [wishes, dispatch] = useReducer(wishesReducer, initialState, init);
+  // console.log(wishes);
 
-const handleAddWished = (itemWished)=>{
+  const handleAddWished = (product) => {
+    let newItem = {
+      id: product.id,
+      name: product.name
+    };
+
     const action = {
-        type: 'add_item',
-        payload: itemWished,
+      type: 'add_item',
+      payload: newItem,
     }
     dispatch(action);
-}
-// const handleRemove= (id)=>{
-//     dispatch({
-//         type: 'delete_item',
-//         payload: id,
-//     })
-// }
-//----- estaba lo de arriba en wishlist
+  }
 
-const [itemWish, setItemWish] = useState({
-    nameWish: "",
-    idWish:""
-});
-const {nameWish,idWish } = itemWish;
+  function saveWish(wishes) {
+    localStorage.setItem("wishes", JSON.stringify(wishes));
+  }
 
-// const onInputChange = ({target}) => {
-//     console.log(nameWish, value);
-//     const {nameWish}= target;
-//     setItemWish({...itemWish,
-//         [nameWish]:value,
-//     })
-// };
-// console.log(itemWish);
-
-// const onSubmit =()=> {
-//     e.preventDefault();
-//     if (id=== null || name === null){
-//         return;
-//     }
-// };
-
-const newItem = {
-    idWish,
-    nameWish,
-};
-
-setItemWish({
-    nameWish:"",
-    idWish: ""
-});
+  useEffect(() => {
+    saveWish(wishes)
+  }, [wishes]);
 
 
+  // const handleRemove= (id)=>{
+  //     dispatch({
+  //         type: 'delete_item',
+  //         payload: id,
+  //     })
+  // }
+  //----- estaba lo de arriba en wishlist
+
+  // const [itemWish, setItemWish] = useState({
+  //     nameWish: "",
+  //     idWish:""
+  // });
+  // const {nameWish,idWish } = itemWish;
+
+  // const onInputChange = ({target}) => {
+  //     console.log(nameWish, value);
+  //     const {nameWish}= target;
+  //     setItemWish({...itemWish,
+  //         [nameWish]:value,
+  //     })
+  // };
+  // console.log(itemWish);
+
+  // const onSubmit =()=> {
+  //     e.preventDefault();
+  //     if (id=== null || name === null){
+  //         return;
+  //     }
+  // };
+
+  // const newItem = {
+  //     idWish,
+  //     nameWish,
+  // };
+
+  // setItemWish({
+  //     nameWish:"",
+  //     idWish: ""
+  // });
 
 
   return (
     <>
-    <MainSlider />
-    <ProductsContainer
-      addToCart={addToCart}
-      stock={stock}
-      handleAddWished= {handleAddWished}
-    
+      <MainSlider />
+      <ProductsContainer
+        addToCart={addToCart}
+        stock={stock}
+        handleAddWished={handleAddWished}
 
-    />
+
+      />
     </>
   )
 }

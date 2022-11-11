@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import { useEffect } from 'react';
 import { useContext } from 'react'
 import CartNav from '../components/CartNav/CartNav'
 import { CartContext } from '../context/CartContext';
@@ -12,6 +13,12 @@ const Cart = () => {
         const removes = items.filter((item, indice) => indice !== id);
         setItems(removes);
     }
+
+    
+    useEffect(() => {
+        localStorage.setItem("items", JSON.stringify(items));
+      }, [items]);
+    
 
     return (
         <>

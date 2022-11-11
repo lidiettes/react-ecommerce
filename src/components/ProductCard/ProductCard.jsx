@@ -32,7 +32,7 @@ const ProductCard = ({ name, img, description, id, price, addToCart, handleAddWi
 
                 <div className="product-info">
                     <div className='buttonContainer'>
-                        <button className='heartButton' type="submit" value='add' onClick={(itemWished) => {handleAddWished(itemWished) }}> 
+                        <button className='heartButton' type="submit" value='add' onClick={() => {handleAddWished(item)}}> 
                             <i className="fa fa-heart " aria-hidden="true"></i> 
                         </button>
                         </div>

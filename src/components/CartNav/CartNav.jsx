@@ -14,11 +14,8 @@ import ProductCart from '../ProductCart/ProductCart';
 // }
 // console.log(getTotal())
 
-const CartNav = ({ items, removeCart, }) => {
+const CartNav = ({ items, removeCart }) => {
 
-
-  console.log(items.price);
-  
   
   return (
 

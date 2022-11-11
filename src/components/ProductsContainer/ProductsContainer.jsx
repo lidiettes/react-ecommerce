@@ -6,7 +6,7 @@ import ProductCard from '../ProductCard/ProductCard';
 
 
 
-const ProductsContainer = ({ addToCart,stock, addWishList }) => {
+const ProductsContainer = ({ addToCart,stock, handleAddWished }) => {
     return (
 
         <div className="ContainerCard">
@@ -22,7 +22,7 @@ const ProductsContainer = ({ addToCart,stock, addWishList }) => {
                     price = {item.price} 
                     img = {item.img}
                     addToCart={addToCart}
-                    addWishList= {addWishList}
+                    handleAddWished= {handleAddWished}
 
                     />
                 )
