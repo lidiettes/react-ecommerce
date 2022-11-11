@@ -1,8 +1,11 @@
 import React from 'react'
 import { useContext } from 'react';
 import { useEffect } from 'react';
+import Login from '../components/Login/Login';
 import WishList from '../components/WishList/WishList'
 import { WishListContext } from '../context/WishListContext/WishListContext';
+import './WishListPage.css';
+
 
 const WishListPage = () => {
 
@@ -29,11 +32,13 @@ const WishListPage = () => {
 
   return (
     <>
-
-      <WishList
-        wishes = {wishes}
-        removeCart = {removeCart}
-      />
+      <div className="WishListContainer"  >
+          <WishList
+            wishes = {wishes}
+            removeCart = {removeCart}
+          />
+          <Login/> 
+      </div>
     </>
   )
 }

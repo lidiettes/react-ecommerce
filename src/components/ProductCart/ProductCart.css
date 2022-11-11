@@ -15,6 +15,7 @@
 }
 
 .infoProductCart {
+    display: inline;
     font-size: 1.1rem;
     justify-content: center;
     margin: 20px ;
@@ -43,11 +44,22 @@ margin: 10px 40px;
 color: rgb(71, 72, 72);
 }
 
-/* .item {
-display: inline;
-padding: 34px;
 
-height: 100vh;
-min-height: 1000px;
-width: 200px;
-} */
+h2{
+        margin-left: 140px;
+        margin-bottom: 30px;
+        padding: 10px;
+        color:cadetblue ;
+        letter-spacing: 0.1em;
+        font-family: 'Raleway', sans-serif;
+} 
+
+.buttonDeleteWish{
+    border: none;
+    margin-left: 190px;
+    margin-top: 40px;
+    transform: translate(0,-60px);
+}
+.buttonDeleteWish:hover{
+   color:bisque
+}

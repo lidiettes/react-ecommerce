@@ -22,10 +22,3 @@ export default WishListProvider
 
 
 
-
-  // const init=()=>{
-  // return JSON.parse(localStorage.getItem("wishes"))|| [];
-  // }
-
-  // const initialState = [];
-  // const [wishes, dispatch] = useReducer(wishesReducer, initialState, init);

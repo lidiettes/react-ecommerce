@@ -10,8 +10,6 @@
     margin: auto;
     margin-bottom: 40px;
 
-    
-
 }
 
 .product-img {
@@ -37,7 +35,7 @@
 }
 
 .product-text {
-    height: 250px;
+    height: 200px;
     width: 327px;
 
     
@@ -56,13 +54,14 @@
 }
 
 .product-text h2 {
-    margin: 0 0 47px 38px;
+    margin: 0 0 0px 38px;
     font-size: 13px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
     color: #d2d2d2;
     letter-spacing: 0.2em;
+    
 }
 
 .product-text p {
@@ -71,10 +70,10 @@
     font-family: 'Playfair Display', serif;
     color: #8d8d8d;
     line-height: 1.7em;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: lighter;
     overflow: hidden;
-    padding: 2px;
+    padding: 10px;
 }
 
 .product-price-btn {
@@ -100,7 +99,6 @@
 
 span {
     display: inline-block;
-    
     font-family: 'Suranna', serif;
     font-size: 24px;
 }
@@ -131,14 +129,27 @@ span {
 
 
 .heartButton{
-    margin-left: 260px;
+    margin-left: 240px;
     justify-content: flex-end;
 text-decoration: none;
 border: none;
 background: white;
-padding: 10px;
+padding: 15px;
 cursor: pointer;
+font-family: 50px;
 }
+
+.counterContainer{
+    margin-top: 13px;
+}
+.buttonContainer{
+    height: 45px;
+}
+
+.fa.fa-heart.card{
+
+font-size: 35px;
+} 
 
 .fa.fa-heart:hover{
     color: red;
@@ -146,5 +157,5 @@ cursor: pointer;
 
 
 .prueba{
-    color:red;
+    color:rgb(144, 130, 130);
 }

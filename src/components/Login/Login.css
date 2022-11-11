@@ -3,13 +3,22 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 .loginContainer {
-	width: 100vw;
-	height: 100vh;
+    display: block;
+	/* width: 100vw;
+	height: 100vh; */
 	background: #f3e0e2;
 	display: grid;
 	place-content: center;
 }
+
 .wrapper {
+
+    
+ justify-content:flex-end;
+   position: absolute;
+   margin-left: 600px;
+   margin-top: 100px;
+   float: right;
 	width: 25rem;
 	padding: 2.1rem 2rem;
 	border-radius: 0.7rem;
@@ -18,7 +27,7 @@ body {
 	background: #fff;
 	justify-items: center;
 	align-items: center;
-	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 19px 38px, rgba(0, 0, 0, 0.1) 0px 5px 5px;
 }
 .wrapper .heading h1 {
 	font-weight: 700;

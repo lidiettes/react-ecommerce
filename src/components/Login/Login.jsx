@@ -7,10 +7,10 @@ const Login = () => {
         <>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-            <div className='loginContainer'>
+            
                 <div className="wrapper">
                     <div className="heading">
-                        <h1>Login</h1>
+                        {/* <p>Sign in to sync your Saved Items across all your devices.</p> */}
                     </div>
                     <div className="social">
                         <a href="#" className="social-links"><i className="fa-brands fa-facebook-f"></i></a>
@@ -24,7 +24,7 @@ const Login = () => {
                         <a href="#" type="submit" className="btn btn-primary">log in</a>
                     </form>
                 </div>
-            </div>
+            
 
         </>
     )

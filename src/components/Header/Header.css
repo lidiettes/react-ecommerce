@@ -59,7 +59,7 @@ header nav a:hover {
 
 
 i{
-	font-size: 23px;
+	font-size: 20px;
 	color: #5988f5c5;
 	margin-left: 15px;
 	
@@ -67,5 +67,5 @@ i{
 
 .iconsContainer{
 	padding: 20px;
-	margin-left: 500px;
+	margin-left: 10px;
 }
