@@ -1,12 +1,14 @@
 import React from 'react'
-import { useState } from 'react';
+import { useContext } from 'react';
 import { useEffect } from 'react';
 import WishList from '../components/WishList/WishList'
+import { WishListContext } from '../context/WishListContext/WishListContext';
 
 const WishListPage = () => {
 
 
-  const [wishes, setWishes] = useState(JSON.parse(localStorage.getItem('wishes')));
+  const {wishes, dispatch} = useContext(WishListContext);
+
   
   useEffect(() => {
     localStorage.setItem("wishes", JSON.stringify(wishes));
@@ -14,7 +16,12 @@ const WishListPage = () => {
 
   function removeCart(id) {
     const removes = wishes.filter((wish, indice) => indice !== id);
-    setWishes(removes);
+    
+    const action = {
+      type: 'delete_item',
+      payload: removes,
+    }
+    dispatch(action);
   }
 
 
@@ -24,8 +31,8 @@ const WishListPage = () => {
     <>
 
       <WishList
-        wishes={wishes}
-        removeCart={removeCart}
+        wishes = {wishes}
+        removeCart = {removeCart}
       />
     </>
   )

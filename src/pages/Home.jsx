@@ -4,8 +4,7 @@ import getData from '../api/api';
 import MainSlider from '../components/MainSlider/MainSlider';
 import ProductsContainer from '../components/ProductsContainer/ProductsContainer'
 import { CartContext } from '../context/CartContext';
-import { useReducer } from 'react'
-import wishesReducer from '../components/WishList/actions'
+import { WishListContext } from '../context/WishListContext/WishListContext';
 
 
 const Home = () => {
@@ -43,26 +42,28 @@ const Home = () => {
   }, [])
 
   // wishLists
-  const init=()=>{
-  return JSON.parse(localStorage.getItem("wishes"))|| [];
-  }
+  // const init=()=>{
+  // return JSON.parse(localStorage.getItem("wishes"))|| [];
+  // }
 
-  const initialState = [];
-  const [wishes, dispatch] = useReducer(wishesReducer, initialState, init);
-  // console.log(wishes);
+  // const initialState = [];
+  // const [wishes, dispatch] = useReducer(wishesReducer, initialState, init);
+
+
+  const{wishes,dispatch} = useContext(WishListContext);
 
   const handleAddWished = (product) => {
     let newItem = {
       id: product.id,
       name: product.name
     };
-
     const action = {
       type: 'add_item',
       payload: newItem,
     }
     dispatch(action);
   }
+
 
   function saveWish(wishes) {
     localStorage.setItem("wishes", JSON.stringify(wishes));
@@ -72,7 +73,7 @@ const Home = () => {
     saveWish(wishes)
   }, [wishes]);
 
-
+/////NOTAS
   // const handleRemove= (id)=>{
   //     dispatch({
   //         type: 'delete_item',
@@ -112,7 +113,7 @@ const Home = () => {
   //     nameWish:"",
   //     idWish: ""
   // });
-
+/////NOTAS
 
   return (
     <>

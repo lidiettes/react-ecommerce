@@ -5,6 +5,7 @@ import Router from './routes/Router';
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import CartProvider from "./context/CartProvider";
+import WishListProvider from "./context/WishListContext/WishListProvider";
 
 
 
@@ -13,16 +14,17 @@ function App() {
 
   return (
     <>
-      <CartProvider>
+      <WishListProvider>
+        <CartProvider>
 
-            <BrowserRouter>
-              <Header /> 
-              <Router />
-              <Footer />
-            </BrowserRouter>
+          <BrowserRouter>
+            <Header />
+            <Router />
+            <Footer />
+          </BrowserRouter>
 
-      </CartProvider>
-
+        </CartProvider>
+      </WishListProvider>
     </>
   );
 }
