@@ -141,8 +141,10 @@ cursor: pointer;
 }
 
 .fa.fa-heart:hover{
-    color: #ebd79c;
+    color: red;
 }
 
 
-
+.prueba{
+    color:red;
+}

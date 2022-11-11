@@ -7,18 +7,17 @@ const WishListPage = () => {
 
 
   const [wishes, setWishes] = useState(JSON.parse(localStorage.getItem('wishes')));
-
-  function removeCart(id) {
-    const removes = wishes.filter((whish, indice) => indice !== id);
-    setWishes(removes);
-    console.log(wishes);
-  }
-
-  //siempre que cambie wishes ejecutamos funcion de actualizar el LS
-
+  
   useEffect(() => {
     localStorage.setItem("wishes", JSON.stringify(wishes));
   }, [wishes]);
+
+  function removeCart(id) {
+    const removes = wishes.filter((wish, indice) => indice !== id);
+    setWishes(removes);
+  }
+
+
 
 
   return (

@@ -13,7 +13,6 @@ const Cart = () => {
         const removes = items.filter((item, indice) => indice !== id);
         setItems(removes);
     }
-
     
     useEffect(() => {
         localStorage.setItem("items", JSON.stringify(items));
