@@ -63,3 +63,9 @@ h2{
 .buttonDeleteWish:hover{
    color:bisque
 }
+
+.containerEmpty{
+    display: inline-block;
+    
+    height: 300px;
+}

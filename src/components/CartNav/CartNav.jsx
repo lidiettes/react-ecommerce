@@ -26,14 +26,8 @@ const CartNav = ({ items, removeCart }) => {
         removeCart={removeCart}
         />
 
-      <div className="total">
-        <p>Estimated Shipping</p>
-        {/* <h3>ESTIMATED TOTAL {getTotal(items)} </h3> */}
 
-      </div>
-      <Link to="/login">
-        <button className="button buttonPay"> CHECK OUT </button>
-      </Link>
+      
     </div>
 
   )
