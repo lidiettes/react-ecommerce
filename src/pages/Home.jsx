@@ -5,7 +5,7 @@ import MainSlider from '../components/MainSlider/MainSlider';
 import ProductsContainer from '../components/ProductsContainer/ProductsContainer'
 import { CartContext } from '../context/CartContext';
 import { WishListContext } from '../context/WishListContext/WishListContext';
-
+import toast, { Toaster } from 'react-hot-toast';
 
 const Home = () => {
 
@@ -27,6 +27,10 @@ const Home = () => {
       listOfCart = [product];
     }
     setItems(listOfCart);
+
+    
+    const notify = () => toast.success('Added to cart');
+    return notify();
   }
 
   //fetch

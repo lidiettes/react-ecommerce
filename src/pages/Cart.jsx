@@ -13,17 +13,27 @@ const Cart = () => {
         const removes = items.filter((item, indice) => indice !== id);
         setItems(removes);
     }
-    
+
     useEffect(() => {
         localStorage.setItem("items", JSON.stringify(items));
-      }, [items]);
-    
+    }, [items]);
+
+
+
+    function getTotal(items) {
+        return items.reduce((accum, curr) => {
+            return accum + curr.price ;
+        }, 0);
+    }
+
+    //* curr.quantity
 
     return (
         <>
             <CartNav
                 items={items}
                 removeCart={removeCart}
+                getTotal={getTotal}
             />
         </>
     )

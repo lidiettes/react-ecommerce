@@ -159,3 +159,27 @@ font-size: 35px;
 .prueba{
     color:rgb(144, 130, 130);
 }
+
+.buttonMoveToBag{
+    background-color: #ebd79c;
+    display: inline-block;
+    height: 50px;
+    width: 176px;
+    margin: 0 40px 0 16px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #ebd79c;
+    cursor: pointer;
+    outline: none;
+}
+
+.buttonMoveToBag:hover {
+    background-color: #79b0a1;
+}

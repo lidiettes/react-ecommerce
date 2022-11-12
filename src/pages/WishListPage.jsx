@@ -32,12 +32,14 @@ const WishListPage = () => {
 
   return (
     <>
+      <h2>Saved Items</h2>
       <div className="WishListContainer"  >
+      
           <WishList
             wishes = {wishes}
             removeCart = {removeCart}
           />
-          <Login/> 
+          
       </div>
     </>
   )

@@ -18,7 +18,7 @@ const Login = () => {
                         <input type="text" placeholder="email" className="email" />
                         <input type="password" placeholder="password" className="passwd" />
                         <a href="#" className="btn btn-forget">Forget your password?</a>
-                        <a href="#" type="submit" className="btn btn-primary">log in</a>
+                        <a href="#" type="submit" className="btn btn-primary">Sign in</a>
                     </form>
                     <div className="social">
                     <p>Or sign in with... </p>

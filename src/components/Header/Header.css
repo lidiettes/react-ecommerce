@@ -33,7 +33,7 @@ header nav {
 	line-height: 60px;
 	font-weight: 600;
 	letter-spacing: 0.2em;
-	margin-left: 350px;
+	margin-left: 250px;
 
 }
 
@@ -41,11 +41,10 @@ header nav a {
 	display: inline-block;
 	color: #5988f5c5;
 	text-decoration: none;
-	padding: 5px 20px;
+	padding: 5px 12px;
 	line-height: normal;
 	font-size: 20px;
 	
-
 	-webkit-transition: all 500ms ease;
 	-o-transition: all 500ms ease;
 	transition: all 500ms ease;
@@ -58,14 +57,16 @@ header nav a:hover {
 
 
 
-i{
+header .fa {
 	font-size: 20px;
 	color: #5988f5c5;
-	margin-left: 15px;
+	
 	
 }
 
-.iconsContainer{
-	padding: 20px;
-	margin-left: 10px;
+.iconsHeader{
+margin-left: 380px;
+display:inline;
 }
+
+

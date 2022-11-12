@@ -15,7 +15,7 @@ const ProductCart = ({ items, removeCart }) => {
                             <div className="containerProductCart" key={indice} >
                                 <img className="imgProductCart" src={item.img} alt={item.name} />
                                 <div className="infoProductCart">{item.name}  {item.price} €
-                                    <button className="buttonDelete" type="submit" value='add' onClick={() => { removeCart(indice) }} >Delete</button>
+                                    <button className="buttonDelete" type="submit" value='add' onClick={() => { removeCart(indice) }} ><i class="fa fa-trash" aria-hidden="true"></i></button>
                                 </div>
                                 <hr />
                             </div>
@@ -48,9 +48,7 @@ const ProductCart = ({ items, removeCart }) => {
 
             }
             
-                        <Link to="/login">
-        <button className="button buttonPay"> CHECK OUT </button>
-      </Link>
+
 
 
 

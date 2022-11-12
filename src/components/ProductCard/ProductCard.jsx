@@ -2,6 +2,7 @@ import './ProductCard.css';
 import CounterApp from '../CounterApp/CounterApp';
 import { useState } from 'react';
 import { useReducer } from 'react'
+import toast, { Toaster } from 'react-hot-toast';
 
 // import * as photos from '../../img/index';
 
@@ -20,8 +21,12 @@ const ProductCard = ({ name, img, description, id, price, addToCart, handleAddWi
         img: img
     };
     
+    
+
+
     return (
         <>
+        
             <div className="wrapperProducts">
                 <div className="product-img">
                     <img src={img}  alt="lampara" height="420" width="327" />
@@ -43,6 +48,9 @@ const ProductCard = ({ name, img, description, id, price, addToCart, handleAddWi
                     <div className="product-price-btn">
                         <p><span>{price}</span>€</p>
                         <button type="submit" value='add' onClick={() => { addToCart(item) }} >buy now</button>
+                        <Toaster 
+                        position="top-center"
+                        reverseOrder={true}/>
                         <h2>{ }</h2>
                     </div>
                 </div>

@@ -34,7 +34,11 @@ body {
 	font-size: 2rem;
 }
 .wrapper .social {
-	padding: 2.5rem;
+	padding: 2rem;
+    
+}
+p{
+    margin-bottom: 10px;
 }
 .wrapper .social .social-links {
 	text-decoration: none;
@@ -48,6 +52,8 @@ body {
 	padding: 0.5em 0.6em;
 	margin-left: 0.5rem;
 	transition: all 0.5s ease;
+
+    
 }
 .wrapper .social .social-links > .fa-brands:hover {
 	background: #000;
@@ -63,7 +69,7 @@ body {
 	font-size: 0.9rem;
 	opacity: 0.9;
 	color: #212121;
-	margin-bottom: 0.3rem;
+	margin-bottom: 0.6rem;
 }
 .form-group > input {
 	padding: 0.7rem 0.1rem;
@@ -88,13 +94,13 @@ body {
 	margin-bottom: 1rem;
 }
 .btn-primary {
-	background: #ff4b2b;
+	background: #BD9F69;
 	padding: 0.6rem 2.4rem;
 	text-transform: uppercase;
 	color: #fff;
 	border-radius: 2rem;
 	font-weight: 700;
-	border: 1px solid #ff4b2b;
+	border: 1px solid #9c8960;
 	transition: all 200ms linear;
 }
 .btn-primary:hover {

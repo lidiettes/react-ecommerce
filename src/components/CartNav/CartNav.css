@@ -1,10 +1,12 @@
 .cartContainer{
+    display: flex;
 margin-left: 100px;
 margin-top: 50px;
 height: 800px;
 width: 80%;
 padding: auto;
 min-height: 1000px;
+align-items: baseline;
 }
 
 
@@ -17,18 +19,40 @@ h2{
     font-family: 'Raleway', sans-serif;
 }
 
-.total{
 
-margin-top: 10px;
-margin-left: 150px;
-
-
-/* position: absolute; */
-
-
-}
 .buttonPay{
     position: relative;
-    margin-left: 50px;
+    margin: auto;
     text-decoration: none;
+    margin-bottom: 100px;
+}
+
+.containerTotal{
+    justify-content: flex-end;
+    transform: translateY(-145px);
+    padding: 40px;
+    display: block;
+    justify-content: center;
+    width: 50%;
+    height: 410px;
+    background-color:rgba(240, 240, 240, 0.846);
+    
+    margin: 50px auto;
+    border-radius: 7px 7px 7px 7px;
+    margin: 0;
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  
+}
+
+
+.shippingContainer{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.fa {
+    color: gray;
+    padding: 10px;
 }
