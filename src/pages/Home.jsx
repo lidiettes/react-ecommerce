@@ -53,12 +53,7 @@ const Home = () => {
   const{wishes,dispatch} = useContext(WishListContext);
 
   const handleAddWished = (product) => {
-    // let newItem = {
-    //   id: product.id,
-    //   name: product.name,
-    //   img: product.img,
-    //   price: product.price
-    // };
+
     const action = {
       type: 'add_item',
       payload: product,

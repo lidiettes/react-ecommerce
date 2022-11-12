@@ -10,12 +10,9 @@ const Login = () => {
             
                 <div className="wrapper">
                     <div className="heading">
-                        {/* <p>Sign in to sync your Saved Items across all your devices.</p> */}
+                        <p>Sign in </p>
                     </div>
-                    <div className="social">
-                        <a href="#" className="social-links"><i className="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" className="social-links"><i className="fa-brands fa-twitter"></i></a>
-                    </div>
+                   
                     <form action="#" className="form-group">
                         <p className="account-heading">or use your account</p>
                         <input type="text" placeholder="email" className="email" />
@@ -23,6 +20,11 @@ const Login = () => {
                         <a href="#" className="btn btn-forget">Forget your password?</a>
                         <a href="#" type="submit" className="btn btn-primary">log in</a>
                     </form>
+                    <div className="social">
+                    <p>Or sign in with... </p>
+                        <a href="#" className="social-links"><i className="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" className="social-links"><i className="fa-brands fa-twitter"></i></a>
+                    </div>
                 </div>
             
 
