@@ -6,13 +6,6 @@ import { Link } from 'react-router-dom';
 import ProductCart from '../ProductCart/ProductCart';
 
 
-// function getTotal(items) {
-//   return items.reduce((accum) => {
-//     return accum + items.price;
-//   }, 0);
-
-// }
-// console.log(getTotal())
 
 const CartNav = ({ items, removeCart, getTotal }) => {
 

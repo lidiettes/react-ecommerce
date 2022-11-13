@@ -1,12 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import Login from '../Login/Login';
 import './ProductCart.css'
 
 const ProductCart = ({ items, removeCart }) => {
     
     return (
-
         <div >
             {
                 items.length > 0 ?
@@ -19,44 +17,20 @@ const ProductCart = ({ items, removeCart }) => {
                                 </div>
                                 <hr />
                             </div>
-                            
-                            
                         )
-
                     }
-                    
-                    
-                    
                     ))
-                    
-
-                    
-
                     : <div className='containerEmpty'>
                         
                         <h3><i className="fa fa-shopping-cart" aria-hidden="true"></i> Your bag is empty</h3>
                         <h4>Items remain in your bag for 60 minutes, and then they're moved to your Saved Items.</h4>
-
                         <p>   Sign in to see your bag
                             and get shopping!</p>
-
-                            
-
                     </div>
-
-
-
             }
-            
-
-
-
-
         </div>
         
-
     )
-
 }
 
 export default ProductCart

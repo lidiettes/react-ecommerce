@@ -11,8 +11,6 @@ const ProductCard = ({ name, img, description, id, price, addToCart, handleAddWi
     // const { photo01, photo02, photo03} = photos;
     // const productImage = photos[`photo${item.img}`];
 
-
-    //-- arriba es parte nueva de wishlist
     
     const item = {
         id: id,
@@ -21,8 +19,6 @@ const ProductCard = ({ name, img, description, id, price, addToCart, handleAddWi
         img: img
     };
     
-    
-
 
     return (
         <>

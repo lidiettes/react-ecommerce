@@ -3,13 +3,14 @@ import { useContext } from 'react';
 import { useEffect } from 'react';
 import Login from '../components/Login/Login';
 import WishList from '../components/WishList/WishList'
+import { CartContext } from '../context/CartContext';
 import { WishListContext } from '../context/WishListContext/WishListContext';
 import './WishListPage.css';
 
 
 const WishListPage = () => {
 
-
+  // const { items, setItems } = useContext(CartContext);
   const {wishes, dispatch} = useContext(WishListContext);
 
   
@@ -27,7 +28,19 @@ const WishListPage = () => {
     dispatch(action);
   }
 
+  //PRUEBAS DE AÑADIR WISHES AL CARRITO DE LA COMPRA
 
+  // function addWishToCart(wishes) {
+  //     let listOfWish = localStorage.setItem("wishes", JSON.stringify(wishes));
+  //     if (Array.isArray(listOfWish)) {
+  //         listOfCart.push(wish);
+  //         listOfWish.removeItem(wishes)
+  //     } else {
+  //         listOfWish = [wishes];
+  //     }
+  //     // setItems(listOfWish);
+  //     
+  // }
 
 
   return (
@@ -38,6 +51,7 @@ const WishListPage = () => {
           <WishList
             wishes = {wishes}
             removeCart = {removeCart}
+            // addWishToCart={addWishToCart}
           />
           
       </div>
