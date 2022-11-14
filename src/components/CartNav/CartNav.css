@@ -1,7 +1,8 @@
 .cartContainer{
     display: flex;
 margin-left: 100px;
-margin-top: 50px;
+margin-top: 10px;
+
 height: 800px;
 width: 80%;
 padding: auto;
@@ -28,6 +29,7 @@ h2{
 }
 
 .containerTotal{
+    
     justify-content: flex-end;
     transform: translateY(-145px);
     padding: 40px;
@@ -43,7 +45,7 @@ h2{
     -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-  
+    
 }
 
 

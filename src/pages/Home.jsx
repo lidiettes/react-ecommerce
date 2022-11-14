@@ -28,7 +28,6 @@ const Home = () => {
     }
     setItems(listOfCart);
 
-    
     const notify = () => toast.success('Added to cart');
     return notify();
   }
@@ -38,11 +37,11 @@ const Home = () => {
   const [stock, setStock] = useState([]);
 
   useEffect(() => {
-    const prueba = async () => {
-      const datos = await getData();
-      setStock(datos);
+    const fetch = async () => {
+      const data = await getData();
+      setStock(data);
     }
-    prueba();
+    fetch();
   }, [])
 
   // wishLists
@@ -54,7 +53,7 @@ const Home = () => {
   // const [wishes, dispatch] = useReducer(wishesReducer, initialState, init);
 
 
-  const{wishes,dispatch} = useContext(WishListContext);
+  const { wishes, dispatch } = useContext(WishListContext);
 
   const handleAddWished = (product) => {
 
@@ -63,8 +62,12 @@ const Home = () => {
       payload: product,
     }
     dispatch(action);
-  }
 
+    const notifyWish = () => toast('Added to wishlist',{
+      icon: '❤️',
+    });
+    return notifyWish();
+  }
 
   function saveWish(wishes) {
     localStorage.setItem("wishes", JSON.stringify(wishes));
@@ -74,7 +77,10 @@ const Home = () => {
     saveWish(wishes)
   }, [wishes]);
 
-/////NOTAS
+//toggle heart
+  const [iconColor,setIconColor] = useState("white");
+
+  /////NOTAS
   // const handleRemove= (id)=>{
   //     dispatch({
   //         type: 'delete_item',
@@ -96,7 +102,7 @@ const Home = () => {
   //         [nameWish]:value,
   //     })
   // };
-  // console.log(itemWish);
+  
 
   // const onSubmit =()=> {
   //     e.preventDefault();
@@ -114,7 +120,7 @@ const Home = () => {
   //     nameWish:"",
   //     idWish: ""
   // });
-/////NOTAS
+  /////NOTAS
 
   return (
     <>
@@ -123,7 +129,7 @@ const Home = () => {
         addToCart={addToCart}
         stock={stock}
         handleAddWished={handleAddWished}
-        
+
 
 
       />

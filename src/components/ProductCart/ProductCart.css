@@ -62,9 +62,20 @@ h2{
 }
 
 .containerEmpty{
+    padding: 30px;
     display: inline-block;
-    
-    height: 300px;
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    height: 200px;
+    background-color: rgba(240, 240, 240, 0.846);
+-webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+-moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+border-radius: 7px 7px 7px 7px;
+margin: 10px 40px;
+color: rgb(71, 72, 72);
+ ;
 }
 
 .emptySaved{

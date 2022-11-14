@@ -94,7 +94,7 @@
     font-size: 18px;
     font-weight: lighter;
     color: #474747;
-    margin-top: 25px;
+    margin-top: 48px;
 }
 
 span {
@@ -121,6 +121,7 @@ span {
     background-color: #ebd79c;
     cursor: pointer;
     outline: none;
+    margin-top: 20px;
 }
 
 .product-price-btn button:hover {

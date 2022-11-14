@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import CounterApp from '../CounterApp/CounterApp';
 import './ProductCart.css'
 
-const ProductCart = ({ items, removeCart }) => {
+const ProductCart = ({ items, removeCart, substract,increase, counter  }) => {
     
     return (
-        <div >
+        <div className='container'>
             {
                 items.length > 0 ?
                     (items.map((item, indice) => {   //incluyendo indice solventamos el error de las key iguales
@@ -13,14 +14,23 @@ const ProductCart = ({ items, removeCart }) => {
                             <div className="containerProductCart" key={indice} >
                                 <img className="imgProductCart" src={item.img} alt={item.name} />
                                 <div className="infoProductCart">{item.name}  {item.price} €
-                                    <button className="buttonDelete" type="submit" value='add' onClick={() => { removeCart(indice) }} ><i class="fa fa-trash" aria-hidden="true"></i></button>
+                                    
+                                    <button className="buttonDelete" type="submit" value='add' onClick={() => { removeCart(indice) }} ><i className="fa fa-trash" aria-hidden="true"></i></button>
+                                    <div className='counterContainer'>  
+                                    <CounterApp 
+                                    
+                                    substract={substract}
+                                    increase={increase}
+                                    counter={counter}
+                                    /> 
+                                    </div>
                                 </div>
                                 <hr />
                             </div>
                         )
                     }
                     ))
-                    : <div className='containerEmpty'>
+                    : <div className='containerEmpty '>
                         
                         <h3><i className="fa fa-shopping-cart" aria-hidden="true"></i> Your bag is empty</h3>
                         <h4>Items remain in your bag for 60 minutes, and then they're moved to your Saved Items.</h4>

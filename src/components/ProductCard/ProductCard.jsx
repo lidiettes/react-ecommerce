@@ -31,21 +31,25 @@ const ProductCard = ({ name, img, description, id, price, addToCart, handleAddWi
 
                 <div className="product-info">
                     <div className='buttonContainer'>
-                        <button className='heartButton' type="submit" value='add' onClick={() => {handleAddWished(item)}}> 
-                            <i className="fa fa-heart card" aria-hidden="true"></i> 
+                        <button className='heartButton' type="submit" value='add' onClick={() => {handleAddWished(item)}}> <i className="fa fa-heart card" aria-hidden="true"></i> 
                         </button>
+
+                        {/* <button className='heartButton'> <i className="fa fa-heart card" aria-hidden="false"></i>  */}
+                        {/* </button> */}
+
+
                         </div>
                     <div className="product-text">
                         <h1>{name}</h1>
                         <h2>by Verner Panton</h2>
                         <p>{description} </p>
                     </div>
-                    <div className='counterContainer'>  <CounterApp /> </div>
+                    
                     <div className="product-price-btn">
-                        <p><span>{price}</span>€</p>
+                        <p><span>{price}</span> €</p>
                         <button type="submit" value='add' onClick={() => { addToCart(item) }} >buy now</button>
                         <Toaster 
-                        position="top-center"
+                        position="top-right"
                         reverseOrder={true}/>
                         <h2>{ }</h2>
                     </div>

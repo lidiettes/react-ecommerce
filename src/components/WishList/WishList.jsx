@@ -15,7 +15,7 @@ const Wishlist = ({ removeCart, wishes, addWishToCart  }) => {
                             <div className='infoProductCart'>
                                 <div >{wish.name}  {wish.price} €</div>
                                 <button className="buttonDeleteWish" type="submit" value='add' onClick={() => { removeCart(indice) }} ><i className="fa fa-trash" aria-hidden="true"></i></button>
-                                <button className="buttonMoveToBag" type="submit" value='add' onClick={() => { addWishToCart(wish) }} >Move to bag</button>
+                                <button className="buttonMoveToBag" type="submit" value='add' onClick={() => { addWishToCart(wish, indice) }} >Move to bag</button>
                             </div>
                             <hr />
                         </div>

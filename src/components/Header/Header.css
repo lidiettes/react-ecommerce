@@ -1,7 +1,7 @@
 header {
 	width: 100%;
 	margin-bottom: 20px;
-	height: 45px;
+	height: 40px;
 	display:flex;
 }
 
@@ -20,7 +20,7 @@ header {
 header .logo {
 	
 	color: #5988f5c5;
-	font-size: 40px;
+	font-size: 20px;
 	line-height: 50px;
 	margin-right: 100px;
 	float: left;
@@ -31,7 +31,7 @@ header .logo {
 header nav {
 	justify-content: center;
 	line-height: 60px;
-	font-weight: 600;
+	font-weight: 530;
 	letter-spacing: 0.2em;
 	margin-left: 250px;
 
@@ -65,7 +65,7 @@ header .fa {
 }
 
 .iconsHeader{
-margin-left: 380px;
+margin-left: 560px;
 display:inline;
 }
 

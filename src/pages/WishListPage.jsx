@@ -10,7 +10,7 @@ import './WishListPage.css';
 
 const WishListPage = () => {
 
-  // const { items, setItems } = useContext(CartContext);
+  const { items, setItems } = useContext(CartContext);
   const {wishes, dispatch} = useContext(WishListContext);
 
   
@@ -30,18 +30,28 @@ const WishListPage = () => {
 
   //PRUEBAS DE AÑADIR WISHES AL CARRITO DE LA COMPRA
 
-  // function addWishToCart(wishes) {
-  //     let listOfWish = localStorage.setItem("wishes", JSON.stringify(wishes));
-  //     if (Array.isArray(listOfWish)) {
-  //         listOfCart.push(wish);
-  //         listOfWish.removeItem(wishes)
-  //     } else {
-  //         listOfWish = [wishes];
-  //     }
-  //     // setItems(listOfWish);
-  //     
-  // }
+  function addWishToCart(wish, id) {
 
+      let listOfCart = JSON.parse(localStorage.getItem("items"));
+
+      if (Array.isArray(listOfCart)) {
+          listOfCart.push(wish);
+      } else {
+          listOfCart = [wish];
+      }
+      setItems(listOfCart);
+      const removesWishes = wishes.filter((wish, indice) => indice !== id);
+
+      const action = {
+        type: 'delete_item',
+        payload: removesWishes,
+      }
+      dispatch(action);
+  }
+
+  useEffect(() => {
+    localStorage.setItem("items", JSON.stringify(items));
+  }, [items]);
 
   return (
     <>
@@ -51,7 +61,7 @@ const WishListPage = () => {
           <WishList
             wishes = {wishes}
             removeCart = {removeCart}
-            // addWishToCart={addWishToCart}
+            addWishToCart={addWishToCart}
           />
           
       </div>

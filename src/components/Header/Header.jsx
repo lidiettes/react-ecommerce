@@ -16,7 +16,7 @@ const Header = () => {
 		<>
 			<header>
 				<div className="wrapperHeader">
-					{/* <Link to="/" className="logo">Söd</Link> */}
+					<Link to="/" className="logo">Söd</Link>
 
 					<nav>
 						

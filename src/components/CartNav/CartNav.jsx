@@ -4,10 +4,11 @@ import { memo } from 'react'
 import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import ProductCart from '../ProductCart/ProductCart';
+import CounterApp from '../CounterApp/CounterApp';
+import { useState } from 'react';
 
 
-
-const CartNav = ({ items, removeCart, getTotal }) => {
+const CartNav = ({ items, removeCart, getTotal, counter, increase, substract }) => {
 
 
   return (
@@ -15,11 +16,13 @@ const CartNav = ({ items, removeCart, getTotal }) => {
       <h2>MY SHOPPING BAG</h2>
       <div className='cartContainer'>
 
-        <div>
-
+        <div className=''>
           <ProductCart
             items={items}
             removeCart={removeCart}
+            increase={increase}
+            substract={substract}
+            counter={counter}
           />
         </div>
 
@@ -30,14 +33,11 @@ const CartNav = ({ items, removeCart, getTotal }) => {
           <button className="button buttonPay"> CHECK OUT </button>
           <div>
             <h3>We accept:</h3>
-            <i class="fa fa-cc-visa fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-cc-mastercard fa-2x" aria-hidden="true"></i>
-            <i class="fa fa-cc-paypal fa-2x" aria-hidden="true"></i>
-            {/* <p>Got a discount code? Add it in the next step.</p> */}
+            <i className="fa fa-cc-visa fa-2x" aria-hidden="true"></i>
+            <i className="fa fa-cc-mastercard fa-2x" aria-hidden="true"></i>
+            <i className="fa fa-cc-paypal fa-2x" aria-hidden="true"></i>
           </div>
         </div>
-
-
       </div>
     </>
   )
