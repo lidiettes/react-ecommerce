@@ -1,22 +1,19 @@
 import React from 'react'
-import { useState } from 'react';
 import { useEffect } from 'react';
 import { useContext } from 'react'
 import CartNav from '../components/CartNav/CartNav'
 import { CartContext } from '../context/CartContext';
 
-const Cart = ({ value = 1 }) => {
+const Cart = () => {
 
-    //counter (igual delete con filter)
-
-    const [counter, setCounter] = useState(value);
-    const increase = (id) => {
-        setCounter((prevState) => prevState + 1);
-    };
-    const substract = (id) => {
-        setCounter((prevState) => prevState - 1);
-    }
+    // // nuevo 
+    // const increase =(id)=>{
+    //  const prueba = counter.filter((count, indice,) => indice !== id);
+    //  setCounter((prueba)+1);
+    // }
+      
     //stock de carrito
+
 
     const { items, setItems } = useContext(CartContext);
     function removeCart(id) {
@@ -28,11 +25,11 @@ const Cart = ({ value = 1 }) => {
     }, [items]);
 
     //Conseguimos el total (faltaria: * curr.quantity)
-    function getTotal(items) {
-        return items.reduce((accum, curr) => {
-            return accum + curr.price * (counter);
-        }, 0);
-    }
+    // function getTotal(items) {
+    //     return items.reduce((accum, curr) => {
+    //         return accum + curr.price;
+    //     }, 0);
+    // }
     
 
     return (
@@ -40,10 +37,8 @@ const Cart = ({ value = 1 }) => {
             <CartNav
                 items={items}
                 removeCart={removeCart}
-                getTotal={getTotal}
-                counter={counter}
-                increase={increase}
-                substract={substract}
+                // getTotal={getTotal}
+               
             />
         </>
     )
