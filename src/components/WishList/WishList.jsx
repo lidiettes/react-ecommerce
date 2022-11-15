@@ -4,8 +4,6 @@ import '../ProductCart/ProductCart.css'
 
 const Wishlist = ({ removeCart, wishes, addWishToCart  }) => {
 
-    
-
     return (
         <>
                 {wishes.length > 0 && wishes?.map((wish, indice) => {

@@ -3,18 +3,22 @@
     align-items:baseline;
     line-height: normal;
     padding: 30px;
-    width: 350px;
+    width: 750px;
     
 }
 
-input{
+.inputSearch{
     height: 40px;
     border-radius: 5px;
     padding: 5px;
-    width: 250px;
+    width: 750px;
     background-color: rgba(226, 192, 91, 0.252);
+    border-width: thin;
+    border: none;
+    outline: none;
 
 }
+
 .buttonSearch{
     height: 40px;
     width: 65px;

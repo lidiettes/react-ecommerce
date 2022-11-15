@@ -62,12 +62,8 @@ const Home = () => {
   }, [])
 
   // wishLists
-  // const init=()=>{
-  // return JSON.parse(localStorage.getItem("wishes"))|| [];
-  // }
-
-  // const initialState = [];
-  // const [wishes, dispatch] = useReducer(wishesReducer, initialState, init);
+  
+ 
 
 
   const { wishes, dispatch } = useContext(WishListContext);
