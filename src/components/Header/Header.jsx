@@ -6,7 +6,7 @@ import Items from '../../assets/db';
 import { useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Search from '../Search/Search';
+
 
 const Header = () => {
 
@@ -18,12 +18,13 @@ const Header = () => {
 			<header>
 				<div className="wrapperHeader">
 					<Link to="/" className="logo">Söd</Link>
-
+					
 					<nav>
-						
+					
 						<Link to="/">Home</Link>
-						<a href="#">Shop</a>
-						<Link to="/shippingpage">Shipping page</Link>
+						<a href="/shop">Shop</a>
+						
+					
 						<div className='iconsHeader'>
 						
 							<Link to="/cart"><i className="fa fa-shopping-cart" aria-hidden="true">{items.length}</i></Link>

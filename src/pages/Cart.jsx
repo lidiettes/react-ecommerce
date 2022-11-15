@@ -7,11 +7,6 @@ import { CartContext } from '../context/CartContext';
 
 const Cart = () => {
 
-    // // nuevo 
-    // const increase =(id)=>{
-    //  const prueba = counter.filter((count, indice,) => indice !== id);
-    //  setCounter((prueba)+1);
-    // }
     //stock de carrito
     const { items, setItems } = useContext(CartContext);
 
@@ -41,20 +36,22 @@ const Cart = () => {
     }, [items]);
 
     //Conseguimos el total (faltaria: * curr.quantity)
-    // function getTotal(items) {
-    //     return items.reduce((accum, curr) => {
-    //         return accum + curr.price;
-    //     }, 0);
-    // }
+    function getTotal(items) {
+        return items.reduce((accum, curr) => {
+            return accum + curr.price * curr.quantity;
+            
 
+        }, 0);
+    }
+    console.log(getTotal(items));
 
     return (
         <>
             <CartNav
                 items={items}
                 removeCart={removeCart}
-            // getTotal={getTotal}
-            addToCart={addToCart}
+                getTotal={getTotal}
+                addToCart={addToCart}
 
             />
         </>

@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { CartContext } from '../../context/CartContext';
 import './CounterApp.css';
 
-export const CounterApp = ({item, addToCart, removeCart}) => {
+export const CounterApp = ({ item, addToCart, removeCart }) => {
 
 
     const { items, setItems } = useContext(CartContext);
@@ -16,9 +16,24 @@ export const CounterApp = ({item, addToCart, removeCart}) => {
         addToCart(item);
 
     };
+
+
+    function removeCartUnidad(product) {
+        const index = items.find(e => e.id === product.id)
+        if (index) {
+            setItems(
+                items.map(e => e.id === product.id ? {
+                    ...index,
+                    quantity: index.quantity - 1
+                }
+                    : e));
+        } else {
+            setItems([...items, { ...product, quantity: -1 }])
+        }
+    }
     const substract = () => {
         setCounter((prevState) => prevState - 1);
-        removeCart(item.id);
+        removeCartUnidad(item);
     }
 
     return (

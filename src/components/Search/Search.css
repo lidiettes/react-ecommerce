@@ -3,7 +3,7 @@
     align-items:baseline;
     line-height: normal;
     padding: 30px;
-    width: 750px;
+    width: 350px;
     
 }
 
@@ -11,7 +11,7 @@
     height: 40px;
     border-radius: 5px;
     padding: 5px;
-    width: 750px;
+    width: 350px;
     background-color: rgba(226, 192, 91, 0.252);
     border-width: thin;
     border: none;

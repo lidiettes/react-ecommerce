@@ -4,11 +4,10 @@ import { memo } from 'react'
 import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import ProductCart from '../ProductCart/ProductCart';
-import CounterApp from '../CounterApp/CounterApp';
 import { useState } from 'react';
 
 
-const CartNav = ({ items, removeCart, addToCart}) => {
+const CartNav = ({ items, removeCart, addToCart, getTotal}) => {
 
 
   return (
@@ -21,12 +20,13 @@ const CartNav = ({ items, removeCart, addToCart}) => {
             items={items}
             removeCart={removeCart}
             addToCart={addToCart}
+            
 
           />
         </div>
 
         <div className='containerTotal'>
-          <div><h3>Subtotal: € </h3></div>
+          <div><h3>Subtotal: {getTotal(items)} € </h3></div>
           <div className='shippingContainer'>Shipping: </div>
 
           <button className="button buttonPay"> CHECK OUT </button>

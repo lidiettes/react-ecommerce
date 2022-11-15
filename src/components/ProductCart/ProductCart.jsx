@@ -4,7 +4,7 @@ import CounterApp from '../CounterApp/CounterApp';
 
 import './ProductCart.css'
 
-const ProductCart = ({ items, removeCart,addToCart }) => {
+const ProductCart = ({ items, removeCart,addToCart, }) => {
 
  
     return (
@@ -26,6 +26,7 @@ const ProductCart = ({ items, removeCart,addToCart }) => {
                                     item={item}
                                     addToCart={addToCart}
                                     removeCart={removeCart}
+                                    
                                     /> 
                                     </div>
                                 </div>
