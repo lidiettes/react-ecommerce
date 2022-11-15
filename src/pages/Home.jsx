@@ -6,6 +6,7 @@ import ProductsContainer from '../components/ProductsContainer/ProductsContainer
 import { CartContext } from '../context/CartContext';
 import { WishListContext } from '../context/WishListContext/WishListContext';
 import toast, { Toaster } from 'react-hot-toast';
+import Search from '../components/Search/Search';
 
 const Home = () => {
 
@@ -141,6 +142,7 @@ const Home = () => {
   return (
     <>
       <MainSlider />
+      
       <ProductsContainer
         addToCart={addToCart}
         stock={stock}

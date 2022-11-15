@@ -1,18 +1,18 @@
 import React from 'react'
+import { useSearchParams } from 'react-router-dom'
 import Items from '../../assets/db'
 import './Search.css'
 
-const Search = () => {
+const Search = ({handleFilter, filter}) => {
 
-    // const filteredItems = Items.filter(item => (
-    //     item.name.includes(text);
-    // ))
+    
+
 
 
     return (
         <div className="searchContainer">
-            <input type="search" name="Busquedademueble" placeholder="Introduce aqui tu mueble..."></input>
-            {/* <input className='buttonSearch' type="submit" value="Buscar" onClick={filteredItems()}></input> */}
+            <input value={filter} type="text" name="filter" placeholder="Search..."onChange={handleFilter}></input>
+            {/* <input className='buttonSearch' type="submit" value="Buscar" ></input> */}
         </div>
     )
 }

@@ -2,32 +2,61 @@
 import './ProductsContainer.css';
 // import Items from "../../assets/db";
 import ProductCard from '../ProductCard/ProductCard';
+import Search from '../Search/Search';
+import { Link, useSearchParams } from 'react-router-dom';
 
 
 
 
-const ProductsContainer = ({ addToCart,stock, handleAddWished }) => {
+
+const ProductsContainer = ({ addToCart, stock, handleAddWished }) => {
+
+    const [searchParams, setSearchParams] = useSearchParams();
+    const filter = searchParams.get("filter") ?? "";
+
+    const handleFilter = (e) => {
+        setSearchParams({ filter: e.target.value });
+
+    };
     return (
+        <>
+            <div>
+                <Search
+                    handleFilter={handleFilter}
+                    filter={filter}
+                />
+            </div>
 
-        <div className="ContainerCard">
+            <div className="ContainerCard">
 
-                {stock.map((item) => {
-                    
-                return (
-                    <ProductCard 
-                    key = {item.id}
-                    id = {item.id}
-                    name = {item.name} 
-                    description = {item.description} 
-                    price = {item.price} 
-                    img = {item.img}
-                    addToCart={addToCart}
-                    handleAddWished= {handleAddWished}
+                {stock
+                .filter((items) => {
+                    if (!filter) return true;
+                    else {
+                        const itemName = items.name.toLowerCase();
+                        return itemName.includes(filter.toLocaleLowerCase())
+                    }
+                })
+                .map((item) => {
 
-                    />
-                )
-                })} 
-        </div>
+                    return (
+                        <ProductCard
+                            key={item.id}
+                            id={item.id}
+                            name={item.name}
+                            description={item.description}
+                            price={item.price}
+                            img={item.img}
+                            addToCart={addToCart}
+                            handleAddWished={handleAddWished}
+
+                        />
+                    )
+                })
+            
+                }
+            </div>
+        </>
     )
 };
 

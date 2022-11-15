@@ -1,20 +1,22 @@
 .searchContainer{
-    display: inline-block;
+    display: flex;
+    align-items:baseline;
     line-height: normal;
-    padding: auto;
+    padding: 30px;
     width: 350px;
     
 }
 
 input{
-    height: 30px;
-    border: none;
+    height: 40px;
     border-radius: 5px;
     padding: 5px;
-    width: 150px;
+    width: 250px;
+    background-color: rgba(226, 192, 91, 0.252);
 
 }
 .buttonSearch{
+    height: 40px;
     width: 65px;
     margin-left: 5px;
     margin-top: 15px;

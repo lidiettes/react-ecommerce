@@ -1,12 +1,17 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+
 import CounterApp from '../CounterApp/CounterApp';
+
 import './ProductCart.css'
 
 const ProductCart = ({ items, removeCart,addToCart }) => {
-    
+
+ 
     return (
+        <>
+      
         <div className='container'>
+            
             {
                 items.length > 0 ?
                     (items.map((item, indice) => {   //incluyendo indice solventamos el error de las key iguales
@@ -38,7 +43,7 @@ const ProductCart = ({ items, removeCart,addToCart }) => {
                     </div>
             }
         </div>
-        
+        </>
     )
 }
 
