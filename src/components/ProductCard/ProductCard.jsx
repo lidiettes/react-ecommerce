@@ -19,6 +19,7 @@ const ProductCard = ({ name, img, description, id, price, addToCart, handleAddWi
         img: img
     };
     
+    
 
     return (
         <>

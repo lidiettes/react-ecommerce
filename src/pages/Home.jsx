@@ -19,18 +19,34 @@ const Home = () => {
     saveProduct((items));
   }, [items]);
 
-  function addToCart(product) {
-    let listOfCart = JSON.parse(localStorage.getItem("items"));
-    if (Array.isArray(listOfCart)) {
-      listOfCart.push(product);
-    } else {
-      listOfCart = [product];
-    }
-    setItems(listOfCart);
+  // function addToCart(product) {
+  //   let listOfCart = JSON.parse(localStorage.getItem("items"));
+  //   console.log(listOfCart);
+  //   if (Array.isArray(listOfCart)) {
+  //     listOfCart.push(product);
+  //   } else {
+  //     listOfCart = [product];
+  //   }
+  //   setItems(listOfCart);
+  //   const notify = () => toast.success('Added to cart');
+  //   return notify();
+  // }
 
-    const notify = () => toast.success('Added to cart');
-    return notify();
-  }
+  function addToCart(product) {
+      const index = items.find(e => e.id === product.id)  
+      if (index) {
+        setItems(
+          items.map(e => e.id === product.id ? { 
+            ...index, 
+            quantity: index.quantity + 1 } 
+            : e));
+      } else {
+        setItems([...items, { ...product, quantity: 1 }])
+      }
+      const notify = () => toast.success('Added to cart');
+      return notify();
+    }
+
 
   //fetch
 

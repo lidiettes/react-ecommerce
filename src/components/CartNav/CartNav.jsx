@@ -8,7 +8,7 @@ import CounterApp from '../CounterApp/CounterApp';
 import { useState } from 'react';
 
 
-const CartNav = ({ items, removeCart}) => {
+const CartNav = ({ items, removeCart, addToCart}) => {
 
 
   return (
@@ -20,6 +20,7 @@ const CartNav = ({ items, removeCart}) => {
           <ProductCart
             items={items}
             removeCart={removeCart}
+            addToCart={addToCart}
 
           />
         </div>

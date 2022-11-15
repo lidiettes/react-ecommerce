@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react';
 import { useContext } from 'react'
+import toast from 'react-hot-toast';
 import CartNav from '../components/CartNav/CartNav'
 import { CartContext } from '../context/CartContext';
 
@@ -11,11 +12,26 @@ const Cart = () => {
     //  const prueba = counter.filter((count, indice,) => indice !== id);
     //  setCounter((prueba)+1);
     // }
-      
     //stock de carrito
-
-
     const { items, setItems } = useContext(CartContext);
+
+    function addToCart(product) {
+        const index = items.find(e => e.id === product.id)
+        if (index) {
+            setItems(
+                items.map(e => e.id === product.id ? {
+                    ...index,
+                    quantity: index.quantity + 1
+                }
+                    : e));
+        } else {
+            setItems([...items, { ...product, quantity: 1 }])
+        }
+        const notify = () => toast.success('Added to cart');
+        return notify();
+    }
+
+
     function removeCart(id) {
         const removes = items.filter((item, indice) => indice !== id);
         setItems(removes);
@@ -30,15 +46,16 @@ const Cart = () => {
     //         return accum + curr.price;
     //     }, 0);
     // }
-    
+
 
     return (
         <>
             <CartNav
                 items={items}
                 removeCart={removeCart}
-                // getTotal={getTotal}
-               
+            // getTotal={getTotal}
+            addToCart={addToCart}
+
             />
         </>
     )

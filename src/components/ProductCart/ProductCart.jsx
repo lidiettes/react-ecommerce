@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import CounterApp from '../CounterApp/CounterApp';
 import './ProductCart.css'
 
-const ProductCart = ({ items, removeCart }) => {
+const ProductCart = ({ items, removeCart,addToCart }) => {
     
     return (
         <div className='container'>
@@ -18,7 +18,9 @@ const ProductCart = ({ items, removeCart }) => {
                                     <button className="buttonDelete" type="submit" value='add' onClick={() => { removeCart(indice) }} ><i className="fa fa-trash" aria-hidden="true"></i></button>
                                     <div className='counterContainer'>  
                                     <CounterApp 
-                                  
+                                    item={item}
+                                    addToCart={addToCart}
+                                    removeCart={removeCart}
                                     /> 
                                     </div>
                                 </div>
