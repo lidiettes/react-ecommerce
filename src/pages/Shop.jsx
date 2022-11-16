@@ -34,19 +34,20 @@ const Shop = () => {
   // }
 
   function addToCart(product) {
-      const index = items.find(e => e.id === product.id)  
-      if (index) {
-        setItems(
-          items.map(e => e.id === product.id ? { 
-            ...index, 
-            quantity: index.quantity + 1 } 
-            : e));
-      } else {
-        setItems([...items, { ...product, quantity: 1 }])
-      }
-      const notify = () => toast.success('Added to cart');
-      return notify();
+    const index = items.find(e => e.id === product.id)
+    if (index) {
+      setItems(
+        items.map(e => e.id === product.id ? {
+          ...index,
+          quantity: index.quantity + 1
+        }
+          : e));
+    } else {
+      setItems([...items, { ...product, quantity: 1 }])
     }
+    const notify = () => toast.success('Added to cart');
+    return notify();
+  }
 
 
   //fetch
@@ -62,21 +63,23 @@ const Shop = () => {
   }, [])
 
   // wishLists
-  
+
   const { wishes, dispatch } = useContext(WishListContext);
 
   const handleAddWished = (product) => {
+    const provisionalWish = wishes.find(e => e.id === product.id)
+    if (!provisionalWish) {
+      const action = {
+        type: 'add_item',
+        payload: product,
+      }
+      dispatch(action);
 
-    const action = {
-      type: 'add_item',
-      payload: product,
+      const notifyWish = () => toast('Added to wishlist', {
+        icon: '❤️',
+      });
+      return notifyWish();
     }
-    dispatch(action);
-
-    const notifyWish = () => toast('Added to wishlist',{
-      icon: '❤️',
-    });
-    return notifyWish();
   }
 
   function saveWish(wishes) {
@@ -87,8 +90,8 @@ const Shop = () => {
     saveWish(wishes)
   }, [wishes]);
 
-//toggle heart
-  const [iconColor,setIconColor] = useState("white");
+  //toggle heart
+  const [iconColor, setIconColor] = useState("white");
 
   /////NOTAS
   // const handleRemove= (id)=>{
@@ -112,7 +115,7 @@ const Shop = () => {
   //         [nameWish]:value,
   //     })
   // };
-  
+
 
   // const onSubmit =()=> {
   //     e.preventDefault();
