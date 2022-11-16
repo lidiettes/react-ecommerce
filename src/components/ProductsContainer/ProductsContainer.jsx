@@ -33,7 +33,7 @@ const ProductsContainer = ({ addToCart, stock, handleAddWished }) => {
                 .filter((items) => {
                     if (!filter) return true;
                     else {
-                        const itemName = items.name.toLowerCase();
+                        const itemName = items.name.toLowerCase() && items.description.toLowerCase() 
                         return itemName.includes(filter.toLocaleLowerCase())
                     }
                 })

@@ -26,9 +26,8 @@ const Cart = () => {
         return notify();
     }
 
-
     function removeCart(id) {
-        const removes = items.filter((item, indice) => indice !== id);
+        const removes = items.filter((item) => item.id!== id);
         setItems(removes);
     }
     useEffect(() => {
@@ -37,13 +36,13 @@ const Cart = () => {
 
     //Conseguimos el total (faltaria: * curr.quantity)
     function getTotal(items) {
-        return items.reduce((accum, curr) => {
+        return items?.reduce((accum, curr) => {
             return accum + curr.price * curr.quantity;
             
 
         }, 0);
     }
-    console.log(getTotal(items));
+
 
     return (
         <>

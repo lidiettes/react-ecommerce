@@ -12,7 +12,6 @@ const Search = ({handleFilter, filter}) => {
     return (
         <div className="searchContainer">
             <input className="inputSearch"value={filter} type="text" name="filter" placeholder="Search..."onChange={handleFilter}></input>
-            {/* <input className='buttonSearch' type="submit" value="Buscar" ></input> */}
         </div>
     )
 }
