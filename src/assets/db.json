@@ -44,7 +44,7 @@
         }
     ],
     
-    "user": [
+    "users": [
         {
             "name": "Lidia",
             "lastName": "Frias",
@@ -54,7 +54,7 @@
         {
             "name": "Alvaro",
             "lastName": "Alonso",
-            "email": "alvarito92@gmail.com",
+            "email": "alvarito13@gmail.com",
             "password": "123456"
         },
         {

@@ -1,12 +1,11 @@
 import React, { useContext, useEffect } from 'react'
 import { useState } from 'react';
 import getData from '../api/api';
-import MainSlider from '../components/MainSlider/MainSlider';
 import ProductsContainer from '../components/ProductsContainer/ProductsContainer'
 import { CartContext } from '../context/CartContext';
 import { WishListContext } from '../context/WishListContext/WishListContext';
 import toast, { Toaster } from 'react-hot-toast';
-import Search from '../components/Search/Search';
+
 
 const Shop = () => {
 

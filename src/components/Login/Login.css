@@ -2,6 +2,8 @@
 
 body {
     font-family: "Roboto", sans-serif;
+    height: 100vh;
+    
 }
 
 .loginContainer {
@@ -11,15 +13,17 @@ body {
     background: #f3e0e2;
     display: grid;
     place-content:center;
+    height: 2000px;
+
 }
 
 .wrapper {
 
-
-    justify-content: flex-end;
+   
+    justify-content: center;
     position: absolute;
-    margin-left: 50%;
-    margin-top: 100px;
+    margin-left: 5px;
+    margin-top: 10px;
     float: right;
     width: 35rem;
     padding: 2.1rem 2rem;
