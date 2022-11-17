@@ -2,64 +2,80 @@ import React, { useEffect } from 'react'
 import { useState } from 'react';
 import './Login.css';
 import getDataUsers from '../../api/apiUsers';
+import { useContext } from 'react';
+import { UserDataContext } from '../../context/UserDataContext/UserDataContext';
+import { ApiContext } from '../../context/ApiContext/ApiContext';
+import { UserContext } from '../../context/UserContext/UserContext';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
     //fetch
-
-    const [user, setUser] = useState([]);
+    const { userData, setUserData } = useContext(UserDataContext);
+    const { fetchUser } = useContext(ApiContext);
 
     useEffect(() => {
-        const fetch = async () => {
-            const data = await getDataUsers();
-            setUser(data);
-        }
-        fetch();
-    }, [])
+        fetchUser()
+    }, []);
 
-    console.log(user);
+    //LOGIN
+    const navigate = useNavigate();
+    const { user, setUser } = useContext(UserContext)
+
+    useEffect(() => {
+        sessionStorage.setItem("user", JSON.stringify(user))
+    }, [user])
 
     const getDataForm = e => {
         e.preventDefault();
+
         const target = e.target;
         const email = target.email.value;
         const password = target.password.value;
-        alert(email + password);
-        
-    //autentificar la info....
-    // si es correcta, setUser(info)
 
-        // const user = {
-        //     id: new Date().getTime(),
-        //     email,
-        //     password
-        // };
-      
-        // setUser(user)
+        const authentic = userData.find(u => email === u.email) && userData.find(u => password === u.password)
+        console.log(authentic);
 
-    
-        // saveUserStorage(user);
+        if (authentic) {
+            setUser(authentic);
+            navigate("/shippingPage");
+        } else {
+            console.log("error credenciales");
+        }
     }
 
+    //REGISTER
 
-    // const saveUserStorage = (user) => {
-    //     let saved = JSON.parse(localStorage.getItem("users"));
-    //     if (Array.isArray(saved)) {
-    //         saved.push(user);
-    //     } else {
-    //         saved = [user];
-    //     }
-    //     localStorage.setItem('users', JSON.stringify([saved]));
-    //     return user;
-    //     console.log(saved);
-    // }
 
+    const getUserRegister = (e) => {
+        e.preventDefault();
+
+        const newUser = {
+            id: new Date().getTime(),
+            name: e.target.name.value,
+            lastName: e.target.lastName.value,
+            email: e.target.email.value,
+            password: e.target.password.value
+        }
+
+        fetch("http://localhost:3000/users", {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(newUser)
+        }).then(res => res.json())
+            .then(data => console.log(data))
+            .catch(error => console.log(error));
+        setUser(newUser); // login the new user
+       
+    }
+   
+
+    
 
     return (
-
         <>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossOrigin="anonymous" referrerPolicy="no-referrer" />
-
             <div className="wrapper">
                 <div className="heading">
                     <p>Sign in </p>
@@ -70,17 +86,15 @@ const Login = () => {
                     <input type="password" placeholder="password" id="password" name="password" className="passwd" />
                     <a href="#" className="btn btn-forget">Forget your password?</a>
                     <button href="#" type="submit" className="btn btn-primary">Sign in</button>
-
                 </form>
 
-
-                <form onSubmit={getDataForm} action="#" className="form-group">
+                <form onSubmit={getUserRegister} action="#" className="form-group">
                     <br />
                     <p>REGISTER</p>
-                    <input type="text" placeholder="name" name ="name"className="name" />
-                    <input type="text" placeholder="lastName" name= "lastName"className="lastName" />
+                    <input type="text" placeholder="name" name="name" className="name" />
+                    <input type="text" placeholder="lastName" name="lastName" className="lastName" />
                     <input type="text" placeholder="email" name="email" className="email" />
-                    <input type="password" placeholder="password" name="password"className="passwd" />
+                    <input type="password" placeholder="password" name="password" className="passwd" />
                     <button href="#" type="submit" className="btn btn-primary">Sign in</button>
                 </form>
                 <div className="social">

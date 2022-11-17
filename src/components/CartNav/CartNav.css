@@ -26,6 +26,18 @@ h2{
     margin: auto;
     text-decoration: none;
     margin-bottom: 100px;
+    background-color: rgb(25, 143, 18);
+    text-transform: uppercase;
+    border-radius: 0.45rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+    width: 100%;
+    padding: 1rem;
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+    margin-top: 20px;
 }
 
 .containerTotal{
@@ -54,7 +66,7 @@ h2{
     margin-bottom: 40px;
 }
 
-.fa {
+.fa.cartNav {
     color: gray;
     padding: 10px;
 }

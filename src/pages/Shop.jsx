@@ -19,18 +19,6 @@ const Shop = () => {
     saveProduct((items));
   }, [items]);
 
-  // function addToCart(product) {
-  //   let listOfCart = JSON.parse(localStorage.getItem("items"));
-  //   console.log(listOfCart);
-  //   if (Array.isArray(listOfCart)) {
-  //     listOfCart.push(product);
-  //   } else {
-  //     listOfCart = [product];
-  //   }
-  //   setItems(listOfCart);
-  //   const notify = () => toast.success('Added to cart');
-  //   return notify();
-  // }
 
   function addToCart(product) {
     const index = items.find(e => e.id === product.id)

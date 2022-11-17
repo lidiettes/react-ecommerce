@@ -4,8 +4,8 @@ import './App.css';
 import Router from './routes/Router';
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
-import CartProvider from "./context/CartProvider";
-import WishListProvider from "./context/WishListContext/WishListProvider";
+
+import GeneralProvider from "./context/GeneralContext.jsx/GeneralProvider";
 
 
 
@@ -14,17 +14,17 @@ function App() {
 
   return (
     <>
-      <WishListProvider>
-        <CartProvider>
 
-          <BrowserRouter>
-            <Header />
-            <Router />
-            <Footer />
-          </BrowserRouter>
+      
+        <BrowserRouter>
+        <GeneralProvider>
+          <Header />
+          <Router />
+          <Footer />
+          </GeneralProvider>
+        </BrowserRouter>
+      
 
-        </CartProvider>
-      </WishListProvider>
     </>
   );
 }

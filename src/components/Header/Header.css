@@ -2,13 +2,13 @@ header {
 	display: flex;
 	
 	width: 100%;
-	margin-bottom: 20px;
+
 	height: 40px;
 	display:flex;
 }
 
 .wrapperHeader {
-	
+	display: flex;
 	align-items: baseline;
 	width: 100%;
 	/* Establecemos que el ancho sera del 90% */
@@ -24,7 +24,7 @@ header .logo {
 	
 	color: #5988f5c5;
 	font-size: 20px;
-	line-height: 50px;
+	line-height: 60px;
 	margin-right: 100px;
 	float: left;
 	text-decoration: none;
@@ -32,16 +32,18 @@ header .logo {
 }
 
 header nav {
-	
-	line-height: 60px;
+	display: flex;
+	justify-content: baseline;
+	line-height: 30px;
 	font-weight: 530;
 	letter-spacing: 0.2em;
-	margin-left: 50px;
+
 
 }
 
 header nav a {
-	display: inline-block;
+	display: inline;
+	justify-content: baseline;
 	color: #5988f5c5;
 	text-decoration: none;
 	padding: 5px 12px;
@@ -66,8 +68,13 @@ header .fa {
 }
 
 .iconsHeader{
-margin-left: 510px;
+justify-content: flex-end;
 display:inline;
+
+}
+.userInfo{
+	width: 250px;
+	margin-left: 250px;
 }
 
 

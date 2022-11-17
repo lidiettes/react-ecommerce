@@ -107,7 +107,7 @@ hr {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.button {
+.button .shipping {
     background-color: rgb(25, 143, 18);
     text-transform: uppercase;
     font-size: 0.8rem;

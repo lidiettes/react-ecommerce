@@ -89,7 +89,7 @@ const enableButton = inputCheck (validName, validLastName, validAddress,validCou
                     </div>
                 </div>
                 
-                    <button className="button" type="submit" onChange={(e) => enableButton(e.target.value)} >Continue</button>
+                    <button className="button shipping" type="submit" onChange={(e) => enableButton(e.target.value)} >Continue</button>
             </div>
 
         </>

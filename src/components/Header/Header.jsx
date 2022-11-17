@@ -6,25 +6,24 @@ import Items from '../../assets/db';
 import { useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { UserContext } from '../../context/UserContext/UserContext';
 
 
 const Header = () => {
 
 	const { items, setItems } = useContext(CartContext);
-
+	const { user, setUser } = useContext(UserContext);
 
 	return (
 		<>
 			<header>
 				<div className="wrapperHeader">
 					<Link to="/" className="logo">Söd</Link>
-					
 					<nav>
-					
 						<Link to="/">Home</Link>
-						<a href="/shop">Shop</a>
+						<Link to="/shop">Shop</Link>
 						
-					
+						<div className="userInfo"><p>{user.name} {user.lastName}</p></div>
 						<div className='iconsHeader'>
 						
 							<Link to="/cart"><i className="fa fa-shopping-cart" aria-hidden="true">{items.length}</i></Link>
