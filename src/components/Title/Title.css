@@ -10,7 +10,7 @@
 
 }
 
-h2 {
+.h2Title {
     color: rgb(237, 237, 245);
     display: flex;
     justify-content: center;
@@ -23,4 +23,5 @@ h2 {
 p {
     display: flex;
     justify-content: center;
+   
 }

@@ -13,7 +13,7 @@ const CartNav = ({ items, removeCart, addToCart, }) => {
 
   return (
     <>
-      <h2>MY SHOPPING BAG</h2>
+      
       <div className='cartContainer'>
 
         <div className=''>

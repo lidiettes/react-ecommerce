@@ -33,7 +33,7 @@ body {
     background: #fff;
     justify-items: center;
     align-items: center;
-    
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 19px 38px, rgba(0, 0, 0, 0.1) 0px 5px 5px;
 }
 
 .wrapper .heading h1 {
@@ -46,9 +46,7 @@ body {
 
 }
 
-p {
-    margin-bottom: 10px;
-}
+
 
 .wrapper .social .social-links {
     text-decoration: none;
@@ -123,14 +121,23 @@ p {
 }
 
 .btn-primary {
-    background: #BD9F69;
-    padding: 0.6rem 2.4rem;
+    background-color: #ebd79c;
+    display: inline-block;
+    height: 30px;
+    width: 156px;
+    margin: 0 40px 0 16px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
     text-transform: uppercase;
-    color: #fff;
-    border-radius: 2rem;
-    font-weight: 700;
-    border: 1px solid #9c8960;
-    transition: all 200ms linear;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #ebd79c;
+    cursor: pointer;
+    outline: none;
 }
 
 .btn-primary:hover {
