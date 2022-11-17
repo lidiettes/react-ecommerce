@@ -30,12 +30,10 @@ export const CounterApp = ({ item, addToCart }) => {
         setItems(prev => prev = copyItems)
     }
 
-
     const substract = () => {
         removeCartUnidad(item);
 
-
-
+        
 
     
 }

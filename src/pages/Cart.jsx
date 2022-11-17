@@ -4,6 +4,7 @@ import { useContext } from 'react'
 import toast from 'react-hot-toast';
 import CartNav from '../components/CartNav/CartNav'
 import { CartContext } from '../context/CartContext';
+import { getTotal } from '../helpers/addToCart';
 
 const Cart = () => {
 
@@ -34,24 +35,14 @@ const Cart = () => {
         localStorage.setItem("items", JSON.stringify(items));
     }, [items]);
 
-    //Conseguimos el total (faltaria: * curr.quantity)
-    function getTotal(items) {
-        return items?.reduce((accum, curr) => {
-            return accum + curr.price * curr.quantity;
-            
-
-        }, 0);
-    }
-
 
     return (
         <>
             <CartNav
                 items={items}
                 removeCart={removeCart}
-                getTotal={getTotal}
+                // getTotal={getTotal}
                 addToCart={addToCart}
-
             />
         </>
     )

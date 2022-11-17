@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { CartContext } from '../../context/CartContext';
-import '../ProductCart/ProductCart.css'
+import './WishList.css';
+
 
 const Wishlist = ({ removeCart, wishes, addWishToCart  }) => {
 

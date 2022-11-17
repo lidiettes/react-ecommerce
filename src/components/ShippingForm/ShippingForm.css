@@ -107,29 +107,34 @@ hr {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.button .shipping {
-    background-color: rgb(25, 143, 18);
-    text-transform: uppercase;
-    font-size: 0.8rem;
-    font-weight: 600;
-    display: block;
-    color: #fff;
-    width: 100%;
-    padding: 1rem;
-    border-radius: 0.45rem;
-    border: 0;
-    cursor: pointer;
-    outline: 0;
-    margin-top: 20px;
-}
-.button:hover {
-    background-color: rgb(37, 95, 40);
- 
-}
+.buttonShipping {
+    
+        background-color: #ebd79c;
+        display: inline-block;
+        height: 40px;
+        width: 466px;
+        margin: 20px 40px 0 16px;
+        box-sizing: border-box;
+        border: transparent;
+        border-radius: 60px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: #ffffff;
+        background-color: #ebd79c;
+        cursor: pointer;
+        outline: none;
+    }
 
-.button:focus-visible {
-    background-color: #333;
-}
+    .buttonShipping:hover {
+        background-color: #79b0a1;
+    }
+
+
+
+
 
 span {
     display: inline-block;

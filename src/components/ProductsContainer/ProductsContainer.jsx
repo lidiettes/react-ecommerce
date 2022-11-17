@@ -4,12 +4,15 @@ import './ProductsContainer.css';
 import ProductCard from '../ProductCard/ProductCard';
 import Search from '../Search/Search';
 import { Link, useSearchParams } from 'react-router-dom';
+import { CartContext } from '../../context/CartContext';
+import { useContext } from 'react';
 
 
 
 
 
 const ProductsContainer = ({ addToCart, stock, handleAddWished }) => {
+
 
     const [searchParams, setSearchParams] = useSearchParams();
     const filter = searchParams.get("filter") ?? "";

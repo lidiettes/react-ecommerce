@@ -33,7 +33,7 @@ body {
     background: #fff;
     justify-items: center;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 19px 38px, rgba(0, 0, 0, 0.1) 0px 5px 5px;
+    
 }
 
 .wrapper .heading h1 {
@@ -73,10 +73,19 @@ p {
 }
 
 .form-group {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     width: 100%;
     align-items: center;
+    padding: 2.1rem 2rem;
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    justify-items: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 19px 38px, rgba(0, 0, 0, 0.1) 0px 5px 5px;
 }
 
 .form-group p {

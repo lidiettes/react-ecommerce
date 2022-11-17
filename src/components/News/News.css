@@ -1,0 +1,32 @@
+.news__container--column img {
+    width: 100%;
+    position: relative;
+    max-width: 450px;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.news__container--column {
+    width: 30%;
+    height: 300px;
+    float: left;
+    box-sizing: border-box;
+   
+}
+
+.news__container {
+    margin-top: 120px;
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: "OpenSans-Light";
+    margin-bottom: 20px;
+    justify-content: center;
+    gap: 40px;
+}
+.h5News{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}

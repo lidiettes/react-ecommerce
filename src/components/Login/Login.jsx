@@ -78,10 +78,10 @@ const Login = () => {
         <>
             <div className="wrapper">
                 <div className="heading">
-                    <p>Sign in </p>
+                    <p></p>
                 </div>
                 <form onSubmit={getDataForm} className="form-group">
-                    <p className="account-heading">or use your account</p>
+                    <p className="account-heading">Sign in </p>
                     <input type="text" placeholder="email" id="email" name="email" className="email" />
                     <input type="password" placeholder="password" id="password" name="password" className="passwd" />
                     <a href="#" className="btn btn-forget">Forget your password?</a>
@@ -90,18 +90,18 @@ const Login = () => {
 
                 <form onSubmit={getUserRegister} action="#" className="form-group">
                     <br />
-                    <p>REGISTER</p>
+                    <p>Register                                 </p>
                     <input type="text" placeholder="name" name="name" className="name" />
                     <input type="text" placeholder="lastName" name="lastName" className="lastName" />
                     <input type="text" placeholder="email" name="email" className="email" />
                     <input type="password" placeholder="password" name="password" className="passwd" />
                     <button href="#" type="submit" className="btn btn-primary">Sign in</button>
                 </form>
-                <div className="social">
+                {/* <div className="social">
                     <p>Or sign in with... </p>
                     <a href="#" className="social-links"><i className="fa-brands fa-facebook-f"></i></a>
                     <a href="#" className="social-links"><i className="fa-brands fa-twitter"></i></a>
-                </div>
+                </div> */}
             </div>
 
 

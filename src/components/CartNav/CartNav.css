@@ -22,22 +22,27 @@ h2{
 
 
 .buttonPay{
-    position: relative;
-    margin: auto;
-    text-decoration: none;
-    margin-bottom: 100px;
-    background-color: rgb(25, 143, 18);
+    background-color: #ebd79c;
+    display: inline-block;
+    height: 40px;
+    width: 486px;
+    margin: 0 40px 0 16px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
     text-transform: uppercase;
-    border-radius: 0.45rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: #fff;
-    width: 100%;
-    padding: 1rem;
-    border: 0;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #ebd79c;
     cursor: pointer;
-    outline: 0;
-    margin-top: 20px;
+    outline: none;
+}
+
+.buttonPay:hover {
+    background-color: #79b0a1;
 }
 
 .containerTotal{

@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { CartContext } from '../../context/CartContext';
 
 import CounterApp from '../CounterApp/CounterApp';
 
 import './ProductCart.css'
 
-const ProductCart = ({ items, removeCart,addToCart, }) => {
+const ProductCart = ({removeCart,addToCart, }) => {
 
- 
+    const { items, setItems } = useContext(CartContext);
+
     return (
         <>
       
@@ -26,7 +28,7 @@ const ProductCart = ({ items, removeCart,addToCart, }) => {
                                     item={item}
                                     addToCart={addToCart}
                                     removeCart={removeCart}
-                                    items={items}
+                                 
                                     
                                     /> 
                                     </div>
