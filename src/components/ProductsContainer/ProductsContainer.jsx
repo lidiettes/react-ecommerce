@@ -8,11 +8,7 @@ import { CartContext } from '../../context/CartContext';
 import { useContext } from 'react';
 
 
-
-
-
 const ProductsContainer = ({ addToCart, stock, handleAddWished }) => {
-
 
     const [searchParams, setSearchParams] = useSearchParams();
     const filter = searchParams.get("filter") ?? "";

@@ -1,8 +1,6 @@
 .cartContainer{
     display: flex;
 margin-left: 100px;
-
-
 height: 800px;
 width: 80%;
 padding: auto;
@@ -10,15 +8,12 @@ min-height: 1000px;
 align-items: baseline;
 }
 
-
 h2{
-
     padding: 10px;
     color:cadetblue ;
     letter-spacing: 0.1em;
     font-family: 'Raleway', sans-serif;
 }
-
 
 .buttonPay{
     background-color: #ebd79c;

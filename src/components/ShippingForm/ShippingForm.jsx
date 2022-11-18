@@ -1,99 +1,181 @@
 
 import { useState } from 'react';
 import '../ShippingForm/ShippingForm.css'
+import { useContext } from 'react';
+import { UserDataContext } from '../../context/UserDataContext/UserDataContext';
+
+import { UserContext } from '../../context/UserContext/UserContext';
+
 
 const ShippingForm = () => {
 
-    const [firstName, setFirstName]= useState("");
-    const [lastName, setLastName]=useState("")
-    const [address, setAddress]= useState("");
-    const [country, setCountry]=useState("");
-    const [postalCode, setPostalCode] = useState("");
-    const [city, setCity] = useState("");
+    const { user, setUser } = useContext(UserContext)
+    const { fetchUser } = useContext(UserDataContext)
 
-    const validName = address.length > 0 ? true : false;
-    const validLastName = lastName.length > 0 ? true : false;
-    const validAddress = address.length > 0 ? true : false;
-    const validCountry = country.length > 0 ? true : false;
-    const validPostalCode = postalCode.length > 0 ? true : false;
-    const validCity = city.length > 0 ? true : false;
+    const getAddress = (e) => {
 
-    const inputCheck = (a, b, c, d, e, f ) => {
-        const okay = (a && b && c && d && e && f) ? true : false;
-        return okay;
-    };
+        e.preventDefault();
 
-const enableButton = inputCheck (validName, validLastName, validAddress,validCountry, validPostalCode, validCity) ? "" : "true";
+        const newOrder = {
 
+            idOrder: new Date().getTime(),
+            idUser: user.id,
+            name: user.name,
+            lastName: user.lastName,
+            address: e.target.address.value,
+            country: e.target.country.value,
+            zipcode: e.target.zipcode.value,
+            city: e.target.city.value,
+            numberCard: e.target.numberCard.value,
+            nameCard: e.target.date.value,
+            cvv:  e.target.cvv.value
+
+
+        }
+        console.log(newAddress);
+        fetch("http://localhost:3000/users", {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(newAddress)
+        }).then(res => res.json())
+            .then(data => console.log(data))
+            .catch(error => console.log(error));
+        setUser(newAddress); // login the new user
+    }
+
+    // }
 
     return (
         <>
             <div className="container">
                 <h1>Shipping</h1>
                 <p>Please enter your shipping details.</p>
-                
-                <div className="form">
+
+                <form onSubmit={getAddress} className="form">
 
                     <div className="fields fields--2">
                         <label className="field">
                             <span className="field__label" >First name</span>
-                            <input className="field__input" type="text" id="firstname" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
-                            <div className='invalid-feedback'>
+                            <input className="field__input" type="text" id="firstname" name="name" />
+                            {/* <div className='invalid-feedback'>
                                 Not valid
-                            </div>
+                            </div> */}
                         </label>
                         <label className="field">
                             <span className="field__label" >Last name</span>
-                            <input className="field__input" type="text" id="lastname" value={lastName} onChange={(e) => setLastName(e.target.value)} />
-                            <div className='invalid-feedback'>
+                            <input className="field__input" type="text" id="lastname" name="lastName" />
+                            {/* <div className='invalid-feedback'>
                                 Not valid
-                            </div>
+                            </div> */}
                         </label>
                     </div>
                     <label className="field">
                         <span className="field__label" >Address</span>
-                        <input className="field__input" type="text" id="address" value={address} onChange={(e) => setAddress(e.target.value)} />
-                        <div className='invalid-feedback'>
+                        <input className="field__input" type="text" id="address" name="address" />
+                        {/* <div className='invalid-feedback'>
                                 Not valid
-                            </div>
+                        </div> */}
                     </label>
                     <label className="field">
                         <span className="field__label" >Country</span>
                         {/* <select className="field__input" id="country"> */}
-                            {/* <option value=""></option> */}
-                            {/* <option value={country} onChange={(e) => setCountry(e.target.value)} >Country</option> */}
-                            <input className="field__input" type="text" id="country" value={country} onChange={(e) => setCountry(e.target.value)} />
+                        {/* <option value=""></option> */}
+                        {/* <option value={country} onChange={(e) => setCountry(e.target.value)} >Country</option> */}
+                        <input className="field__input" type="text" id="country" name="country" />
 
-                            <div className='invalid-feedback'>
+                        {/* <div className='invalid-feedback'>
                                 Not valid
-                            </div>
-                            
+                            </div> */}
+
                         {/* </select> */}
                     </label>
                     <div className="fields fields--3">
                         <label className="field">
                             <span className="field__label" >Zip code</span>
-                            <input className="field__input" type="number" id="zipcode" value={postalCode} onChange={(e) => setPostalCode(e.target.value)} />
-                            <div className='invalid-feedback'>
+                            <input className="field__input" type="number" id="zipcode" name="zipcode" />
+                            {/* <div className='invalid-feedback'>
                                 Not valid
-                            </div>
+                            </div> */}
                         </label>
                         <label className="field">
                             <span className="field__label" >City</span>
-                            <input className="field__input" type="text" id="city" value={city} onChange={(e) => setCity(e.target.value)} />
-                            <div className='invalid-feedback'>
+                            <input className="field__input" type="text" id="city" name="city" />
+                            {/* <div className='invalid-feedback'>
                                 Not valid
-                            </div>
+                            </div> */}
                         </label>
-                        
+
                     </div>
-                </div>
-                
-                    <button className="buttonShipping" type="submit" onChange={(e) => enableButton(e.target.value)} >Continue</button>
+
+                    <h1>Payment</h1>
+                    <p>Please enter your payment details.</p>
+                    <div>
+                    <i className="fa fa-cc-visa fa-2x cartNav" aria-hidden="true"></i>
+                    <i className="fa fa-cc-mastercard fa-2x cartNav" aria-hidden="true"></i>
+                    <i className="fa fa-cc-paypal fa-2x cartNav" aria-hidden="true"></i>
+                    </div>
+                    <label className="field">
+                        <span className="field__label" >Number Card</span>
+                        <input className="field__input" type="text" id="card" name="card" />
+                        {/* <div className='invalid-feedback'>
+                                Not valid
+                        </div> */}
+                    </label>
+                    <label className="field">
+                        <span className="field__label" >Name</span>
+                        <input className="field__input" type="text" id="nameCard" name="nameCard" />
+                        {/* <div className='invalid-feedback'>
+                                Not valid
+                        </div> */}
+                    </label>
+                    <div className="fields fields--2">
+                    <label className="field">
+                            <span className="field__label" >Date</span>
+                            <input className="field__input" type="text" id="date" name="date" />
+                            {/* <div className='invalid-feedback'>
+                                Not valid
+                            </div> */}
+                        </label>
+                        <label className="field">
+                            <span className="field__label" >cvv</span>
+                            <input className="field__input" type="text" id="cvv" name="cvv" />
+                            {/* <div className='invalid-feedback'>
+                                Not valid
+                            </div> */}
+                        </label>
+                        </div>
+                </form>
+
+                <button className="buttonShipping" type="submit"  >Continue</button>
             </div>
 
         </>
     )
 }
+
+
+//     const [firstName, setFirstName]= useState("");
+//     const [lastName, setLastName]=useState("")
+//     const [address, setAddress]= useState("");
+//     const [country, setCountry]=useState("");
+//     const [postalCode, setPostalCode] = useState("");
+//     const [city, setCity] = useState("");
+
+//     const validName = address.length > 0 ? true : false;
+//     const validLastName = lastName.length > 0 ? true : false;
+//     const validAddress = address.length > 0 ? true : false;
+//     const validCountry = country.length > 0 ? true : false;
+//     const validPostalCode = postalCode.length > 0 ? true : false;
+//     const validCity = city.length > 0 ? true : false;
+
+//     const inputCheck = (a, b, c, d, e, f ) => {
+//         const okay = (a && b && c && d && e && f) ? true : false;
+//         return okay;
+//     };
+
+// const enableButton = inputCheck (validName, validLastName, validAddress,validCountry, validPostalCode, validCity) ? "" : "true";
+
 
 export default ShippingForm

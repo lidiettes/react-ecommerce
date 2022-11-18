@@ -40,12 +40,11 @@ const Login = () => {
             setUser(authentic);
             navigate("/shippingPage");
         } else {
-            console.log("error credenciales");
+            console.log("error");
         }
     }
 
     //REGISTER
-
 
     const getUserRegister = (e) => {
         e.preventDefault();
@@ -57,7 +56,6 @@ const Login = () => {
             email: e.target.email.value,
             password: e.target.password.value
         }
-
         fetch("http://localhost:3000/users", {
             method: "POST",
             headers: {
@@ -68,11 +66,8 @@ const Login = () => {
             .then(data => console.log(data))
             .catch(error => console.log(error));
         setUser(newUser); // login the new user
-       
     }
-   
 
-    
 
     return (
         <>
