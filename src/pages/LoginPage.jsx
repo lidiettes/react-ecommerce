@@ -10,10 +10,10 @@ const divStyle = {
 const LoginPage = () => {
   return (
     <>
-    <div style={divStyle}>
+  
     <Login />
     
-    </div>
+  
     
     
     </>

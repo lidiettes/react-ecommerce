@@ -3,6 +3,7 @@ import { useState } from 'react';
 import '../ShippingForm/ShippingForm.css'
 import { useContext } from 'react';
 import { UserContext } from '../../context/UserContext/UserContext';
+import Total from '../Total/Total';
 
 
 const ShippingForm = () => {
@@ -44,9 +45,11 @@ const ShippingForm = () => {
     return (
         <>
             <div className="container">
+            <Total />
+                
+                <form className="form" onSubmit={(e)=>{getAddress(e)}}>
                 <h1>Shipping</h1>
                 <p>Please enter your shipping details.</p>
-                <form className="form" onSubmit={(e)=>{getAddress(e)}}>
                     <div className="fields fields--2">
                         <label className="field">
                             <span className="field__label" >First name</span>
@@ -100,8 +103,9 @@ const ShippingForm = () => {
                         </label>
 
                     </div>
-
+                    <hr></hr>
                     <h1>Payment</h1>
+                    <hr></hr>
                     <p>Please enter your payment details.</p>
                     <div>
                     <i className="fa fa-cc-visa fa-2x cartNav" aria-hidden="true"></i>

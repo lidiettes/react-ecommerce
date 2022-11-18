@@ -15,57 +15,7 @@ h2{
     font-family: 'Raleway', sans-serif;
 }
 
-.buttonPay{
-    background-color: #ebd79c;
-    display: inline-block;
-    height: 40px;
-    width: 486px;
-    margin: 0 40px 60px 16px;
-    box-sizing: border-box;
-    border: transparent;
-    border-radius: 30px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    color: #ffffff;
-    background-color: #ebd79c;
-    cursor: pointer;
-    outline: none;
-}
-
-.buttonPay:hover {
-    background-color: #79b0a1;
-}
-
-.containerTotal{
-    
-    justify-content: flex-end;
-    transform: translateY(-145px);
-    padding: 40px;
-    display: block;
-    justify-content: center;
-    width: 50%;
-    height: 410px;
-    background-color:rgba(240, 240, 240, 0.846);
-    
-    margin: 50px auto;
-    border-radius: 7px 7px 7px 7px;
-    margin: 0;
-    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
-    
-}
 
 
-.shippingContainer{
-    margin-top: 30px;
-    margin-bottom: 40px;
-}
 
-.fa.cartNav {
-    color: gray;
-    padding: 10px;
-}
+

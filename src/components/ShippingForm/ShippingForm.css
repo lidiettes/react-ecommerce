@@ -49,13 +49,30 @@ hr {
 .container {
     max-width: 40rem;
     padding: 4vw 2rem 0;
-    margin: 0 auto;
-    height: 100vh;
+  
+
+    
+    
 }
 
 .form {
     display: grid;
     grid-gap: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    transform: translateY(-145px);
+    padding: 40px;
+    display: block;
+    justify-content: center;
+    width: 700px;
+    height: 850px;
+    background-color:rgba(240, 240, 240, 0.846);
+    margin-top: 30px;
+    border-radius: 7px 7px 7px 7px;
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    
 }
 
 .field {
@@ -65,6 +82,7 @@ hr {
     border: 1px solid var(--color-lighter-gray);
     padding: .5rem;
     border-radius: .25rem;
+    margin-top: 10px;
 }
 
 .field__label {
@@ -72,6 +90,7 @@ hr {
     font-size: 0.6rem;
     font-weight: 300;
     text-transform: uppercase;
+    
     
 }
 
@@ -86,6 +105,7 @@ hr {
     -webkit-appearance: none;
     appearance: none;
     background-color: transparent;
+    
 }
 
 .field:focus-within {
@@ -112,7 +132,7 @@ hr {
         background-color: #ebd79c;
         display: inline-block;
         height: 40px;
-        width: 466px;
+        width: 566px;
         margin: 20px 40px 0 16px;
         box-sizing: border-box;
         border: transparent;

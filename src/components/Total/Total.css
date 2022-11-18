@@ -1,0 +1,56 @@
+.containerTotal{
+    display: flex;
+    justify-content: flex-end;
+    transform: translateY(-145px);
+    padding: 30px;
+    display: block;
+    justify-content: center;
+    width: 700px;
+    height: 250px;
+    background-color:rgba(240, 240, 240, 0.846);
+    margin-top: 150px;
+    border-radius: 7px 7px 7px 7px;
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.10);
+    
+}
+
+.buttonPay{
+    background-color: #ebd79c;
+    display: inline-block;
+    height: 40px;
+    width: 90%;
+    margin: 0 20px 5px 8px;
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #ebd79c;
+    cursor: pointer;
+    outline: none;
+}
+
+.buttonPay:hover {
+    background-color: #79b0a1;
+}
+
+
+.shippingContainer{
+   
+    margin-bottom: 20px;
+}
+
+.fa.cartNav {
+    color: gray;
+    padding: 10px;
+}
+
+.cardTotal{
+    margin-top:10px;
+}

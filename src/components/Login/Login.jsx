@@ -4,7 +4,9 @@ import { useContext } from 'react';
 import { UserDataContext } from '../../context/UserDataContext/UserDataContext';
 import { ApiContext } from '../../context/ApiContext/ApiContext';
 import { UserContext } from '../../context/UserContext/UserContext';
-import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import { Navigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
@@ -15,9 +17,17 @@ const Login = () => {
     useEffect(() => {
         fetchUser()
     }, []);
+    //estado para gestionar cuando saltara navigate
+
+    const [sendToShipping, setSendToShipping] = useState(null);
+    useEffect(() => {
+        setSendToShipping(prev => prev = null)
+    }, [sendToShipping])
+
+
 
     //LOGIN
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const { user, setUser } = useContext(UserContext)
 
     useEffect(() => {
@@ -36,10 +46,13 @@ const Login = () => {
 
         if (authentic) {
             setUser(authentic);
-            navigate("/shippingPage");
+            // navigate("/shippingPage");
+
+
         } else {
             console.log("error");
         }
+
     }
 
     //REGISTER
@@ -95,6 +108,8 @@ const Login = () => {
                     <a href="#" className="social-links"><i className="fa-brands fa-facebook-f"></i></a>
                     <a href="#" className="social-links"><i className="fa-brands fa-twitter"></i></a>
                 </div> */}
+                {sendToShipping && <Navigate to="/shippingpage" replace={true} />}
+
             </div>
 
 
