@@ -68,20 +68,21 @@
       "lastName": "patata",
       "email": "patata",
       "password": "patata"
-    },
+    }
+  ],
+  "orders": [
     {
-      "id": 1668679761028,
-      "name": "cafe",
-      "lastName": "cafe",
-      "email": "cafe",
-      "password": "cafe"
-    },
-    {
-      "id": 1668765310114,
-      "name": "12",
-      "lastName": "213",
-      "email": "123123",
-      "password": "213"
+      "id": 1668780092400,
+      "idUser": 1668780022525,
+      "name": "patata",
+      "lastName": "patata",
+      "address": "dsa",
+      "country": "sda",
+      "zipcode": "324",
+      "city": "432",
+      "numberCard": "432",
+      "nameCard": "2022-11-20",
+      "cvv": "423"
     }
   ]
 }

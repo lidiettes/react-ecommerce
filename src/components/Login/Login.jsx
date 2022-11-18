@@ -1,17 +1,15 @@
 import React, { useEffect } from 'react'
-import { useState } from 'react';
 import './Login.css';
-import getDataUsers from '../../api/apiUsers';
 import { useContext } from 'react';
 import { UserDataContext } from '../../context/UserDataContext/UserDataContext';
 import { ApiContext } from '../../context/ApiContext/ApiContext';
 import { UserContext } from '../../context/UserContext/UserContext';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
     //fetch
-    const { userData, setUserData } = useContext(UserDataContext);
+    const { userData } = useContext(UserDataContext);
     const { fetchUser } = useContext(ApiContext);
 
     useEffect(() => {
@@ -85,7 +83,7 @@ const Login = () => {
 
                 <form onSubmit={getUserRegister} action="#" className="form-group">
                     <br />
-                    <p>Register                                 </p>
+                    <p>Register                 </p>
                     <input type="text" placeholder="name" name="name" className="name" />
                     <input type="text" placeholder="lastName" name="lastName" className="lastName" />
                     <input type="text" placeholder="email" name="email" className="email" />

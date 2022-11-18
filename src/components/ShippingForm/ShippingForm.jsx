@@ -2,23 +2,18 @@
 import { useState } from 'react';
 import '../ShippingForm/ShippingForm.css'
 import { useContext } from 'react';
-import { UserDataContext } from '../../context/UserDataContext/UserDataContext';
-
 import { UserContext } from '../../context/UserContext/UserContext';
 
 
 const ShippingForm = () => {
 
     const { user, setUser } = useContext(UserContext)
-    const { fetchUser } = useContext(UserDataContext)
 
     const getAddress = (e) => {
-
         e.preventDefault();
 
         const newOrder = {
-
-            idOrder: new Date().getTime(),
+            id: new Date().getTime(),
             idUser: user.id,
             name: user.name,
             lastName: user.lastName,
@@ -29,20 +24,19 @@ const ShippingForm = () => {
             numberCard: e.target.numberCard.value,
             nameCard: e.target.date.value,
             cvv:  e.target.cvv.value
-
-
         }
-        console.log(newAddress);
-        fetch("http://localhost:3000/users", {
-            method: "POST",
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(newAddress)
-        }).then(res => res.json())
-            .then(data => console.log(data))
-            .catch(error => console.log(error));
-        setUser(newAddress); // login the new user
+
+        console.log(user);
+        // fetch("http://localhost:3000/orders", {
+        //     method: "POST",
+        //     headers: {
+        //         'Content-Type': 'application/json'
+        //     },
+        //     body: JSON.stringify(newOrder)
+        // }).then(res => res.json())
+        //     .then(data => console.log(data))
+        //     .catch(error => console.log(error));
+        // setUser(newOrder); 
     }
 
     // }
@@ -52,9 +46,7 @@ const ShippingForm = () => {
             <div className="container">
                 <h1>Shipping</h1>
                 <p>Please enter your shipping details.</p>
-
-                <form onSubmit={getAddress} className="form">
-
+                <form className="form" onSubmit={(e)=>{getAddress(e)}}>
                     <div className="fields fields--2">
                         <label className="field">
                             <span className="field__label" >First name</span>
@@ -118,7 +110,7 @@ const ShippingForm = () => {
                     </div>
                     <label className="field">
                         <span className="field__label" >Number Card</span>
-                        <input className="field__input" type="text" id="card" name="card" />
+                        <input className="field__input" type="number" id="numberCard" name="numberCard" />
                         {/* <div className='invalid-feedback'>
                                 Not valid
                         </div> */}
@@ -133,22 +125,23 @@ const ShippingForm = () => {
                     <div className="fields fields--2">
                     <label className="field">
                             <span className="field__label" >Date</span>
-                            <input className="field__input" type="text" id="date" name="date" />
+                            <input className="field__input" type="date" id="date" name="date" />
                             {/* <div className='invalid-feedback'>
                                 Not valid
                             </div> */}
                         </label>
                         <label className="field">
                             <span className="field__label" >cvv</span>
-                            <input className="field__input" type="text" id="cvv" name="cvv" />
+                            <input className="field__input" type="number" id="cvv" name="cvv" />
                             {/* <div className='invalid-feedback'>
                                 Not valid
                             </div> */}
                         </label>
                         </div>
+                        <button className="buttonShipping" type="submit" >Continue</button>
                 </form>
 
-                <button className="buttonShipping" type="submit"  >Continue</button>
+                
             </div>
 
         </>
