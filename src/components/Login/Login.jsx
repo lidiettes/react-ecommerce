@@ -5,8 +5,8 @@ import { UserDataContext } from '../../context/UserDataContext/UserDataContext';
 import { ApiContext } from '../../context/ApiContext/ApiContext';
 import { UserContext } from '../../context/UserContext/UserContext';
 import { useState } from 'react';
-import { Navigate } from 'react-router-dom';
-// import { useNavigate } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
@@ -27,7 +27,7 @@ const Login = () => {
 
 
     //LOGIN
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
     const { user, setUser } = useContext(UserContext)
 
     useEffect(() => {
@@ -45,8 +45,10 @@ const Login = () => {
         console.log(authentic);
 
         if (authentic) {
+            
             setUser(authentic);
-            // navigate("/shippingPage");
+            navigate("/shippingPage");
+            
 
 
         } else {
@@ -77,6 +79,7 @@ const Login = () => {
             .then(data => console.log(data))
             .catch(error => console.log(error));
         setUser(newUser); // login the new user
+        navigate("/shippingPage");
     }
 
 
@@ -108,7 +111,7 @@ const Login = () => {
                     <a href="#" className="social-links"><i className="fa-brands fa-facebook-f"></i></a>
                     <a href="#" className="social-links"><i className="fa-brands fa-twitter"></i></a>
                 </div> */}
-                {sendToShipping && <Navigate to="/shippingpage" replace={true} />}
+               
 
             </div>
 

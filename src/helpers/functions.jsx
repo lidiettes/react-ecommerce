@@ -1,4 +1,6 @@
+import { useContext } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
+import { HeartContext } from '../context/HeartContext/HeartContext';
 
 export function getTotal(items) {
     return items?.reduce((accum, curr) => {
@@ -28,8 +30,7 @@ export function getTotal(items) {
 
   export const notify = () => toast.success('Added to cart');
 
-  export function saveWish(wishes) {
-    localStorage.setItem("wishes", JSON.stringify(wishes));
-  }
+
+
 
   

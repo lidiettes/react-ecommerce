@@ -5,7 +5,7 @@ import CounterApp from '../CounterApp/CounterApp';
 
 import './ProductCart.css'
 
-const ProductCart = ({removeCart,addToCart, }) => {
+const ProductCart = ({removeCart,addToCart }) => {
 
     const { items, setItems } = useContext(CartContext);
 

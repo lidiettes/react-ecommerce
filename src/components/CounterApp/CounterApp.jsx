@@ -37,7 +37,7 @@ export const CounterApp = ({ item, addToCart }) => {
 
     
 }
-console.log(items);
+
 return (
     <>
         <div className='counterContainer'>

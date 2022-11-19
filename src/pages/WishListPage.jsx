@@ -50,9 +50,6 @@ const WishListPage = () => {
   }
 
 
-
-
-
     useEffect(() => {
       localStorage.setItem("items", JSON.stringify(items));
     }, [items]);

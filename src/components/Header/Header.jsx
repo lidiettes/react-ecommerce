@@ -24,7 +24,7 @@ const Header = () => {
 						<Link to="/shop">Shop</Link>
 						<Link to="/shop">About us</Link>
 						
-						<div className="userInfo"><p>{user.name} {user.lastName}</p></div>
+						<div className="userInfo"><p className='userInfoP'>{user.name} {user.lastName}</p></div>
 						<div className='iconsHeader'>
 						
 							<Link to="/cart"><i className="fa fa-shopping-cart" aria-hidden="true">{items.length}</i></Link>

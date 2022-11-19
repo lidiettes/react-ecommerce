@@ -7,6 +7,7 @@ import ShippingPage from '../pages/ShippingPage';
 import WishListPage from '../pages/WishListPage';
 import Shop from '../pages/Shop';
 import Home from '../pages/Home';
+import ThankYouBye from '../pages/ThankYouBye';
 
 const Router = () => {
   return (
@@ -19,6 +20,7 @@ const Router = () => {
         <Route path="/shippingpage" element={<ShippingPage />} />
         <Route path="/login" element={<LoginPage />} /> 
         <Route path="/wishlist" element={<WishListPage/>} /> 
+        <Route path="/thankyou" element={<ThankYouBye />} />
 
       </Routes>
 

@@ -6,6 +6,7 @@ import Total from '../components/Total/Total'
 import Cart from './Cart'
 
 const ShippingPage = () => {
+  
   return (
     <>
       <div className="mari" style={{ display: "flex" }}>

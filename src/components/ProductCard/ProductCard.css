@@ -130,14 +130,27 @@ span {
 
 
 .heartButton{
-    margin-left: 240px;
-    justify-content: flex-end;
+margin-left: 240px;
+justify-content: flex-end;
 text-decoration: none;
 border: none;
 background: white;
 padding: 15px;
 cursor: pointer;
 font-family: 50px;
+
+}
+.heartClose{
+    background-color: red;
+    margin-left: 240px;
+justify-content: flex-end;
+text-decoration: none;
+border: none;
+
+padding: 15px;
+cursor: pointer;
+font-family: 50px;
+
 }
 
 .counterContainer{

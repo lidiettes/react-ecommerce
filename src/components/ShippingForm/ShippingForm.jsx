@@ -4,11 +4,13 @@ import '../ShippingForm/ShippingForm.css'
 import { useContext } from 'react';
 import { UserContext } from '../../context/UserContext/UserContext';
 import Total from '../Total/Total';
+import { useNavigate } from 'react-router-dom';
 
 
 const ShippingForm = () => {
 
     const { user, setUser } = useContext(UserContext)
+    const navigate = useNavigate();
 
     const getAddress = (e) => {
         e.preventDefault();
@@ -27,17 +29,18 @@ const ShippingForm = () => {
             cvv:  e.target.cvv.value
         }
 
-        console.log(user);
-        // fetch("http://localhost:3000/orders", {
-        //     method: "POST",
-        //     headers: {
-        //         'Content-Type': 'application/json'
-        //     },
-        //     body: JSON.stringify(newOrder)
-        // }).then(res => res.json())
-        //     .then(data => console.log(data))
-        //     .catch(error => console.log(error));
-        // setUser(newOrder); 
+        
+        fetch("http://localhost:3000/orders", {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(newOrder)
+        }).then(res => res.json())
+            .then(data => console.log(data))
+            .catch(error => console.log(error));
+        setUser(newOrder); 
+        navigate("/thankyou");
     }
 
     // }
@@ -142,7 +145,7 @@ const ShippingForm = () => {
                             </div> */}
                         </label>
                         </div>
-                        <button className="buttonShipping" type="submit" >Continue</button>
+                        <button className="buttonShipping" type="submit" >PAY</button>
                 </form>
 
                 

@@ -5,18 +5,15 @@ import ProductsContainer from '../components/ProductsContainer/ProductsContainer
 import { CartContext } from '../context/CartContext';
 import { WishListContext } from '../context/WishListContext/WishListContext';
 import toast, { Toaster } from 'react-hot-toast';
-import { notify, saveProduct, saveWish } from '../helpers/functions';
+import { notify, saveProduct } from '../helpers/functions';
 import Title from '../components/Title/Title';
+import { HeartContext } from '../context/HeartContext/HeartContext';
 
 
 
 const Shop = () => {
 
   const { items, setItems } = useContext(CartContext);
-
-  // function saveProduct(items) {
-  //   localStorage.setItem("items", JSON.stringify(items));
-  // }
 
   useEffect(() => {
     saveProduct((items));
@@ -35,10 +32,8 @@ const Shop = () => {
     } else {
       setItems([...items, { ...product, quantity: 1 }])
     }
-
     return notify();
   }
-
 
   //fetch
 
@@ -55,6 +50,7 @@ const Shop = () => {
   // wishLists
 
   const { wishes, dispatch } = useContext(WishListContext);
+  const { toggleHeart, setToggleHeart } = useContext(HeartContext);
 
   const handleAddWished = (product) => {
     const provisionalWish = wishes.find(e => e.id === product.id)
@@ -63,7 +59,9 @@ const Shop = () => {
         type: 'add_item',
         payload: product,
       }
+      
       dispatch(action);
+      setToggleHeart(!toggleHeart);
 
       const notifyWish = () => toast('Added to wishlist', {
         icon: '❤️',
@@ -72,8 +70,13 @@ const Shop = () => {
     }
   }
 
+  function saveWish(wishes) {
+    localStorage.setItem("wishes", JSON.stringify(wishes));
+
+  }
   useEffect(() => {
     saveWish(wishes)
+    
   }, [wishes]);
 
 
@@ -85,6 +88,7 @@ const Shop = () => {
         addToCart={addToCart}
         stock={stock}
         handleAddWished={handleAddWished}
+        setToggleHeart={setToggleHeart} //no se si hace falta pero por si acaso
       />
     </>
   )

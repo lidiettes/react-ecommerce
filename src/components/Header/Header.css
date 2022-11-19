@@ -70,12 +70,17 @@ header .fa {
 .iconsHeader{
 justify-content: flex-end;
 display:inline;
-margin-left: 150px;
+
 
 }
 .userInfo{
-	width: 250px;
-	margin-left: 150px;
+	width: 120px;
+	margin-left: 650px;
+	
+	
 }
-
+.userInfoP{
+	color: azure;
+	
+}
 

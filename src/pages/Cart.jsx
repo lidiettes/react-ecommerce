@@ -4,6 +4,7 @@ import { useContext } from 'react'
 import toast from 'react-hot-toast';
 import CartNav from '../components/CartNav/CartNav'
 import Title from '../components/Title/Title';
+
 import { CartContext } from '../context/CartContext';
 import { getTotal } from '../helpers/functions';
 
@@ -46,6 +47,9 @@ const Cart = () => {
                 // getTotal={getTotal}
                 addToCart={addToCart}
             />
+            
+            
+
         </>
     )
 }
