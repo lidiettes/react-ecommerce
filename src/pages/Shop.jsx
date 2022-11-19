@@ -5,7 +5,7 @@ import ProductsContainer from '../components/ProductsContainer/ProductsContainer
 import { CartContext } from '../context/CartContext';
 import { WishListContext } from '../context/WishListContext/WishListContext';
 import toast, { Toaster } from 'react-hot-toast';
-import { notify, saveProduct, saveWish } from '../helpers/addToCart';
+import { notify, saveProduct, saveWish } from '../helpers/functions';
 import Title from '../components/Title/Title';
 
 

@@ -37,7 +37,7 @@ header nav {
 	line-height: 30px;
 	font-weight: 530;
 	letter-spacing: 0.2em;
-
+	margin-left: 250px;
 
 }
 
@@ -56,7 +56,7 @@ header nav a {
 }
 
 header nav a:hover {
-	background: #f1f1f5;
+	background: #d9d9ed;
 	border-radius: 10px;
 }
 
@@ -70,11 +70,12 @@ header .fa {
 .iconsHeader{
 justify-content: flex-end;
 display:inline;
+margin-left: 150px;
 
 }
 .userInfo{
 	width: 250px;
-	margin-left: 250px;
+	margin-left: 150px;
 }
 
 

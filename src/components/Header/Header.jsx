@@ -22,6 +22,7 @@ const Header = () => {
 					<nav>
 						<Link to="/">Home</Link>
 						<Link to="/shop">Shop</Link>
+						<Link to="/shop">About us</Link>
 						
 						<div className="userInfo"><p>{user.name} {user.lastName}</p></div>
 						<div className='iconsHeader'>

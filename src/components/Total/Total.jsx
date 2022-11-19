@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../../context/CartContext';
-import { getTotal } from '../../helpers/addToCart'
+import { getTotal } from '../../helpers/functions'
 import '../Total/Total.css'
 
 const Total = () => {
