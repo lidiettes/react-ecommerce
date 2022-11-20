@@ -108,7 +108,7 @@ const ShippingForm = () => {
                     </div>
                     <hr></hr>
                     <h1>Payment</h1>
-                    <hr></hr>
+                    
                     <p>Please enter your payment details.</p>
                     <div>
                     <i className="fa fa-cc-visa fa-2x cartNav" aria-hidden="true"></i>

@@ -14,13 +14,14 @@ const Total = () => {
                 <div><h3>Subtotal: {getTotal(items)} € </h3></div>
                 <div className='shippingContainer'>Shipping: Free </div>
 
-                <Link to="/login"> <button className="button buttonPay"> CHECK OUT  </button></Link>
+                
                 <div className='cardTotal'>
                     <h3>We accept:</h3>
                     <i className="fa fa-cc-visa fa-2x cartNav" aria-hidden="true"></i>
                     <i className="fa fa-cc-mastercard fa-2x cartNav" aria-hidden="true"></i>
                     <i className="fa fa-cc-paypal fa-2x cartNav" aria-hidden="true"></i>
                 </div>
+                <Link to="/login"> <button className="button buttonPay"> CHECK OUT  </button></Link>
             </div>
         </>
     )
