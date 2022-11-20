@@ -4,7 +4,7 @@ import './ProductsContainer.css';
 import ProductCard from '../ProductCard/ProductCard';
 import Search from '../Search/Search';
 import { Link, useSearchParams } from 'react-router-dom';
-import { CartContext } from '../../context/CartContext';
+import { CartContext } from '../../context/CartContext/CartContext';
 import { useContext } from 'react';
 
 

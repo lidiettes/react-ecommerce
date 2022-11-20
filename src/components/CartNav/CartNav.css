@@ -1,11 +1,11 @@
 .cartContainer{
-    display: flex;
-margin-left: 100px;
-height: 800px;
-width: 80%;
+display: flex;
+justify-content: center;
+min-height: 600px;
+width: 100%;
 padding: auto;
-min-height: 1000px;
 align-items: baseline;
+margin: 50px;
 }
 
 h2{

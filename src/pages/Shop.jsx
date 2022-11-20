@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react'
 import { useState } from 'react';
 import getData from '../api/api';
 import ProductsContainer from '../components/ProductsContainer/ProductsContainer'
-import { CartContext } from '../context/CartContext';
+import { CartContext } from '../context/CartContext/CartContext';
 import { WishListContext } from '../context/WishListContext/WishListContext';
 import toast, { Toaster } from 'react-hot-toast';
 import { notify, saveProduct } from '../helpers/functions';

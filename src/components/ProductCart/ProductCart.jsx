@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { CartContext } from '../../context/CartContext';
+import { CartContext } from '../../context/CartContext/CartContext';
 
 import CounterApp from '../CounterApp/CounterApp';
 
@@ -12,7 +12,7 @@ const ProductCart = ({removeCart,addToCart }) => {
     return (
         <>
       
-        <div className='container'>
+        <div className=''>
             
             {
                 items.length > 0 ?

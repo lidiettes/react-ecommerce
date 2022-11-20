@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import { useEffect } from 'react';
 import Login from '../components/Login/Login';
 import WishList from '../components/WishList/WishList'
-import { CartContext } from '../context/CartContext';
+import { CartContext } from '../context/CartContext/CartContext';
 import { WishListContext } from '../context/WishListContext/WishListContext';
 
 

@@ -1,0 +1,26 @@
+
+.buttonPay{
+    background-color: #ebd79c;
+    display: inline-block;
+    height: 40px;
+    width: 90%;
+    margin-left: 40px;
+    margin-right: 40px;
+   
+    box-sizing: border-box;
+    border: transparent;
+    border-radius: 30px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #ebd79c;
+    cursor: pointer;
+    outline: none;
+}
+
+.buttonPay:hover {
+    background-color: #79b0a1;
+}

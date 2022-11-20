@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { useState } from 'react';
-import { CartContext } from '../../context/CartContext';
+import { CartContext } from '../../context/CartContext/CartContext';
 import './CounterApp.css';
 
 export const CounterApp = ({ item, addToCart }) => {

@@ -4,7 +4,7 @@ import CartNav from '../components/CartNav/CartNav'
 import ProductCart from '../components/ProductCart/ProductCart'
 import ShippingForm from '../components/ShippingForm/ShippingForm'
 import Total from '../components/Total/Total'
-import { CartContext } from '../context/CartContext'
+import { CartContext } from '../context/CartContext/CartContext'
 import Cart from './Cart'
 
 const ShippingPage = ({ removeCart, addToCart}) => {
@@ -39,7 +39,7 @@ useEffect(() => {
 
   return (
     <>
-      <div className="mari" style={{ display: "flex" }}>
+      <div className="mari" style={{display:"flex", margin:"50px"}}>
         <div className="pili" >
           
           <ProductCart 
@@ -49,10 +49,11 @@ useEffect(() => {
           addToCart={addToCart}
           />
 
-        </div>
+        </div >
+        <div style={{  }}>
         <ShippingForm />
 
-
+        </div>
       </div>
 
     </>

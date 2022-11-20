@@ -2,10 +2,11 @@ import React from 'react'
 import { useEffect } from 'react';
 import { useContext } from 'react'
 import toast from 'react-hot-toast';
+import ButtonCheckOut from '../components/ButtonCheckOut/ButtonCheckOut';
 import CartNav from '../components/CartNav/CartNav'
 import Title from '../components/Title/Title';
 
-import { CartContext } from '../context/CartContext';
+import { CartContext } from '../context/CartContext/CartContext';
 import { getTotal } from '../helpers/functions';
 
 const Cart = () => {
@@ -47,7 +48,7 @@ const Cart = () => {
                 // getTotal={getTotal}
                 addToCart={addToCart}
             />
-            
+            <ButtonCheckOut />
             
 
         </>

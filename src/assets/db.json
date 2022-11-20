@@ -124,6 +124,27 @@
       "lastName": "",
       "email": "",
       "password": ""
+    },
+    {
+      "id": 1668965392605,
+      "name": "Sonia",
+      "lastName": "Lopez",
+      "email": "juan@juan.com",
+      "password": "123"
+    },
+    {
+      "id": 1668966229382,
+      "name": "juan",
+      "lastName": "patata",
+      "email": "juan@juan.com",
+      "password": "123"
+    },
+    {
+      "id": 1668966357363,
+      "name": "patata",
+      "lastName": "patata",
+      "email": "patata@patata.com",
+      "password": "123"
     }
   ],
   "orders": [
@@ -190,6 +211,20 @@
       "nameCard": "423",
       "date": "2022-11-18",
       "cvv": "234"
+    },
+    {
+      "id": 1668966377360,
+      "idUser": 1668966357363,
+      "name": "patata",
+      "lastName": "patata",
+      "address": "1",
+      "country": "1",
+      "zipcode": "1",
+      "city": "1",
+      "numberCard": "1",
+      "nameCard": "1",
+      "date": "2022-11-17",
+      "cvv": "11"
     }
   ]
 }

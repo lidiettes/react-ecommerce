@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { CartContext } from '../context/CartContext';
+import { CartContext } from '../context/CartContext/CartContext';
 import { UserContext } from '../context/UserContext/UserContext'
 
 const ThankYouBye = () => {
