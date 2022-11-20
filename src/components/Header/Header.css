@@ -12,7 +12,7 @@ header {
 	align-items: baseline;
 	width: 100%;
 	/* Establecemos que el ancho sera del 90% */
-	max-width: 2050px;
+	max-width: 2150px;
 	/* Aqui le decimos que el ancho máximo sera de 1000px */
 	margin-left: 50px;
 	
@@ -37,7 +37,7 @@ header nav {
 	line-height: 30px;
 	font-weight: 530;
 	letter-spacing: 0.2em;
-	margin-left: 250px;
+	margin-left: 180px;
 
 }
 
@@ -69,13 +69,14 @@ header .fa {
 
 .iconsHeader{
 justify-content: flex-end;
-display:inline;
-
+display:flex;
+margin-left: 400px;
 
 }
 .userInfo{
-	width: 120px;
-	margin-left: 650px;
+	width: 250px;
+	display:inline;
+	
 	
 	
 }

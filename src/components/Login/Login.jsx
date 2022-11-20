@@ -41,7 +41,7 @@ const Login = () => {
         const email = target.email.value;
         const password = target.password.value;
 
-        const authentic = userData.find(u => email === u.email) && userData.find(u => password === u.password)
+        const authentic = userData.find(u => password === u.password) && userData.find(u => email === u.email)
         console.log(authentic);
 
         if (authentic) {

@@ -25,7 +25,8 @@ const ShippingForm = () => {
             zipcode: e.target.zipcode.value,
             city: e.target.city.value,
             numberCard: e.target.numberCard.value,
-            nameCard: e.target.date.value,
+            nameCard:e.target.nameCard.value,
+            date: e.target.date.value,
             cvv:  e.target.cvv.value
         }
 
