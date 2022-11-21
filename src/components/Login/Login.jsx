@@ -7,6 +7,7 @@ import { UserContext } from '../../context/UserContext/UserContext';
 import { useState } from 'react';
 import { Link, Navigate } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import { LoggedInContext } from '../../context/LoggedInContext/LoggedInContext';
 
 const Login = () => {
 
@@ -28,7 +29,8 @@ const Login = () => {
 
     //LOGIN
     const navigate = useNavigate();
-    const { user, setUser } = useContext(UserContext)
+    const { user, setUser } = useContext(UserContext);
+    const {loggedIn, setLoggedIn} = useContext(LoggedInContext);
 
     useEffect(() => {
         sessionStorage.setItem("user", JSON.stringify(user))
@@ -40,18 +42,22 @@ const Login = () => {
         const target = e.target;
         const email = target.email.value;
         const password = target.password.value;
-
         const authentic = userData.find(u => password === u.password) && userData.find(u => email === u.email)
-       
+
 
         if (authentic) {
             setUser(authentic);
             navigate("/shippingPage");
+            setLoggedIn(true);
 
         } else {
             console.log("error");
         }
 
+    }
+    //botón pendiente de crear
+    const logOut = () => {
+        localStorage.removeItem('user')
     }
 
     //REGISTER
@@ -75,7 +81,8 @@ const Login = () => {
         }).then(res => res.json())
             .then(data => console.log(data))
             .catch(error => console.log(error));
-        setUser(newUser); // login the new user
+        setUser(newUser);
+        setLoggedIn(true); // login the new user
         navigate("/shippingPage");
     }
 
@@ -108,7 +115,7 @@ const Login = () => {
                     <a href="#" className="social-links"><i className="fa-brands fa-facebook-f"></i></a>
                     <a href="#" className="social-links"><i className="fa-brands fa-twitter"></i></a>
                 </div> */}
-               
+
 
             </div>
 

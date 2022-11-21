@@ -8,6 +8,7 @@ import WishListPage from '../pages/WishListPage';
 import Shop from '../pages/Shop';
 import Home from '../pages/Home';
 import ThankYouBye from '../pages/ThankYouBye';
+import PrivateRoutes from './PrivateRoutes';
 
 const Router = () => {
   return (
@@ -18,14 +19,24 @@ const Router = () => {
         <Route path="/shop" element={<Shop />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/shippingpage" element={<ShippingPage />} />
-        <Route path="/login" element={<LoginPage />} /> 
-        <Route path="/wishlist" element={<WishListPage/>} /> 
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/wishlist" element={<WishListPage />} />
         <Route path="/thankyou" element={<ThankYouBye />} />
+      
 
+{/* declaro lo privado  */}
+
+      <Route 
+      path="/*" 
+      element = {
+        <PrivateRoutes>
+          <ShippingPage />
+        </PrivateRoutes>
+      }
+      />
       </Routes>
-
     </>
-  )
+  );
 }
 
 export default Router
