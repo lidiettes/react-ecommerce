@@ -1,6 +1,6 @@
 import './ProductCard.css';
-import { useContext, useState } from 'react';
-import { useReducer } from 'react'
+import { useContext } from 'react';
+
 import toast, { Toaster } from 'react-hot-toast';
 import { HeartContext } from '../../context/HeartContext/HeartContext';
 
@@ -18,6 +18,7 @@ const ProductCard = ({ name, img, description, id, price, addToCart, handleAddWi
         img: img
     };
 
+    // Heart
     const { toggleHeart, setToggleHeart } = useContext(HeartContext);
 
     return (

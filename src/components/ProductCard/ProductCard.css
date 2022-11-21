@@ -146,7 +146,6 @@ font-family: 50px;
 justify-content: flex-end;
 text-decoration: none;
 border: none;
-
 padding: 15px;
 cursor: pointer;
 font-family: 50px;
@@ -165,14 +164,14 @@ font-family: 50px;
 font-size: 35px;
 } 
 
-.fa.fa-heart:hover{
+/* .fa.fa-heart:hover{
     color: red;
-}
+} */
 
 
-.prueba{
+/* .prueba{
     color:rgb(144, 130, 130);
-}
+} */
 
 .buttonMoveToBag{
     background-color: #ebd79c;

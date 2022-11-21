@@ -61,7 +61,8 @@ const Shop = () => {
       }
       
       dispatch(action);
-      setToggleHeart(!toggleHeart);
+      setToggleHeart(!!toggleHeart);
+      console.log(toggleHeart);
 
       const notifyWish = () => toast('Added to wishlist', {
         icon: '❤️',

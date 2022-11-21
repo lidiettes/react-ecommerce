@@ -42,14 +42,11 @@ const Login = () => {
         const password = target.password.value;
 
         const authentic = userData.find(u => password === u.password) && userData.find(u => email === u.email)
-        console.log(authentic);
+       
 
         if (authentic) {
-            
             setUser(authentic);
             navigate("/shippingPage");
-            
-
 
         } else {
             console.log("error");
