@@ -1,11 +1,9 @@
-import React, { useContext, useEffect } from 'react'
+import { useContext, useEffect } from 'react'
 import toast from 'react-hot-toast'
-import CartNav from '../components/CartNav/CartNav'
 import ProductCart from '../components/ProductCart/ProductCart'
 import ShippingForm from '../components/ShippingForm/ShippingForm'
-import Total from '../components/Total/Total'
 import { CartContext } from '../context/CartContext/CartContext'
-import Cart from './Cart'
+
 
 const ShippingPage = ({ removeCart, addToCart}) => {
 
@@ -38,27 +36,20 @@ useEffect(() => {
 }, [items]);
 
   return (
-    <>
+
       <div className="mari" style={{display:"flex", margin:"50px"}}>
         <div className="pili" >
           
           <ProductCart 
-          
           removeCart={removeCart}
-          // getTotal={getTotal}
           addToCart={addToCart}
           />
 
         </div >
         <div style={{  }}>
         <ShippingForm />
-
         </div>
       </div>
-
-    </>
-
-
   )
 }
 

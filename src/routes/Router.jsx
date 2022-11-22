@@ -15,25 +15,15 @@ const Router = () => {
 
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/shippingpage" element={<ShippingPage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/wishlist" element={<WishListPage />} />
-        <Route path="/thankyou" element={<ThankYouBye />} />
-      
-
-{/* declaro lo privado  */}
-
-      <Route 
-      path="/*" 
-      element = {
-        <PrivateRoutes>
-          <ShippingPage />
-        </PrivateRoutes>
-      }
-      />
+        <Route path="/" element = {<Home />} />
+        <Route path="/shop" element = {<Shop />} />
+        <Route path="/cart" element = {<Cart />} />
+        <Route path="/login" element = {<LoginPage />} />
+        <Route path="/wishlist" element ={<WishListPage />} />
+  
+        <Route path="/shippingpage" element = {<PrivateRoutes> <ShippingPage /> </PrivateRoutes>} />
+        <Route path="/thankyou" element = { <PrivateRoutes> <ThankYouBye /> </PrivateRoutes>} />
+        
       </Routes>
     </>
   );

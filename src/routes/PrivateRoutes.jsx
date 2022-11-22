@@ -5,7 +5,8 @@ import { LoggedInContext } from '../context/LoggedInContext/LoggedInContext';
 const PrivateRoutes = ({ children }) => {
 
     const { loggedIn, setLoggedIn } = useContext(LoggedInContext);
-    return loggedIn ? children : <Navigate to=" /login" />
+    
+    return loggedIn ? children : <Navigate to="/login" />
 
 
 }

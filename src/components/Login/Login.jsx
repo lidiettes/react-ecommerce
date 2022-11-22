@@ -51,7 +51,7 @@ const Login = () => {
             setLoggedIn(true);
 
         } else {
-            console.log("error");
+            console.log("credenciales no validas");
         }
 
     }
