@@ -19,3 +19,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.TitleThankyou{
+  font-weight: 600;
+  font-size: 3rem;
+  color: rgb(42, 39, 39);
+}
+.containerThankyou{
+  display: inline-block;
+  justify-content: inline-block;
+  margin: 150px 150px 150px 150px
+}
+
+.containerThankyouProducts{
+  margin-top: 50px;
+}
+.pThankyou{
+  margin-top: 50px;
+  color: rgb(75, 71, 71);
+}

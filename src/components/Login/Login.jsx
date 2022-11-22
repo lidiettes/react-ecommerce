@@ -8,12 +8,14 @@ import { useState } from 'react';
 import { Link, Navigate } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { LoggedInContext } from '../../context/LoggedInContext/LoggedInContext';
+import { OrdersContext } from '../../context/OrdersContext/OrdersContext';
 
 const Login = () => {
 
     //fetch
     const { userData } = useContext(UserDataContext);
     const { fetchUser } = useContext(ApiContext);
+   
 
     useEffect(() => {
         fetchUser()
@@ -44,16 +46,14 @@ const Login = () => {
         const password = target.password.value;
         const authentic = userData.find(u => password === u.password) && userData.find(u => email === u.email)
 
-
         if (authentic) {
             setUser(authentic);
-            navigate("/shippingPage");
             setLoggedIn(true);
+            navigate("/shippingPage");
 
         } else {
             console.log("credenciales no validas");
         }
-
     }
     //botón pendiente de crear
     const logOut = () => {
@@ -82,6 +82,7 @@ const Login = () => {
             .then(data => console.log(data))
             .catch(error => console.log(error));
         setUser(newUser);
+        
         setLoggedIn(true); // login the new user
         navigate("/shippingPage");
     }

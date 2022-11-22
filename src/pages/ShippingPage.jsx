@@ -3,6 +3,7 @@ import toast from 'react-hot-toast'
 import ProductCart from '../components/ProductCart/ProductCart'
 import ShippingForm from '../components/ShippingForm/ShippingForm'
 import { CartContext } from '../context/CartContext/CartContext'
+import { UserContext } from '../context/UserContext/UserContext'
 
 
 const ShippingPage = ({ removeCart, addToCart}) => {
@@ -34,6 +35,20 @@ function removeCart(id) {
 useEffect(() => {
     localStorage.setItem("items", JSON.stringify(items));
 }, [items]);
+
+
+//error f5 user
+const {user, setUser}= useContext(UserContext);
+console.log(user)
+    useEffect(()=>{
+        const refresh = JSON.parse(sessionStorage.getItem("user"));
+        setUser(refresh)
+      },[])
+    
+      useEffect(()=>{
+        sessionStorage.setItem("user", JSON.stringify(user))
+      },[user])
+
 
   return (
 

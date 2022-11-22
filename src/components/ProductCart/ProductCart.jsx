@@ -28,8 +28,6 @@ const ProductCart = ({removeCart,addToCart }) => {
                                     item={item}
                                     addToCart={addToCart}
                                     removeCart={removeCart}
-                                 
-                                    
                                     /> 
                                     </div>
                                 </div>

@@ -5,12 +5,14 @@ import { useContext } from 'react';
 import { UserContext } from '../../context/UserContext/UserContext';
 import Total from '../Total/Total';
 import { useNavigate } from 'react-router-dom';
+import { OrdersContext } from '../../context/OrdersContext/OrdersContext';
 
 
 const ShippingForm = () => {
 
     const { user, setUser } = useContext(UserContext)
     const navigate = useNavigate();
+    const {orders, setOrders}= useContext(OrdersContext);
 
     const getAddress = (e) => {
         e.preventDefault();
@@ -40,7 +42,9 @@ const ShippingForm = () => {
         }).then(res => res.json())
             .then(data => console.log(data))
             .catch(error => console.log(error));
-        setUser(newOrder); 
+        // setUser(newOrder); 
+        setOrders(newOrder);
+        
         navigate("/thankyou");
     }
 

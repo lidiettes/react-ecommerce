@@ -5,14 +5,17 @@ import toast from 'react-hot-toast';
 import ButtonCheckOut from '../components/ButtonCheckOut/ButtonCheckOut';
 import CartNav from '../components/CartNav/CartNav'
 import Title from '../components/Title/Title';
-
 import { CartContext } from '../context/CartContext/CartContext';
-import { getTotal } from '../helpers/functions';
+import { UserContext } from '../context/UserContext/UserContext';
+
 
 const Cart = () => {
 
     //stock de carrito
     const { items, setItems } = useContext(CartContext);
+    const {user, setUser}= useContext(UserContext);
+
+
 
     function addToCart(product) {
         const index = items.find(e => e.id === product.id)

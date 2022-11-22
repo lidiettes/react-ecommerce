@@ -8,16 +8,29 @@ import toast, { Toaster } from 'react-hot-toast';
 import { notify, saveProduct } from '../helpers/functions';
 import Title from '../components/Title/Title';
 import { HeartContext } from '../context/HeartContext/HeartContext';
-
+import { UserContext } from '../context/UserContext/UserContext';
 
 
 const Shop = () => {
 
   const { items, setItems } = useContext(CartContext);
+  const {user, setUser} = useContext(UserContext);
+
+  const refresh = JSON.parse(sessionStorage.getItem("user"));
+
 
   useEffect(() => {
     saveProduct((items));
   }, [items]);
+
+  //evitar perder usuario con f5
+  useEffect(()=>{
+    setUser(refresh)
+  },[])
+
+  useEffect(()=>{
+    sessionStorage.setItem("user", JSON.stringify(user))
+  },[user])
 
 
   function addToCart(product) {

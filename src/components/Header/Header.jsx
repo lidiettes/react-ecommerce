@@ -3,16 +3,33 @@ import './Header.css';
 import CounterApp from '../CounterApp/CounterApp';
 import { Link } from 'react-router-dom';
 import Items from '../../assets/db';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { CartContext } from '../../context/CartContext/CartContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { UserContext } from '../../context/UserContext/UserContext';
+import { OrdersContext } from '../../context/OrdersContext/OrdersContext';
 
 
 const Header = () => {
 
 	const { items, setItems } = useContext(CartContext);
 	const { user, setUser } = useContext(UserContext);
+	const {orders, setOrders}= useContext(OrdersContext);
+
+
+	useEffect(() => {
+        sessionStorage.setItem("user", JSON.stringify(user))
+    }, [user])
+
+	useEffect(() => {
+        localStorage.setItem("order", JSON.stringify(orders))
+    }, [orders])
+
+
+
+
+
+
 
 	return (
 		<>
