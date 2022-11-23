@@ -34,7 +34,7 @@ const Header = () => {
 	
 			<Navbar expand="lg" className='navbar'>
 				<Container className="">
-					<Navbar.Brand href="/">Söd</Navbar.Brand>
+					<Navbar.Brand className="brand" href="/">Söd</Navbar.Brand>
 					<Navbar.Toggle aria-controls="basic-navbar-nav" />
 					<Navbar.Collapse id="basic-navbar-nav">
 						<Nav className="me-auto">
@@ -50,9 +50,9 @@ const Header = () => {
 
 							<NavDropdown title={user.name} id="basic-nav-dropdown">
 
-								<NavDropdown.Item href="/user">User</NavDropdown.Item>
+								<NavDropdown.Item href="/user">My account</NavDropdown.Item>
 								<NavDropdown.Item href="/order">
-									Orders
+									My orders
 								</NavDropdown.Item>
 								<NavDropdown.Item href="/Something">Something</NavDropdown.Item>
 								<NavDropdown.Divider />

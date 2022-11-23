@@ -139,6 +139,7 @@ padding: 15px;
 cursor: pointer;
 font-family: 50px;
 
+
 }
 .heartClose{
     background-color: red;
@@ -162,10 +163,12 @@ font-family: 50px;
 .fa.fa-heart.card{
 color:#a7a7a7;
 font-size: 35px;
+text-decoration: none;
 } 
 .fa.fa-heart.card.red{
     color:#e86969;
     font-size: 35px;
+    text-decoration: none;
 } 
 
 

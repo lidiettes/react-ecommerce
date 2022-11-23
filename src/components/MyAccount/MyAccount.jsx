@@ -1,61 +1,16 @@
+import React from 'react'
 
-import { useState } from 'react';
-import '../ShippingForm/ShippingForm.css'
-import { useContext } from 'react';
-import { UserContext } from '../../context/UserContext/UserContext';
-import Total from '../Total/Total';
-import { useNavigate } from 'react-router-dom';
-import { OrdersContext } from '../../context/OrdersContext/OrdersContext';
-
-
-const ShippingForm = () => {
-
-    const { user, setUser } = useContext(UserContext)
-    const navigate = useNavigate();
-    const { orders, setOrders } = useContext(OrdersContext);
-
-    const getAddress = (e) => {
-        e.preventDefault();
-
-        const newOrder = {
-            id: new Date().getTime(),
-            idUser: user.id,
-            name: user.name,
-            lastName: user.lastName,
-            address: e.target.address.value,
-            country: e.target.country.value,
-            zipcode: e.target.zipcode.value,
-            city: e.target.city.value,
-            numberCard: e.target.numberCard.value,
-            nameCard: e.target.nameCard.value,
-            date: e.target.date.value,
-            cvv: e.target.cvv.value
-        }
-
-
-        fetch("http://localhost:3000/orders", {
-            method: "POST",
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(newOrder)
-        }).then(res => res.json())
-            .then(data => console.log(data))
-            .catch(error => console.log(error));
-        // setUser(newOrder); 
-        setOrders(newOrder);
-
-        navigate("/thankyou");
-    }
-
-    // }
-
+const MyAccount = () => {
     return (
         <>
-            <div className="containerShipping">
-                <Total />
+            <input type="text" placeholder="name" name="name" className="name" />
+            <input type="text" placeholder="lastName" name="lastName" className="lastName" />
+            <input type="text" placeholder="email" name="email" className="email" />
+            <input type="password" placeholder="password" name="password" className="passwd" />
+            <button href="#" type="submit" className="btn btn-primary">Sign in</button>
 
-                <form className="form" onSubmit={(e) => { getAddress(e) }}>
+            <div className="containerShipping">
+                <form className="form" >
                     <h1>Shipping</h1>
                     <p>Please enter your shipping details.</p>
                     <div className="fields fields--2">
@@ -134,27 +89,4 @@ const ShippingForm = () => {
     )
 }
 
-
-//     const [firstName, setFirstName]= useState("");
-//     const [lastName, setLastName]=useState("")
-//     const [address, setAddress]= useState("");
-//     const [country, setCountry]=useState("");
-//     const [postalCode, setPostalCode] = useState("");
-//     const [city, setCity] = useState("");
-
-//     const validName = address.length > 0 ? true : false;
-//     const validLastName = lastName.length > 0 ? true : false;
-//     const validAddress = address.length > 0 ? true : false;
-//     const validCountry = country.length > 0 ? true : false;
-//     const validPostalCode = postalCode.length > 0 ? true : false;
-//     const validCity = city.length > 0 ? true : false;
-
-//     const inputCheck = (a, b, c, d, e, f ) => {
-//         const okay = (a && b && c && d && e && f) ? true : false;
-//         return okay;
-//     };
-
-// const enableButton = inputCheck (validName, validLastName, validAddress,validCountry, validPostalCode, validCity) ? "" : "true";
-
-
-export default ShippingForm
+export default MyAccount
