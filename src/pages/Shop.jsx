@@ -7,7 +7,7 @@ import { WishListContext } from '../context/WishListContext/WishListContext';
 import toast, { Toaster } from 'react-hot-toast';
 import { notify, saveProduct } from '../helpers/functions';
 import Title from '../components/Title/Title';
-import { HeartContext } from '../context/HeartContext/HeartContext';
+
 import { UserContext } from '../context/UserContext/UserContext';
 
 
@@ -63,7 +63,7 @@ const Shop = () => {
   // wishLists
 
   const { wishes, dispatch } = useContext(WishListContext);
-  const { toggleHeart, setToggleHeart } = useContext(HeartContext);
+  
 
   const handleAddWished = (product) => {
     const provisionalWish = wishes.find(e => e.id === product.id)
@@ -72,15 +72,20 @@ const Shop = () => {
         type: 'add_item',
         payload: product,
       }
-      
       dispatch(action);
-      setToggleHeart(!!toggleHeart);
-      console.log(toggleHeart);
-
       const notifyWish = () => toast('Added to wishlist', {
         icon: '❤️',
       });
       return notifyWish();
+    } else{
+      // parte de borrar al renderizar distintos corazones
+      const provisionalWish2 = wishes.filter(e => e.id !== product.id)
+  
+      const action= {
+        type: 'delete_item',
+        payload :provisionalWish2,
+      }
+      dispatch(action);
     }
   }
 
@@ -102,7 +107,6 @@ const Shop = () => {
         addToCart={addToCart}
         stock={stock}
         handleAddWished={handleAddWished}
-        setToggleHeart={setToggleHeart} //no se si hace falta pero por si acaso
       />
     </>
   )

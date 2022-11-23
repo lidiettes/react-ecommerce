@@ -160,18 +160,16 @@ font-family: 50px;
 }
 
 .fa.fa-heart.card{
-
+color:#a7a7a7;
 font-size: 35px;
 } 
+.fa.fa-heart.card.red{
+    color:#e86969;
+    font-size: 35px;
+} 
 
-/* .fa.fa-heart:hover{
-    color: red;
-} */
 
 
-/* .prueba{
-    color:rgb(144, 130, 130);
-} */
 
 .buttonMoveToBag{
     background-color: #ebd79c;

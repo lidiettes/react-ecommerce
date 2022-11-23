@@ -2,14 +2,14 @@ import './ProductCard.css';
 import { useContext } from 'react';
 
 import toast, { Toaster } from 'react-hot-toast';
-import { HeartContext } from '../../context/HeartContext/HeartContext';
+
+import { WishListContext } from '../../context/WishListContext/WishListContext';
 
 // import * as photos from '../../img/index';
 
 const ProductCard = ({ name, img, description, id, price, addToCart, handleAddWished }) => {
 
-    // const { photo01, photo02, photo03} = photos;
-    // const productImage = photos[`photo${item.img}`];
+    const { wishes } = useContext(WishListContext);
 
     const item = {
         id: id,
@@ -19,7 +19,24 @@ const ProductCard = ({ name, img, description, id, price, addToCart, handleAddWi
     };
 
     // Heart
-    const { toggleHeart, setToggleHeart } = useContext(HeartContext);
+
+
+    const hearToggle = () => {
+        const provisional = wishes.find(wish => wish.id === item.id)
+        if (provisional) {
+            return (
+                <button className='heartButton' type="submit" value='add' onClick={() => { handleAddWished(item) }}>
+                    <i className="fa fa-heart card red" aria-hidden="true"></i>
+                </button>
+            )
+        } else {
+            return (
+                <button className='heartButton' type="submit" value='add' onClick={() => { handleAddWished(item) }}>
+                    <i className="fa fa-heart card"></i>
+                </button>
+            )
+        }
+    }
 
     return (
         <>
@@ -32,11 +49,12 @@ const ProductCard = ({ name, img, description, id, price, addToCart, handleAddWi
 
                 <div className="product-info">
                     <div className='buttonContainer'>
-                        <button className='heartButton' type="submit" value='add' onClick={() => { handleAddWished(item) }}> <i className="fa fa-heart card" aria-hidden="true"></i>
-                        </button>
+                        {hearToggle()}
+                        {/* <button className='heartButton'type="submit" value='add' onClick={() => { handleAddWished(item) }}> <i className="fa fa-heart card" aria-hidden="true"></i> */}
+                        {/* <button className='heartButton'type="submit" value='add' onClick={() => { handleAddWished(item) }}><i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-heart"></i>
+                        </button> */}
 
-                        {/* <button className='heartButton'> <i className="fa fa-heart card" aria-hidden="false"></i>  */}
-                        {/* </button> */}
 
 
                     </div>

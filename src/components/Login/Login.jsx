@@ -5,10 +5,10 @@ import { UserDataContext } from '../../context/UserDataContext/UserDataContext';
 import { ApiContext } from '../../context/ApiContext/ApiContext';
 import { UserContext } from '../../context/UserContext/UserContext';
 import { useState } from 'react';
-import { Link, Navigate } from 'react-router-dom';
+
 import { useNavigate } from 'react-router-dom';
 import { LoggedInContext } from '../../context/LoggedInContext/LoggedInContext';
-import { OrdersContext } from '../../context/OrdersContext/OrdersContext';
+
 
 const Login = () => {
 
@@ -24,10 +24,10 @@ const Login = () => {
 
     //estado para gestionar cuando saltara navigate FUNCIONA ESTA PRUEBA?
 
-    const [sendToShipping, setSendToShipping] = useState(null);
-    useEffect(() => {
-        setSendToShipping(prev => prev = null)
-    }, [sendToShipping])
+    // const [sendToShipping, setSendToShipping] = useState(null);
+    // useEffect(() => {
+    //     setSendToShipping(prev => prev = null)
+    // }, [sendToShipping])
 
 
 

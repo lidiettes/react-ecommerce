@@ -1,7 +1,7 @@
 import React from 'react'
 import ApiProvider from '../ApiContext/ApiProvider'
 import CartProvider from '../CartContext/CartProvider'
-import { HeartProvider } from '../HeartContext/HeartProvider'
+
 import LoggedInProvider from '../LoggedInContext/LoggedInProvider'
 import OrdersProvider from '../OrdersContext/OrdersProvider'
 import UserProvider from '../UserContext/UserProvider'
@@ -14,7 +14,7 @@ const GeneralProvider = ({ children }) => {
         <>
             <LoggedInProvider>
                 <OrdersProvider>
-                <HeartProvider>
+           
                     <CartProvider>
                         <WishListProvider>
                             <UserProvider>
@@ -26,7 +26,7 @@ const GeneralProvider = ({ children }) => {
                             </UserProvider>
                         </WishListProvider>
                     </CartProvider>
-                </HeartProvider>
+          
                 </OrdersProvider>
             </LoggedInProvider>
         </>
