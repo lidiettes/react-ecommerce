@@ -23,7 +23,8 @@ const Router = () => {
   
         <Route path="/shippingpage" element = {<PrivateRoutes> <ShippingPage /> </PrivateRoutes>} />
         <Route path="/thankyou" element = { <PrivateRoutes> <ThankYouBye /> </PrivateRoutes>} />
-        
+
+
       </Routes>
     </>
   );

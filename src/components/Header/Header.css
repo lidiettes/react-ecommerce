@@ -85,3 +85,11 @@ margin-left: 400px;
 	
 }
 
+button{
+	text-decoration: none;
+	outline:none;
+	border: none;
+	
+    box-shadow: none;
+}
+

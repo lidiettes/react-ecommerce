@@ -20,7 +20,9 @@ const Login = () => {
     useEffect(() => {
         fetchUser()
     }, []);
-    //estado para gestionar cuando saltara navigate
+
+
+    //estado para gestionar cuando saltara navigate FUNCIONA ESTA PRUEBA?
 
     const [sendToShipping, setSendToShipping] = useState(null);
     useEffect(() => {

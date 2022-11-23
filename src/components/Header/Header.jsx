@@ -1,13 +1,14 @@
 import './Header.css';
 
 import CounterApp from '../CounterApp/CounterApp';
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import Items from '../../assets/db';
 import { useContext, useEffect } from 'react';
 import { CartContext } from '../../context/CartContext/CartContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { UserContext } from '../../context/UserContext/UserContext';
 import { OrdersContext } from '../../context/OrdersContext/OrdersContext';
+import { LoggedInContext } from '../../context/LoggedInContext/LoggedInContext';
 
 
 const Header = () => {
@@ -15,6 +16,8 @@ const Header = () => {
 	const { items, setItems } = useContext(CartContext);
 	const { user, setUser } = useContext(UserContext);
 	const {orders, setOrders}= useContext(OrdersContext);
+	const {loggedIn}=useContext(LoggedInContext);
+	const navigate= useNavigate();
 
 
 	useEffect(() => {
@@ -26,9 +29,9 @@ const Header = () => {
     }, [orders])
 
 
+const doubleWay=()=>{loggedIn ? navigate("/") : navigate("/login") }
 
-
-
+	
 
 
 	return (
@@ -46,7 +49,7 @@ const Header = () => {
 						
 							<Link to="/cart"><i className="fa fa-shopping-cart" aria-hidden="true">{items.length}</i></Link>
 							<Link to="/wishlist"><i className="fa fa-heart" aria-hidden="true"></i></Link>
-							<Link to="/login"><i className="fa fa-user" aria-hidden="true"></i> {user.name}</Link>
+							{/* <Link to={loggedIn ? navigate("/") : navigate("/login") }><i className="fa fa-user" aria-hidden="true"></i> {user.name}</Link> */}
 							
 						</div>
 

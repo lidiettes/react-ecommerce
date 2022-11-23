@@ -1,6 +1,6 @@
 import React from 'react'
 import { useContext } from 'react'
-import { Link, Navigate, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { LoggedInContext } from '../../context/LoggedInContext/LoggedInContext'
 import './ButtonCheckOut.css'
 
