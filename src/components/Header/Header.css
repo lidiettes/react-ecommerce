@@ -11,13 +11,9 @@ header {
 	display: flex;
 	align-items: baseline;
 	width: 100%;
-	/* Establecemos que el ancho sera del 90% */
 	max-width: 2150px;
-	/* Aqui le decimos que el ancho máximo sera de 1000px */
 	margin-left: 50px;
-	
 	overflow: hidden;
-	
 }
 
 header .logo {
@@ -27,7 +23,7 @@ header .logo {
 	margin-right: 100px;
 	float: left;
 	text-decoration: none;
-	color: white;
+
 
 }
 
@@ -44,7 +40,7 @@ header nav {
 header nav a {
 	display: inline;
 	justify-content: baseline;
-	color: white;
+
 	text-decoration: none;
 	padding: 5px 12px;
 	line-height: normal;
@@ -62,7 +58,7 @@ header nav a:hover {
 
 header .fa {
 	font-size: 20px;
-	color: white;
+	color: rgb(34, 27, 27);
 	
 	
 }
@@ -91,4 +87,6 @@ button{
 	border: none;
     box-shadow: none;
 }
+
+
 

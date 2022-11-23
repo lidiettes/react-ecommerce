@@ -52,7 +52,7 @@ const ShippingForm = () => {
 
     return (
         <>
-            <div className="container">
+            <div className="containerShipping">
             <Total />
                 
                 <form className="form" onSubmit={(e)=>{getAddress(e)}}>
