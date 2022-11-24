@@ -17,7 +17,7 @@
     height: 420px;
     width: 327px;
 
-    
+
 }
 
 .product-img img {
@@ -31,14 +31,14 @@
     border-radius: 0 7px 10px 7px;
     background-color: #ffffff;
 
-    
+
 }
 
 .product-text {
     height: 200px;
     width: 327px;
 
-    
+
 }
 
 .product-text h1 {
@@ -61,7 +61,7 @@
     text-transform: uppercase;
     color: #d2d2d2;
     letter-spacing: 0.2em;
-    
+
 }
 
 .product-text p {
@@ -129,52 +129,51 @@ span {
 }
 
 
-.heartButton{
-margin-left: 240px;
-justify-content: flex-end;
-text-decoration: none;
-border: none;
-background: white;
-padding: 15px;
-cursor: pointer;
-font-family: 50px;
-
-
-}
-.heartClose{
-    background-color: red;
+.heartButton {
     margin-left: 240px;
-justify-content: flex-end;
-text-decoration: none;
-border: none;
-padding: 15px;
-cursor: pointer;
-font-family: 50px;
+    justify-content: flex-end;
+    text-decoration: none;
+    border: none;
+    background: white;
+    padding: 15px;
+    cursor: pointer;
+    font-family: 50px;
+
 
 }
 
-.counterContainer{
+
+
+.counterContainer {
     margin-top: 13px;
 }
-.buttonContainer{
+
+.buttonContainer {
     height: 45px;
 }
 
-.fa.fa-heart.card{
-color:#a7a7a7;
-font-size: 35px;
-text-decoration: none;
-} 
-.fa.fa-heart.card.red{
-    color:#e86969;
+.fa.fa-heart.card {
+    color: #a7a7a7;
     font-size: 35px;
     text-decoration: none;
-} 
+    border: none;
+    
+}
+
+.fa.fa-heart.card.red {
+    color: #e86969;
+    font-size: 35px;
+   
+}
+
+
+i {
+    text-decoration: none;
+}
 
 
 
-
-.buttonMoveToBag{
+.buttonMoveToBag {
     background-color: #ebd79c;
     display: inline-block;
     height: 50px;

@@ -31,9 +31,9 @@ const ProductCard = ({ name, img, description, id, price, addToCart, handleAddWi
             )
         } else {
             return (
-                <button className='heartButton' type="submit" value='add' onClick={() => { handleAddWished(item) }}>
+                <div className='heartButton' type="submit" value='add' onClick={() => { handleAddWished(item) }}>
                     <i className="fa fa-heart card"></i>
-                </button>
+                </div>
             )
         }
     }

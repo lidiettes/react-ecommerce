@@ -2,6 +2,9 @@ import React, { useContext, useEffect } from 'react'
 import { OrdersContext } from '../../context/OrdersContext/OrdersContext';
 import { UserContext } from '../../context/UserContext/UserContext';
 
+
+const initUser = sessionStorage.getItem("user") 
+
 const Helper = () => {
 
     const {orders}= useContext(OrdersContext);

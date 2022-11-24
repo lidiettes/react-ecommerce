@@ -16,21 +16,19 @@ const Shop = () => {
   const { items, setItems } = useContext(CartContext);
   const {user, setUser} = useContext(UserContext);
 
-  const refresh = JSON.parse(sessionStorage.getItem("user"));
+  // const refresh = JSON.parse(sessionStorage.getItem("user"));
+  // useEffect(() => {
+  //   saveProduct((items));
+  // }, [items]);
 
+  // //evitar perder usuario con f5
+  // useEffect(()=>{
+  //   setUser(refresh)
+  // },[])
 
-  useEffect(() => {
-    saveProduct((items));
-  }, [items]);
-
-  //evitar perder usuario con f5
-  useEffect(()=>{
-    setUser(refresh)
-  },[])
-
-  useEffect(()=>{
-    sessionStorage.setItem("user", JSON.stringify(user))
-  },[user])
+  // useEffect(()=>{
+  //   sessionStorage.setItem("user", JSON.stringify(user))
+  // },[user])
 
 
   function addToCart(product) {
@@ -63,7 +61,6 @@ const Shop = () => {
   // wishLists
 
   const { wishes, dispatch } = useContext(WishListContext);
-  
 
   const handleAddWished = (product) => {
     const provisionalWish = wishes.find(e => e.id === product.id)

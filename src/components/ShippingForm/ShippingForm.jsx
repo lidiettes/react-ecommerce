@@ -6,10 +6,12 @@ import { UserContext } from '../../context/UserContext/UserContext';
 import Total from '../Total/Total';
 import { useNavigate } from 'react-router-dom';
 import { OrdersContext } from '../../context/OrdersContext/OrdersContext';
+import { CartContext } from '../../context/CartContext/CartContext';
 
 
 const ShippingForm = () => {
 
+    const {items, setItems} =useContext(CartContext)
     const { user, setUser } = useContext(UserContext)
     const navigate = useNavigate();
     const { orders, setOrders } = useContext(OrdersContext);
@@ -29,7 +31,8 @@ const ShippingForm = () => {
             numberCard: e.target.numberCard.value,
             nameCard: e.target.nameCard.value,
             date: e.target.date.value,
-            cvv: e.target.cvv.value
+            cvv: e.target.cvv.value,
+            products: items,
         }
 
 
@@ -44,7 +47,7 @@ const ShippingForm = () => {
             .catch(error => console.log(error));
         // setUser(newOrder); 
         setOrders(newOrder);
-
+        setItems([]);
         navigate("/thankyou");
     }
 

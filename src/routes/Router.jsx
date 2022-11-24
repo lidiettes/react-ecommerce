@@ -9,6 +9,8 @@ import Shop from '../pages/Shop';
 import Home from '../pages/Home';
 import ThankYouBye from '../pages/ThankYouBye';
 import PrivateRoutes from './PrivateRoutes';
+import MyAccount from '../pages/MyAccount';
+import MyOrders from '../pages/MyOrders';
 
 const Router = () => {
   return (
@@ -20,11 +22,12 @@ const Router = () => {
         <Route path="/cart" element = {<Cart />} />
         <Route path="/login" element = {<LoginPage />} />
         <Route path="/wishlist" element ={<WishListPage />} />
+        <Route path="/myaccount" element = { <MyAccount /> } />
+        <Route path="/myorders" element = { <MyOrders /> } />
   
         <Route path="/shippingpage" element = {<PrivateRoutes> <ShippingPage /> </PrivateRoutes>} />
         <Route path="/thankyou" element = { <PrivateRoutes> <ThankYouBye /> </PrivateRoutes>} />
-
-
+        
       </Routes>
     </>
   );

@@ -9,7 +9,6 @@ const ButtonCheckOut = () => {
     const navigate= useNavigate();
 
     const loqueyoquiera = ()=>{
-       
         loggedIn ? navigate("/shippingpage") : navigate("/login") 
     }
   return (

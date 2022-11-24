@@ -45,36 +45,11 @@
   ],
   "users": [
     {
-      "name": "Lidia",
-      "lastName": "Frias",
-      "email": "hello@lidiettes.com",
-      "password": "123456"
-    },
-    {
-      "name": "Alvaro",
-      "lastName": "Alonso",
-      "email": "alvarito13@gmail.com",
-      "password": "123456"
-    },
-    {
-      "name": "Juan",
-      "lastName": "Solano",
-      "email": "juansol@gmail.com",
-      "password": "123456"
-    },
-    {
       "id": 1668679557711,
       "name": "patata",
       "lastName": "patata",
       "email": "patata",
       "password": "patata"
-    },
-    {
-      "id": 1668899155748,
-      "name": "maria",
-      "lastName": "sanchez",
-      "email": "maria67@gmail.com",
-      "password": "1234"
     },
     {
       "id": 1668899817593,
@@ -84,117 +59,19 @@
       "password": "123"
     },
     {
-      "id": 1668900487405,
-      "name": "Ana",
-      "lastName": "Mata",
-      "email": "ana@ana.com",
-      "password": "123"
-    },
-    {
-      "id": 1668901232165,
-      "name": "",
-      "lastName": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": 1668949575280,
-      "name": "juan",
-      "lastName": "solano",
-      "email": "juan@juan.com",
-      "password": "123"
-    },
-    {
-      "id": 1668950258505,
-      "name": "",
-      "lastName": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": 1668950277389,
-      "name": "",
-      "lastName": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": 1668950284097,
-      "name": "",
-      "lastName": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": 1668965392605,
-      "name": "Sonia",
-      "lastName": "Lopez",
-      "email": "juan@juan.com",
-      "password": "123"
-    },
-    {
-      "id": 1668966229382,
-      "name": "juan",
-      "lastName": "patata",
-      "email": "juan@juan.com",
-      "password": "123"
-    },
-    {
-      "id": 1668966357363,
-      "name": "patata",
-      "lastName": "patata",
-      "email": "patata@patata.com",
-      "password": "123"
-    },
-    {
       "id": 1669106945336,
       "name": "juan",
-      "lastName": "juan",
-      "email": "juan",
+      "lastName": "Solano",
+      "email": "juan@juan.com",
       "password": "juan"
-    },
-    {
-      "id": 1669130938298,
-      "name": "ana",
-      "lastName": "gonzalez",
-      "email": "ana@ana.com",
-      "password": "123"
     }
   ],
   "orders": [
     {
-      "id": 1669131154604,
-      "idUser": 1668900487405,
-      "name": "Ana",
-      "lastName": "Mata",
-      "address": "",
-      "country": "",
-      "zipcode": "",
-      "city": "",
-      "numberCard": "",
-      "nameCard": "",
-      "date": "",
-      "cvv": ""
-    },
-    {
-      "id": 1669132057845,
+      "id": 1669289686692,
       "idUser": 1668679557711,
       "name": "patata",
       "lastName": "patata",
-      "address": "d",
-      "country": "España",
-      "zipcode": "41003",
-      "city": "Sevilla",
-      "numberCard": "",
-      "nameCard": "",
-      "date": "",
-      "cvv": ""
-    },
-    {
-      "id": 1669132135865,
-      "idUser": 1668900487405,
-      "name": "Ana",
-      "lastName": "Mata",
       "address": "",
       "country": "",
       "zipcode": "",
@@ -202,7 +79,99 @@
       "numberCard": "",
       "nameCard": "",
       "date": "",
-      "cvv": ""
+      "cvv": "",
+      "products": [
+        {
+          "id": 1,
+          "name": "Pendant Lamp",
+          "price": 350,
+          "img": "/img/img01.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Shuffle Table MH1",
+          "price": 557,
+          "img": "/img/img02.jpeg",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1669292228918,
+      "idUser": 1669106945336,
+      "name": "juan",
+      "lastName": "juan",
+      "address": "",
+      "country": "",
+      "zipcode": "",
+      "city": "",
+      "numberCard": "",
+      "nameCard": "",
+      "date": "",
+      "cvv": "",
+      "products": [
+        {
+          "id": 1,
+          "name": "Pendant Lamp",
+          "price": 350,
+          "img": "/img/img01.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Shuffle Table MH1",
+          "price": 557,
+          "img": "/img/img02.jpeg",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1669292275979,
+      "idUser": 1669106945336,
+      "name": "juan",
+      "lastName": "juan",
+      "address": "",
+      "country": "",
+      "zipcode": "",
+      "city": "",
+      "numberCard": "",
+      "nameCard": "",
+      "date": "",
+      "cvv": "",
+      "products": [
+        {
+          "id": 1,
+          "name": "Pendant Lamp",
+          "price": 350,
+          "img": "/img/img01.jpeg",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1669293238003,
+      "idUser": 1669106945336,
+      "name": "juan",
+      "lastName": "juan",
+      "address": "",
+      "country": "",
+      "zipcode": "",
+      "city": "",
+      "numberCard": "",
+      "nameCard": "",
+      "date": "",
+      "cvv": "",
+      "products": [
+        {
+          "id": 1,
+          "name": "Pendant Lamp",
+          "price": 350,
+          "img": "/img/img01.jpeg",
+          "quantity": 1
+        }
+      ]
     }
   ]
 }

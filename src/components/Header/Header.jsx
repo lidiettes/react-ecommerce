@@ -16,18 +16,25 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Header = () => {
 
 	const { items } = useContext(CartContext);
-	const { user } = useContext(UserContext);
+	const { user, setUser } = useContext(UserContext);
 
-	const { loggedIn } = useContext(LoggedInContext);
+	const { loggedIn, setLoggedIn } = useContext(LoggedInContext);
 	const navigate = useNavigate();
 
 
 	const doubleWay = () => {
 		console.log(loggedIn);
-		loggedIn ? navigate("/") : navigate("/login");
+		loggedIn ? navigate("/myaccount") : navigate("/login");
 	}
 
+	const logOut = () => {
+        const deleteUser = localStorage.removeItem('user');
+		setUser(deleteUser);
+		setLoggedIn(false);
+		
+    }
 
+	
 
 	return (
 		<>
@@ -44,20 +51,21 @@ const Header = () => {
 							<div className='iconsHeader'>
 								<Link to="/cart"><i className="fa fa-shopping-cart" aria-hidden="true">{items.length}</i></Link>
 								<Link to="/wishlist"><i className="fa fa-heart" aria-hidden="true"></i></Link>
-								<a><div onClick={doubleWay}><i className="fa fa-user" aria-hidden="true"></i> {user.name}</div></a>
+								<div onClick={doubleWay}><i className="fa fa-user" aria-hidden="true"></i> </div>
 							</div>
 
 
-							<NavDropdown title={user.name} id="basic-nav-dropdown">
-
-								<NavDropdown.Item href="/user">My account</NavDropdown.Item>
-								<NavDropdown.Item href="/order">
+							<NavDropdown title={loggedIn? user.name : null} id="basic-nav-dropdown">
+								<NavDropdown.Item href="/myaccount">My account</NavDropdown.Item>
+								<NavDropdown.Item href="/myorders">
 									My orders
 								</NavDropdown.Item>
 								<NavDropdown.Item href="/Something">Something</NavDropdown.Item>
 								<NavDropdown.Divider />
-								<NavDropdown.Item href="#action/3.4">
+								<NavDropdown.Item>
+									<div onClick={logOut}>
 									Log out
+									</div>
 								</NavDropdown.Item>
 							</NavDropdown>
 						</Nav>

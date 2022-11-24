@@ -5,8 +5,6 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import GeneralProvider from "./context/GeneralContext.jsx/GeneralProvider";
 import Helper from "./components/Helper/Helper";
-import Dropdown from "./components/Dropdown/Dropdown";
-
 
 
 

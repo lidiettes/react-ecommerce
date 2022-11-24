@@ -84,7 +84,6 @@ const Login = () => {
             .then(data => console.log(data))
             .catch(error => console.log(error));
         setUser(newUser);
-        
         setLoggedIn(true); // login the new user
         navigate("/shippingPage");
     }

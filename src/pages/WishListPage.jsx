@@ -2,6 +2,7 @@ import React from 'react'
 import { useContext } from 'react';
 import { useEffect } from 'react';
 import Login from '../components/Login/Login';
+import Title from '../components/Title/Title';
 import WishList from '../components/WishList/WishList'
 import { CartContext } from '../context/CartContext/CartContext';
 import { WishListContext } from '../context/WishListContext/WishListContext';
@@ -49,13 +50,14 @@ const WishListPage = () => {
     dispatch(action);
   }
 
-
     useEffect(() => {
       localStorage.setItem("items", JSON.stringify(items));
     }, [items]);
 
     return (
       <>
+        
+        <Title />
         <h2>Saved Items</h2>
         <div className="WishListContainer"  >
 
