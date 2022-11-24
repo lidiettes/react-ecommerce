@@ -15,6 +15,7 @@ const Shop = () => {
 
   const { items, setItems } = useContext(CartContext);
   const {user, setUser} = useContext(UserContext);
+  console.log(user);
 
   // const refresh = JSON.parse(sessionStorage.getItem("user"));
   // useEffect(() => {

@@ -117,8 +117,6 @@ const Login = () => {
                     <a href="#" className="social-links"><i className="fa-brands fa-facebook-f"></i></a>
                     <a href="#" className="social-links"><i className="fa-brands fa-twitter"></i></a>
                 </div> */}
-
-
             </div>
 
 
