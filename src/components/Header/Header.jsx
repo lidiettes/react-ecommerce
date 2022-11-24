@@ -17,7 +17,6 @@ const Header = () => {
 
 	const { items } = useContext(CartContext);
 	const { user, setUser } = useContext(UserContext);
-
 	const { loggedIn, setLoggedIn } = useContext(LoggedInContext);
 	const navigate = useNavigate();
 
@@ -31,7 +30,7 @@ const Header = () => {
         const deleteUser = localStorage.removeItem('user');
 		setUser(deleteUser);
 		setLoggedIn(false);
-		
+		navigate("/")
     }
 
 	
@@ -55,7 +54,7 @@ const Header = () => {
 							</div>
 
 
-							<NavDropdown title={loggedIn? user.name : null} id="basic-nav-dropdown">
+							<NavDropdown title={ user ? user.name : "User"} id="basic-nav-dropdown">
 								<NavDropdown.Item href="/myaccount">My account</NavDropdown.Item>
 								<NavDropdown.Item href="/myorders">
 									My orders

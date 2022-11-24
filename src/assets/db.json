@@ -23,23 +23,23 @@
     },
     {
       "id": 4,
-      "name": "Pendant Lamp",
-      "price": 350,
-      "img": "/img/img01.jpeg",
-      "description": "Flowerpot VP9 Table Lamp Mustard is a portable version of Verner Pantons popular Flowerpot table lamp."
+      "name": "Lato",
+      "price": 250,
+      "img": "/img/img04.jpeg",
+      "description": "At first glance, Lato resembles a sculpture, with its slim, oval or round table top balanced by an oval-shaped base. Striking, graphic and poetic, its purity of form is proof that simple is sophisticated. With Lato, Nichetto wanted to keep the simplicity and streamline into a timeless side table in a style that could easily be the centre of attention."
     },
     {
       "id": 5,
-      "name": "Shuffle Table MH1",
-      "price": 557,
-      "img": "/img/img02.jpeg",
-      "description": "Shuffle MH1 designed by Mia Hamborg for &Tradition is a coffee table realized with lacquered MDF and solid oak or marble. Shuffle Table has size, shape, colour, and height variable and individually selectable, according to the Scandinavian model. Available in two finishes."
+      "name": "Capture",
+      "price": 157,
+      "img": "/img/img05.jpeg",
+      "description": "Designed to be used alone or in a set, the highly adaptable Capture coat hooks provide a range of solutions around the home. Also featuring swinging hooks, this piece can be used in the bathroom or kitchen as a handy place to hang towels, or in the entrance hall for coats and bags."
     },
     {
       "id": 6,
-      "name": "Tripod HM9",
-      "price": 366,
-      "img": "/img/img03.jpeg",
+      "name": "Inland",
+      "price": 44599,
+      "img": "/img/img06.jpeg",
       "description": "After the success of its floor lamp, &Tradition has expanded the Tripod series to include a table lamp with the same timeless design. Tripod, a table lamp built from powder-coated steel with brass details, reflects the clean minimalism of historic Copenhagen-based duo Hvidt & Mølgaard. Considered Old Masters of mid-century Danish design, their pieces often lend a sculptural element to the spaces they inhabit. This scaled-down table lamp version is available in three colours: Black, Maroon, and Moss."
     }
   ],
@@ -200,6 +200,59 @@
           "price": 557,
           "img": "/img/img02.jpeg",
           "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1669325887396,
+      "idUser": 1669106945336,
+      "name": "juan",
+      "lastName": "Solano",
+      "address": "",
+      "country": "",
+      "zipcode": "",
+      "city": "",
+      "numberCard": "",
+      "nameCard": "",
+      "date": "",
+      "cvv": "",
+      "products": [
+        {
+          "id": 1,
+          "name": "Pendant Lamp",
+          "price": 350,
+          "img": "/img/img01.jpeg",
+          "quantity": 1
+        },
+        {
+          "id": 4,
+          "name": "Pendant Lamp",
+          "price": 350,
+          "img": "/img/img01.jpeg",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1669326995192,
+      "idUser": 1669106945336,
+      "name": "juan",
+      "lastName": "Solano",
+      "address": "",
+      "country": "",
+      "zipcode": "",
+      "city": "",
+      "numberCard": "",
+      "nameCard": "",
+      "date": "",
+      "cvv": "",
+      "products": [
+        {
+          "id": 1,
+          "name": "Pendant Lamp",
+          "price": 350,
+          "img": "/img/img01.jpeg",
+          "quantity": 2
         }
       ]
     }

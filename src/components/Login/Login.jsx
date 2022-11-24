@@ -110,7 +110,7 @@ const Login = () => {
                     <input type="text" placeholder="lastName" name="lastName" className="lastName" />
                     <input type="text" placeholder="email" name="email" className="email" />
                     <input type="password" placeholder="password" name="password" className="passwd" />
-                    <button href="#" type="submit" className="btn btn-primary">Sign in</button>
+                    <button href="#" type="submit" className="btn btn-primary">Register</button>
                 </form>
                 {/* <div className="social">
                     <p>Or sign in with... </p>
