@@ -19,6 +19,12 @@ const ShippingForm = () => {
     const getAddress = (e) => {
         e.preventDefault();
 
+        const date = new Date();
+        let day = date.getDate();
+        let month = date.getMonth()+ 1;
+        let year = date.getFullYear();
+        let currentDate = `${day}-${month}-${year}`;
+
         const newOrder = {
             id: new Date().getTime(),
             idUser: user.id,
@@ -32,9 +38,10 @@ const ShippingForm = () => {
             nameCard: e.target.nameCard.value,
             date: e.target.date.value,
             cvv: e.target.cvv.value,
+            dateOrder: currentDate,
             products: items,
         }
-
+console.log(newOrder)
 
         fetch("http://localhost:3000/orders", {
             method: "POST",

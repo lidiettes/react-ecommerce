@@ -27,40 +27,61 @@ const MyOrders = () => {
 
 
 
+    const repeatOrder= (id)=>{
+        const personalOrders = orders.filter(o => o.idUser == user.id);
+        console.log(personalOrders)
+
+    }
+
+
+
+
+
+
+
+
+
+    
     return (
         <>
             <Title />
             <div className="containerOrders">
-            {
-                personalOrders.length > 0 ?
-                    (personalOrders.map((order, i) => {
-                        return (
-                            <div key={order.id}>
-                                <div className="orderTitle"> <h3 className="h3Orders">Order: {order.id} </h3></div>
-                                <div> {
-                                    (order.products).map((o) => {
-                                        return (
-                                            
-                                            <div className="containerProductCart" key={o.id}>
-                                                <img className="imgProductCart" src={o.img} />
-                                                <div className="infoProductCart">{o.name}</div>
-                                                <div className="infoProductCart">Quantity:{o.quantity}</div>
-                                            </div>
+                {
+                    personalOrders.length > 0 ?
+                        (personalOrders.map((order, i) => {
+                            return (
+                                <div key={order.id}>
+                                    <div className="orderTitle">
+                                        <div className="h3Orders">Order: {order.id} </div>
+                                        <div className="h3Orders date">Date of order: {order.dateOrder}</div>
+                                    </div>
+                                    <div> {
+                                        (order.products).map((o) => {
+                                            return (
+
+                                                <div className="containerProductCart" key={o.id}>
+                                                    <img className="imgProductCart" src={o.img} />
+                                                    <div className="infoProductCart">{o.name}</div>
+                                                    <div className="infoProductCart">Quantity:{o.quantity}</div>
+                                                </div>
+                                            )
+                                        }
                                         )
+
                                     }
-                                    )
+                                    </div>
+                                    <button onClick={repeatOrder}>hola</button>
 
-                                } 
+
                                 </div>
+                            )
+                        }
+                        ))
+                        : <p>"No orders"</p>
+                }
+            </div>
 
 
-                            </div>
-                        )
-                    }
-                    ))
-                    : <p>"No orders"</p>
-            }
-        </div>
         </>
     )
 

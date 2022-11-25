@@ -57,26 +57,31 @@ color: rgb(71, 72, 72);
 }
 
 .orderTitle{
-  margin-top: 20px;
+  margin-top: 25px;
   background-color: rgb(249, 228, 185);
   margin-left: 40px;
-  
-  height: 30px;
+  margin-right: 40px;
+  height: 65px;
   width: 800px;
-  align-content: space-between;
-  border-radius: 10px;
+  border-radius: 4px;
   
-}
-
-.mainTitle{
-  width: 100vw;
-  width: 100px;
-  margin-left: 50px;
-  margin-right: 50px;
-  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
 }
 
 .h3Orders{
   margin-left: 10px;
+  margin-right: 30px;
   
+}
+
+
+.mainTitle{
+  width: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-transform: uppercase;
+  display: flex;
 }

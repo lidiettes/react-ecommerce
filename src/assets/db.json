@@ -73,56 +73,76 @@
     }
   ],
   "orders": [
-    {},
     {
-      "id": 1669386208252,
+      "id": 1669397463783,
       "idUser": 1668899817593,
       "name": "alvaro",
       "lastName": "Alonso",
-      "address": "real 67",
-      "country": "spain",
-      "zipcode": "23442",
-      "city": "Granada",
-      "numberCard": "2352525252525252",
+      "address": "",
+      "country": "",
+      "zipcode": "",
+      "city": "",
+      "numberCard": "",
       "nameCard": "",
-      "date": "2022-11-22",
-      "cvv": "234",
-      "products": [
-        {
-          "id": 4,
-          "name": "Lato",
-          "price": 250,
-          "img": "/img/img04.jpeg",
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": 1669387015597,
-      "idUser": 1668899817593,
-      "name": "alvaro",
-      "lastName": "Alonso",
-      "address": "real 78",
-      "country": "spain",
-      "zipcode": "42543",
-      "city": "Granada",
-      "numberCard": "325235235253252",
-      "nameCard": "Alvaro Alonso",
-      "date": "2022-11-18",
-      "cvv": "566",
+      "date": "",
+      "cvv": "",
+      "dateOrder": "25-11-2022",
       "products": [
         {
           "id": 1,
+          "designer": "Verner Panton",
           "name": "Pendant Lamp",
           "price": 350,
           "img": "/img/img01.jpeg",
           "quantity": 1
         },
         {
+          "id": 4,
+          "designer": "Luca Nichetto",
+          "name": "Lato",
+          "price": 250,
+          "img": "/img/img04.jpeg",
+          "quantity": 1
+        },
+        {
           "id": 5,
+          "designer": "Space Copenhagen 2022",
           "name": "Capture",
           "price": 157,
           "img": "/img/img05.jpeg",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1669399511025,
+      "idUser": 1668899817593,
+      "name": "alvaro",
+      "lastName": "Alonso",
+      "address": "",
+      "country": "",
+      "zipcode": "",
+      "city": "",
+      "numberCard": "",
+      "nameCard": "",
+      "date": "",
+      "cvv": "",
+      "dateOrder": "25-11-2022",
+      "products": [
+        {
+          "id": 1,
+          "designer": "Verner Panton",
+          "name": "Pendant Lamp",
+          "price": 350,
+          "img": "/img/img01.jpeg",
+          "quantity": 2
+        },
+        {
+          "id": 2,
+          "designer": "Mia Hamborg",
+          "name": "Shuffle Table MH1",
+          "price": 557,
+          "img": "/img/img02.jpeg",
           "quantity": 1
         }
       ]
