@@ -1,4 +1,4 @@
-.form-group {
+.form-group.profile{
     margin-top: 20px;
     
     width: 100%;
@@ -10,7 +10,7 @@
     background: #fff;
     justify-items: center;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 19px 38px, rgba(0, 0, 0, 0.1) 0px 5px 5px;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 19px 38px, rgba(0, 0, 0, 0.1) 0px 5px 5px; */
 }
 
 
@@ -25,8 +25,9 @@
 .form-group>input {
     padding: 0.7rem 0.1rem;
     margin-bottom: 0.9rem;
-    border: none;
-    width: 100%;
+    background: rgb(243, 238, 238);
+    width: 90%;
+    border:none;
 }
 
 .form-group>input:focus {
@@ -49,7 +50,7 @@
     margin-bottom: 1rem;
 }
 
-.btn-primary {
+.btn-primary.profile {
     background-color: #ebd79c;
     display: inline-block;
     height: 30px;
@@ -69,7 +70,7 @@
     outline: none;
 }
 
-.btn-primary:hover {
+.btn-primary.profile:hover {
     background: #fff;
     color: #559ee3;
     border: 1px solid #1465d5;

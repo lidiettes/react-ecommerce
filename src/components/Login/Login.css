@@ -16,12 +16,7 @@
 }
 
 .wrapper {
-    
-
-  
-
-   margin: 0 auto;
-   
+    margin: 0 auto;
     width: 35rem;
     padding: 2.1rem 2rem;
     border-radius: 0.7rem;
@@ -67,7 +62,7 @@
     color: #fff;
 }
 
-.form-group {
+.form-group-login {
     margin-top: 20px;
     
     width: 100%;
@@ -82,25 +77,25 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 19px 38px, rgba(0, 0, 0, 0.1) 0px 5px 5px;
 }
 
-.form-group p {
+.form-group-login p {
     font-size: 0.9rem;
     opacity: 0.9;
     color: #212121;
     margin-bottom: 0.6rem;
 }
 
-.form-group>input {
+.form-group-login>input {
     padding: 0.7rem 0.1rem;
     margin-bottom: 0.9rem;
     border: none;
     width: 100%;
 }
 
-.form-group>input:focus {
+.form-group-login>input:focus {
     background: #eee;
 }
 
-.form-group> ::placeholder {
+.form-group-login> ::placeholder {
     background: #eeeeee;
     padding: 0.7rem 0.2rem;
     text-transform: capitalize;

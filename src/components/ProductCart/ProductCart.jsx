@@ -22,7 +22,9 @@ const ProductCart = ({removeCart,addToCart }) => {
                                 <img className="imgProductCart" src={item.img} alt={item.name} />
                                 <div className="infoProductCart">{item.name}  {item.price} €
                                     
-                                    <button className="buttonDelete" type="submit" value='add' onClick={() => { removeCart(item.id) }} ><i className="fa fa-trash" aria-hidden="true"></i></button>
+                                    <button className="buttonDelete" type="submit" value='add
+                                    
+                                    ' onClick={() => { removeCart(item.id) }} ><i className="fa fa-trash" aria-hidden="true"></i></button>
                                     <div className='counterContainer'>  
                                     <CounterApp 
                                     item={item}

@@ -43,6 +43,7 @@ const ProductsContainer = ({ addToCart, stock, handleAddWished }) => {
                         <ProductCard
                             key={item.id}
                             id={item.id}
+                            designer = {item.designer}
                             name={item.name}
                             description={item.description}
                             price={item.price}

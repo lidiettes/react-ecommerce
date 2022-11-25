@@ -18,7 +18,7 @@ const editForm = (e)=>{
     }
 
 
-    fetch("http://localhost:3000/users", {
+    fetch(`http://localhost:3000/users/${user.id}`, {
         method: "PUT",
         headers: {
             'Content-Type': 'application/json'
@@ -36,13 +36,13 @@ const editForm = (e)=>{
     return (
         
 
-        <form onSubmit={editForm} action="#" className="form-group">
+        <form onSubmit={editForm} action="#" className="form-group profile">
             
             <input type="text" placeholder="name" name="name" className="name" defaultValue={ user.name } />
             <input type="text" placeholder="lastName" name="lastName" className="lastName" defaultValue={ user.lastName }/>
             <input type="text" placeholder="email" name="email" className="email" defaultValue={ user.email }/>
             <input type="password" placeholder="password" name="password" className="passwd" defaultValue={ user.password } />
-            <button href="#" type="submit" className="btn btn-primary">Edit</button>
+            <button href="#" type="submit" className="btn btn-primary profile">Edit</button>
         </form>
 
         

@@ -4,7 +4,8 @@ import { useContext } from 'react'
 import toast from 'react-hot-toast';
 import ButtonCheckOut from '../components/ButtonCheckOut/ButtonCheckOut';
 import CartNav from '../components/CartNav/CartNav'
-import Title from '../components/Title/Title';
+
+import TitleCart from '../components/TitleCart/TitleCart';
 import { CartContext } from '../context/CartContext/CartContext';
 
 const Cart = () => {
@@ -39,7 +40,7 @@ const Cart = () => {
 
     return (
         <>
-            <Title />
+            <TitleCart />
             <CartNav
                 items={items}
                 removeCart={removeCart}

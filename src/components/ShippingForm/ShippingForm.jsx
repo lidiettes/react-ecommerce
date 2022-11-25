@@ -46,10 +46,11 @@ const ShippingForm = () => {
             .then(data => console.log(data))
             .catch(error => console.log(error));
         // setUser(newOrder); 
-        setOrders(newOrder);
+        setOrders(...orders, newOrder);
         setItems([]);
         navigate("/thankyou");
     }
+    console.log(orders)
 
     // }
 

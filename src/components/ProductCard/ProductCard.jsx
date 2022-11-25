@@ -7,12 +7,13 @@ import { WishListContext } from '../../context/WishListContext/WishListContext';
 
 // import * as photos from '../../img/index';
 
-const ProductCard = ({ name, img, description, id, price, addToCart, handleAddWished }) => {
+const ProductCard = ({ designer, name, img, description, id, price, addToCart, handleAddWished }) => {
 
     const { wishes } = useContext(WishListContext);
 
     const item = {
         id: id,
+        designer: designer,
         name: name,
         price: price,
         img: img
@@ -60,7 +61,7 @@ const ProductCard = ({ name, img, description, id, price, addToCart, handleAddWi
                     </div>
                     <div className="product-text">
                         <h1>{name}</h1>
-                        <h2>by Verner Panton</h2>
+                        <h2>by {designer}</h2>
                         <p>{description} </p>
                     </div>
 

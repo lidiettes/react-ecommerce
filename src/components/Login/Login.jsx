@@ -57,10 +57,6 @@ const Login = () => {
             console.log("credenciales no validas");
         }
     }
-    //botón pendiente de crear
-    const logOut = () => {
-        localStorage.removeItem('user')
-    }
 
     //REGISTER
 
@@ -95,7 +91,7 @@ const Login = () => {
                 <div className="heading">
                     <p></p>
                 </div>
-                <form onSubmit={getDataForm} className="form-group">
+                <form onSubmit={getDataForm} className="form-group-login">
                     <p className="account-heading">Sign in </p>
                     <input type="text" placeholder="email" id="email" name="email" className="email" />
                     <input type="password" placeholder="password" id="password" name="password" className="passwd" />
@@ -103,7 +99,7 @@ const Login = () => {
                     <button href="#" type="submit" className="btn btn-primary">Sign in</button>
                 </form>
 
-                <form onSubmit={getUserRegister} action="#" className="form-group">
+                <form onSubmit={getUserRegister} action="#" className="form-group-login">
                     <br />
                     <p>Register                 </p>
                     <input type="text" placeholder="name" name="name" className="name" />

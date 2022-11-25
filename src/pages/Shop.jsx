@@ -4,11 +4,12 @@ import getData from '../api/api';
 import ProductsContainer from '../components/ProductsContainer/ProductsContainer'
 import { CartContext } from '../context/CartContext/CartContext';
 import { WishListContext } from '../context/WishListContext/WishListContext';
-import toast, { Toaster } from 'react-hot-toast';
-import { notify, saveProduct } from '../helpers/functions';
-import Title from '../components/Title/Title';
+import toast from 'react-hot-toast';
+import { notify } from '../helpers/functions';
+
 
 import { UserContext } from '../context/UserContext/UserContext';
+import TitleShop from '../components/TitleShop/TitleShop';
 
 
 const Shop = () => {
@@ -16,7 +17,7 @@ const Shop = () => {
   const { items, setItems } = useContext(CartContext);
   const {user, setUser} = useContext(UserContext);
   
-  
+
   function addToCart(product) {
     const index = items.find(e => e.id === product.id)
     if (index) {
@@ -85,7 +86,8 @@ const Shop = () => {
 
   return (
     <>
-      <Title />
+      <TitleShop
+      />
       <ProductsContainer
         addToCart={addToCart}
         stock={stock}

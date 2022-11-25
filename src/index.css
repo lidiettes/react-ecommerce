@@ -7,7 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: bisque;
+
 
 }
 
@@ -36,4 +36,47 @@ code {
 .pThankyou{
   margin-top: 50px;
   color: rgb(75, 71, 71);
+}
+
+/* my orders */
+.containerOrders{
+  margin-left: 30%;
+  margin-right: 30%;
+}
+.mainContainerOrder{
+  display: inline-block;
+  width: 450px;
+  height: 300px;
+  background-color: rgba(240, 240, 240, 0.846);
+-webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+-moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+border-radius: 7px 7px 7px 7px;
+margin: 10px 40px;
+color: rgb(71, 72, 72);
+}
+
+.orderTitle{
+  margin-top: 20px;
+  background-color: rgb(249, 228, 185);
+  margin-left: 40px;
+  
+  height: 30px;
+  width: 800px;
+  align-content: space-between;
+  border-radius: 10px;
+  
+}
+
+.mainTitle{
+  width: 100vw;
+  width: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-transform: uppercase;
+}
+
+.h3Orders{
+  margin-left: 10px;
+  
 }

@@ -1,8 +1,7 @@
 import React from 'react'
 import { useContext } from 'react';
 import { useEffect } from 'react';
-import Login from '../components/Login/Login';
-import Title from '../components/Title/Title';
+import TitleWishes from '../components/TitleWishes/TitleWishes';
 import WishList from '../components/WishList/WishList'
 import { CartContext } from '../context/CartContext/CartContext';
 import { WishListContext } from '../context/WishListContext/WishListContext';
@@ -57,7 +56,7 @@ const WishListPage = () => {
     return (
       <>
         
-        <Title />
+        <TitleWishes />
         <h2>Saved Items</h2>
         <div className="WishListContainer"  >
 

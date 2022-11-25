@@ -2,6 +2,7 @@
   "products": [
     {
       "id": 1,
+      "designer": "Verner Panton",
       "name": "Pendant Lamp",
       "price": 350,
       "img": "/img/img01.jpeg",
@@ -9,6 +10,7 @@
     },
     {
       "id": 2,
+      "designer": "Mia Hamborg",
       "name": "Shuffle Table MH1",
       "price": 557,
       "img": "/img/img02.jpeg",
@@ -16,13 +18,15 @@
     },
     {
       "id": 3,
-      "name": "Tripod HM9",
+      "designer": "Mia Hamborg",
+      "name": "Hvidt & Mølgaard",
       "price": 366,
       "img": "/img/img03.jpeg",
       "description": "After the success of its floor lamp, &Tradition has expanded the Tripod series to include a table lamp with the same timeless design. Tripod, a table lamp built from powder-coated steel with brass details, reflects the clean minimalism of historic Copenhagen-based duo Hvidt & Mølgaard. Considered Old Masters of mid-century Danish design, their pieces often lend a sculptural element to the spaces they inhabit. This scaled-down table lamp version is available in three colours: Black, Maroon, and Moss."
     },
     {
       "id": 4,
+      "designer": "Luca Nichetto",
       "name": "Lato",
       "price": 250,
       "img": "/img/img04.jpeg",
@@ -30,6 +34,7 @@
     },
     {
       "id": 5,
+      "designer": "Space Copenhagen 2022",
       "name": "Capture",
       "price": 157,
       "img": "/img/img05.jpeg",
@@ -37,8 +42,9 @@
     },
     {
       "id": 6,
+      "designer": "Anderssen & Voll",
       "name": "Inland",
-      "price": 44599,
+      "price": 4599,
       "img": "/img/img06.jpeg",
       "description": "After the success of its floor lamp, &Tradition has expanded the Tripod series to include a table lamp with the same timeless design. Tripod, a table lamp built from powder-coated steel with brass details, reflects the clean minimalism of historic Copenhagen-based duo Hvidt & Mølgaard. Considered Old Masters of mid-century Danish design, their pieces often lend a sculptural element to the spaces they inhabit. This scaled-down table lamp version is available in three colours: Black, Maroon, and Moss."
     }
@@ -53,41 +59,35 @@
     },
     {
       "id": 1668899817593,
-      "name": "jose",
-      "lastName": "rodriguez",
-      "email": "jose@jose.com",
-      "password": "123"
+      "name": "alvaro",
+      "lastName": "Alonso",
+      "email": "alvaro@gmail.com",
+      "password": "alvaro"
     },
     {
       "id": 1669106945336,
-      "name": "juan",
+      "name": "Juan",
       "lastName": "Solano",
-      "email": "juan@juan.com",
+      "email": "juan@gmail.com",
       "password": "juan"
     }
   ],
   "orders": [
+    {},
     {
-      "id": 1669330058300,
-      "idUser": 1669106945336,
-      "name": "juan",
-      "lastName": "Solano",
-      "address": "real 34",
-      "country": "España",
-      "zipcode": "41003",
-      "city": "malaga",
-      "numberCard": "8374374274278427842",
-      "nameCard": "juan solano",
-      "date": "2022-11-23",
-      "cvv": "123",
+      "id": 1669386208252,
+      "idUser": 1668899817593,
+      "name": "alvaro",
+      "lastName": "Alonso",
+      "address": "real 67",
+      "country": "spain",
+      "zipcode": "23442",
+      "city": "Granada",
+      "numberCard": "2352525252525252",
+      "nameCard": "",
+      "date": "2022-11-22",
+      "cvv": "234",
       "products": [
-        {
-          "id": 1,
-          "name": "Pendant Lamp",
-          "price": 350,
-          "img": "/img/img01.jpeg",
-          "quantity": 1
-        },
         {
           "id": 4,
           "name": "Lato",
@@ -98,41 +98,18 @@
       ]
     },
     {
-      "id": 1669331218428,
-      "idUser": 1669106945336,
-      "name": "juan",
-      "lastName": "Solano",
-      "address": "",
-      "country": "",
-      "zipcode": "",
-      "city": "",
-      "numberCard": "",
-      "nameCard": "",
-      "date": "",
-      "cvv": "",
-      "products": [
-        {
-          "id": 1,
-          "name": "Pendant Lamp",
-          "price": 350,
-          "img": "/img/img01.jpeg",
-          "quantity": 2
-        }
-      ]
-    },
-    {
-      "id": 1669332360567,
-      "idUser": 1669106945336,
-      "name": "juan",
-      "lastName": "Solano",
-      "address": "",
-      "country": "",
-      "zipcode": "",
-      "city": "",
-      "numberCard": "",
-      "nameCard": "",
-      "date": "",
-      "cvv": "",
+      "id": 1669387015597,
+      "idUser": 1668899817593,
+      "name": "alvaro",
+      "lastName": "Alonso",
+      "address": "real 78",
+      "country": "spain",
+      "zipcode": "42543",
+      "city": "Granada",
+      "numberCard": "325235235253252",
+      "nameCard": "Alvaro Alonso",
+      "date": "2022-11-18",
+      "cvv": "566",
       "products": [
         {
           "id": 1,
@@ -142,17 +119,10 @@
           "quantity": 1
         },
         {
-          "id": 4,
-          "name": "Lato",
-          "price": 250,
-          "img": "/img/img04.jpeg",
-          "quantity": 1
-        },
-        {
-          "id": 6,
-          "name": "Inland",
-          "price": 44599,
-          "img": "/img/img06.jpeg",
+          "id": 5,
+          "name": "Capture",
+          "price": 157,
+          "img": "/img/img05.jpeg",
           "quantity": 1
         }
       ]
