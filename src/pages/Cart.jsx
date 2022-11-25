@@ -7,8 +7,6 @@ import CartNav from '../components/CartNav/CartNav'
 import Title from '../components/Title/Title';
 import { CartContext } from '../context/CartContext/CartContext';
 
-
-
 const Cart = () => {
 
     //stock de carrito
@@ -45,7 +43,6 @@ const Cart = () => {
             <CartNav
                 items={items}
                 removeCart={removeCart}
-                // getTotal={getTotal}
                 addToCart={addToCart}
             />
             <ButtonCheckOut />

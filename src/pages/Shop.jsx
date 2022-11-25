@@ -15,23 +15,8 @@ const Shop = () => {
 
   const { items, setItems } = useContext(CartContext);
   const {user, setUser} = useContext(UserContext);
-  console.log(user);
-
-  // const refresh = JSON.parse(sessionStorage.getItem("user"));
-  // useEffect(() => {
-  //   saveProduct((items));
-  // }, [items]);
-
-  // //evitar perder usuario con f5
-  // useEffect(()=>{
-  //   setUser(refresh)
-  // },[])
-
-  // useEffect(()=>{
-  //   sessionStorage.setItem("user", JSON.stringify(user))
-  // },[user])
-
-
+  
+  
   function addToCart(product) {
     const index = items.find(e => e.id === product.id)
     if (index) {

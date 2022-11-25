@@ -68,18 +68,18 @@
   ],
   "orders": [
     {
-      "id": 1669289686692,
-      "idUser": 1668679557711,
-      "name": "patata",
-      "lastName": "patata",
-      "address": "",
-      "country": "",
-      "zipcode": "",
-      "city": "",
-      "numberCard": "",
-      "nameCard": "",
-      "date": "",
-      "cvv": "",
+      "id": 1669330058300,
+      "idUser": 1669106945336,
+      "name": "juan",
+      "lastName": "Solano",
+      "address": "real 34",
+      "country": "España",
+      "zipcode": "41003",
+      "city": "malaga",
+      "numberCard": "8374374274278427842",
+      "nameCard": "juan solano",
+      "date": "2022-11-23",
+      "cvv": "123",
       "products": [
         {
           "id": 1,
@@ -89,19 +89,19 @@
           "quantity": 1
         },
         {
-          "id": 2,
-          "name": "Shuffle Table MH1",
-          "price": 557,
-          "img": "/img/img02.jpeg",
+          "id": 4,
+          "name": "Lato",
+          "price": 250,
+          "img": "/img/img04.jpeg",
           "quantity": 1
         }
       ]
     },
     {
-      "id": 1669292228918,
+      "id": 1669331218428,
       "idUser": 1669106945336,
       "name": "juan",
-      "lastName": "juan",
+      "lastName": "Solano",
       "address": "",
       "country": "",
       "zipcode": "",
@@ -116,95 +116,12 @@
           "name": "Pendant Lamp",
           "price": 350,
           "img": "/img/img01.jpeg",
-          "quantity": 1
-        },
-        {
-          "id": 2,
-          "name": "Shuffle Table MH1",
-          "price": 557,
-          "img": "/img/img02.jpeg",
-          "quantity": 1
+          "quantity": 2
         }
       ]
     },
     {
-      "id": 1669292275979,
-      "idUser": 1669106945336,
-      "name": "juan",
-      "lastName": "juan",
-      "address": "",
-      "country": "",
-      "zipcode": "",
-      "city": "",
-      "numberCard": "",
-      "nameCard": "",
-      "date": "",
-      "cvv": "",
-      "products": [
-        {
-          "id": 1,
-          "name": "Pendant Lamp",
-          "price": 350,
-          "img": "/img/img01.jpeg",
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": 1669293238003,
-      "idUser": 1669106945336,
-      "name": "juan",
-      "lastName": "juan",
-      "address": "",
-      "country": "",
-      "zipcode": "",
-      "city": "",
-      "numberCard": "",
-      "nameCard": "",
-      "date": "",
-      "cvv": "",
-      "products": [
-        {
-          "id": 1,
-          "name": "Pendant Lamp",
-          "price": 350,
-          "img": "/img/img01.jpeg",
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": 1669306130348,
-      "idUser": 1668679557711,
-      "name": "patata",
-      "lastName": "patata",
-      "address": "",
-      "country": "",
-      "zipcode": "",
-      "city": "",
-      "numberCard": "",
-      "nameCard": "",
-      "date": "",
-      "cvv": "",
-      "products": [
-        {
-          "id": 1,
-          "name": "Pendant Lamp",
-          "price": 350,
-          "img": "/img/img01.jpeg",
-          "quantity": 1
-        },
-        {
-          "id": 2,
-          "name": "Shuffle Table MH1",
-          "price": 557,
-          "img": "/img/img02.jpeg",
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": 1669325887396,
+      "id": 1669332360567,
       "idUser": 1669106945336,
       "name": "juan",
       "lastName": "Solano",
@@ -226,33 +143,17 @@
         },
         {
           "id": 4,
-          "name": "Pendant Lamp",
-          "price": 350,
-          "img": "/img/img01.jpeg",
+          "name": "Lato",
+          "price": 250,
+          "img": "/img/img04.jpeg",
           "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": 1669326995192,
-      "idUser": 1669106945336,
-      "name": "juan",
-      "lastName": "Solano",
-      "address": "",
-      "country": "",
-      "zipcode": "",
-      "city": "",
-      "numberCard": "",
-      "nameCard": "",
-      "date": "",
-      "cvv": "",
-      "products": [
+        },
         {
-          "id": 1,
-          "name": "Pendant Lamp",
-          "price": 350,
-          "img": "/img/img01.jpeg",
-          "quantity": 2
+          "id": 6,
+          "name": "Inland",
+          "price": 44599,
+          "img": "/img/img06.jpeg",
+          "quantity": 1
         }
       ]
     }

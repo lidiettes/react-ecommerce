@@ -7,18 +7,42 @@ const Profile = () => {
 
     const {user, setUser}= useContext(UserContext);
 
-   console.log(user.name);
+const editForm = (e)=>{
+
+    const editUser = {
+        id: user.id,
+        name: e.target.name.value,
+        lastName: e.target.lastName.value,
+        email: e.target.email.value,
+        password: e.target.password.value
+    }
+
+
+    fetch("http://localhost:3000/users", {
+        method: "PUT",
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(editUser)
+        })  
+        .then(res => res.json())
+        .then(data => console.log(data))
+        .catch(error => console.log(error));
+        console.log(editUser);
+        setUser(editUser);
+}
+   
 
     return (
         
 
-        <form action="#" className="form-group">
+        <form onSubmit={editForm} action="#" className="form-group">
             
             <input type="text" placeholder="name" name="name" className="name" defaultValue={ user.name } />
             <input type="text" placeholder="lastName" name="lastName" className="lastName" defaultValue={ user.lastName }/>
             <input type="text" placeholder="email" name="email" className="email" defaultValue={ user.email }/>
             <input type="password" placeholder="password" name="password" className="passwd" defaultValue={ user.password } />
-            <button href="#" type="submit" className="btn btn-primary">Sign in</button>
+            <button href="#" type="submit" className="btn btn-primary">Edit</button>
         </form>
 
         

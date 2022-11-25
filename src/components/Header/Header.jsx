@@ -22,13 +22,15 @@ const Header = () => {
 
 
 	const doubleWay = () => {
-		console.log(loggedIn);
-		loggedIn ? navigate("/myaccount") : navigate("/login");
+		console.log(user);
+		user ? navigate("/myaccount") : navigate("/login");
 	}
 
 	const logOut = () => {
-        const deleteUser = localStorage.removeItem('user');
-		setUser(deleteUser);
+		//esto de abajo da usuario undefi
+        // const deleteUser = localStorage.removeItem('user');
+		//pongo abajo unos corchetes vacios y lo soluciono, ya no sale undefined
+		setUser(false);
 		setLoggedIn(false);
 		navigate("/")
     }
@@ -53,8 +55,9 @@ const Header = () => {
 								<div onClick={doubleWay}><i className="fa fa-user" aria-hidden="true"></i> </div>
 							</div>
 
-
-							<NavDropdown title={ user ? user.name : "User"} id="basic-nav-dropdown">
+							{ user ? (
+							<>
+							<NavDropdown title={ user.name } id="basic-nav-dropdown">
 								<NavDropdown.Item href="/myaccount">My account</NavDropdown.Item>
 								<NavDropdown.Item href="/myorders">
 									My orders
@@ -67,6 +70,8 @@ const Header = () => {
 									</div>
 								</NavDropdown.Item>
 							</NavDropdown>
+							</>	
+                            ) : null }
 						</Nav>
 					</Navbar.Collapse>
 				</Container>

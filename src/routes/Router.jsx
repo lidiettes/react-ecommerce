@@ -22,11 +22,12 @@ const Router = () => {
         <Route path="/cart" element = {<Cart />} />
         <Route path="/login" element = {<LoginPage />} />
         <Route path="/wishlist" element ={<WishListPage />} />
-        <Route path="/myaccount" element = { <MyAccount /> } />
-        <Route path="/myorders" element = { <MyOrders /> } />
+        
   
         <Route path="/shippingpage" element = {<PrivateRoutes> <ShippingPage /> </PrivateRoutes>} />
         <Route path="/thankyou" element = { <PrivateRoutes> <ThankYouBye /> </PrivateRoutes>} />
+        <Route path="/myaccount" element ={ <PrivateRoutes> <MyAccount /> </PrivateRoutes>} />
+        <Route path="/myorders" element = { <PrivateRoutes> <MyOrders /> </PrivateRoutes>} />
         
       </Routes>
     </>

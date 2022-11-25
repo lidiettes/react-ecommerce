@@ -8,13 +8,6 @@ const Home = () => {
   const {user, setUser} = useContext(UserContext);
   console.log(user);
 
-  //no fuchona
-  
-  // useEffect(()=>{
-  //     const refresh = JSON.parse(sessionStorage.getItem("user"));
-  //     setUser(refresh)
-  //   },[user])
-
   return (
     <>
     <MainSlider />
