@@ -21,16 +21,6 @@ const Login = () => {
         fetchUser()
     }, []);
 
-
-    //estado para gestionar cuando saltara navigate FUNCIONA ESTA PRUEBA?
-
-    // const [sendToShipping, setSendToShipping] = useState(null);
-    // useEffect(() => {
-    //     setSendToShipping(prev => prev = null)
-    // }, [sendToShipping])
-
-
-
     //LOGIN
     const navigate = useNavigate();
     const { user, setUser } = useContext(UserContext);

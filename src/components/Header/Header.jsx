@@ -1,6 +1,6 @@
 import './HeaderDos.css';
 import { Link, useNavigate } from 'react-router-dom';
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import { CartContext } from '../../context/CartContext/CartContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { UserContext } from '../../context/UserContext/UserContext';
@@ -78,26 +78,6 @@ const Header = () => {
 			</Navbar>
 		
 
-
-
-
-
-
-			{/* <header>
-				<div className="wrapperHeader">
-					<Link to="/" className="logo">Söd</Link>
-					<nav>
-						<Link to="/">Home</Link>
-						<Link to="/shop">Shop</Link>
-						<Link to="/shop">About us</Link>
-
-
-
-
-					</nav>
-
-				</div>
-			</header> */}
 
 		</>
 	)
