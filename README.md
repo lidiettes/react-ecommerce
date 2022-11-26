@@ -31,7 +31,8 @@ Visualización del proyecto: Login, home page, página de detalle de producto, r
 ## Visual Sample
 
 ### Home Page
-![image](public/img/HomePage.png)
+![HomePage](https://user-images.githubusercontent.com/96661791/204103884-fc77012c-de41-480d-b1a4-422a1c3442cf.png)
+
 
 ### Shop Page
 ![image](https://user-images.githubusercontent.com/90386446/196465101-7e19285b-e5bb-4d50-bd7c-59870e4ca30d.png)
