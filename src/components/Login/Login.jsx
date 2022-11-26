@@ -12,6 +12,13 @@ import { LoggedInContext } from '../../context/LoggedInContext/LoggedInContext';
 
 const Login = () => {
 
+//
+
+
+
+
+
+
     //fetch
     const { userData } = useContext(UserDataContext);
     const { fetchUser } = useContext(ApiContext);
@@ -30,7 +37,8 @@ const Login = () => {
         sessionStorage.setItem("user", JSON.stringify(user))
     }, [user])
 
-    const getDataForm = e => {
+       
+        const getDataForm = e => {
         e.preventDefault();
 
         const target = e.target;
@@ -38,9 +46,13 @@ const Login = () => {
         const password = target.password.value;
         const authentic = userData.find(u => password === u.password) && userData.find(u => email === u.email)
 
+        // const bcrypt = require('bcrypt');
+        
         if (authentic) {
             setUser(authentic);
             setLoggedIn(true);
+            // const passwordHash = bcrypt.hashSync(password, 10);
+
             navigate("/shippingPage");
 
         } else {

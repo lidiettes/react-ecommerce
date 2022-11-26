@@ -27,6 +27,14 @@ const MyOrders = () => {
     const personalOrders = orders.filter(o => o.idUser == user.id);
     console.log(personalOrders)
 
+    const ids = orders.map((order) => {
+        return (order.products)
+    })
+
+
+
+    console.log(ids)
+
     //Search
 
     const [searchParams, setSearchParams] = useSearchParams();
@@ -36,98 +44,71 @@ const MyOrders = () => {
         setSearchParams({ filter: e.target.value });
     };
 
+    const repeatOrder = (items) => {
+        // const personalOrders = orders.filter(o => o.idUser == user.id);
+        // console.log(personalOrders)
 
+        // const totalOrders = orders.map((order) => order.products)
+        // console.log(totalOrders)
+        
+        setItems(items)
+    }
 
+    return (
+        <>
+            <Title />
+            <Search
+                handleFilter={handleFilter}
+                filter={filter}
+            />
+            <div className="containerOrders">
 
-
-
-        // console.log(personalOrders[0].products)
-
-        // const productPersonalOrder= personalOrders.filter.products;
-        // console.log(productPersonalOrder)
-        // 
-        // console.log(orders) ---> pedido en CURSO pero como ha finalizado no hay
-
-
-
-        const repeatOrder = (user, id) => {
-
-            const personalOrders = orders.filter(o => o.idUser == user.id);
-            const productPersonalOrder = personalOrders.filter.products;
-            console.log(personalOrders)
-            console.log(productPersonalOrder)
-
-            // if(personalOrders){
-            //     setItems(
-            //     orders.map(o => o.idUser == user.id ?{
-            //         ...personalOrders,
-            //         quantity: personalOrders.quantity + 1}
-            //         : o));
-            //     } else {
-            //         setItems([...items, { ...orders, quantity: 1 }])
-            //     }
-
-        }
-
-        useEffect(() => {
-            localStorage.setItem("items", JSON.stringify(items));
-        }, [items]);
-
-
-
-        return (
-            <>
-                <Title />
-                <div className="containerOrders">
-                    <Search
-                        handleFilter={handleFilter}
-                        filter={filter}
-                    />
-                    {
-                        personalOrders.length > 0 ?
-                            (personalOrders.map((order, i) => {
-                                return (
-                                    <div key={order.id}>
-                                        <div className="orderTitle">
-                                            <div className="h3Orders">Order: {order.id} </div>
-                                            <div className="h3Orders date">Date of order: {order.dateOrder}</div>
-                                        </div>
-                                        <div>
-                                            {(order.products)
-                                                .filter((o) => {
-                                                    if (!filter) return true;
-                                                    else {
-                                                        const oName = o.name.toLowerCase()
-
-                                                        return oName.includes(filter.toLocaleLowerCase())
-                                                    }
-                                                })
-
-                                                .map((o) => {
-                                                    return (
-
-                                                        <div className="containerProductCart" key={o.id}>
-                                                            <img className="imgProductCart" src={o.img} />
-                                                            <div className="infoProductCart">{o.name}</div>
-                                                            <div className="infoProductCart">Quantity:{o.quantity}</div>
-                                                        </div>
-                                                    )
-                                                }
-                                                )
-
-                                            }
-                                        </div>
-                                        <button onClick={() => { repeatOrder(order, i) }}>hola</button>
-
-
+                {
+                    personalOrders.length > 0 ?
+                        (personalOrders.map((order, i) => {
+                            return (
+                                <div key={order.id}>
+                                    <div className="orderTitle">
+                                        <div className="h3Orders">Order: {order.id} </div>
+                                        <div className="h3Orders date">Date of order: {order.dateOrder}</div>
                                     </div>
-                                )
-                            }
-                            ))
-                            : <p>"No orders"</p>
-                    }
-                </div>
-            </>
-        )
+                                    <div>
+                                        {(order.products)
+                                            .filter((o) => {
+                                                if (!filter) return true;
+                                                else {
+                                                    const oName = o.name.toLowerCase()
+
+                                                    return oName.includes(filter.toLocaleLowerCase())
+                                                }
+                                            })
+
+                                            .map((o) => {
+                                                return (
+
+                                                    <div className="containerProductCart" key={o.id}>
+                                                        <img className="imgProductCart" src={o.img} />
+                                                        <div className="infoProductCart">{o.name}</div>
+                                                        <div className="infoProductCart">Quantity:{o.quantity}</div>
+                                                    </div>
+                                                )
+                                            }
+                                            )
+
+                                        }
+                                    </div>
+                                    
+                                    <button className="repeatYourOrder" onClick={() => { repeatOrder(order.products) }}>Repeat your order</button>
+
+
+                                </div>
+                            )
+                        }
+                        ))
+                        : <p>"No orders"</p>
+                }
+            </div>
+        </>
+    )
 }
 export default MyOrders

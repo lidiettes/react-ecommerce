@@ -40,8 +40,8 @@ code {
 
 /* my orders */
 .containerOrders{
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .mainContainerOrder{
   display: inline-block;
@@ -62,7 +62,7 @@ color: rgb(71, 72, 72);
   margin-left: 40px;
   margin-right: 40px;
   height: 65px;
-  width: 800px;
+  width: 100%;
   border-radius: 4px;
   
   display: flex;
@@ -77,11 +77,36 @@ color: rgb(71, 72, 72);
   
 }
 
-
 .mainTitle{
   width: 100px;
   margin-left: 50px;
   margin-right: 50px;
   text-transform: uppercase;
   display: flex;
+}
+
+.repeatYourOrder{
+  background-color: #ebd79c;
+  display: inline-block;
+  height: 40px;
+  width: 90%;
+  margin-top: 10px;
+  margin-left: 70px;
+  margin-right: 40px;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  background-color: #ebd79c;
+  cursor: pointer;
+  outline: none;
+}
+
+.repeatYourOrder:hover {
+  background-color: #79b0a1;
 }
