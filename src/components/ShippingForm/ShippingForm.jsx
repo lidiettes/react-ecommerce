@@ -41,7 +41,6 @@ const ShippingForm = () => {
             dateOrder: currentDate,
             products: items,
         }
-console.log(newOrder)
 
         fetch("http://localhost:3000/orders", {
             method: "POST",
@@ -52,12 +51,12 @@ console.log(newOrder)
         }).then(res => res.json())
             .then(data => console.log(data))
             .catch(error => console.log(error));
-        // setUser(newOrder); 
+
         setOrders(...orders, newOrder);
         setItems([]);
         navigate("/thankyou");
     }
-    console.log(orders)
+    
 
     // }
 

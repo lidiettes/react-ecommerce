@@ -11,17 +11,14 @@ import { UserContext } from '../context/UserContext/UserContext';
 const MyOrders = () => {
     const { orders, setOrders } = useContext(OrdersContext);
     const { user } = useContext(UserContext);
-    const { items, setItems } = useContext(CartContext);
+    const { setItems } = useContext(CartContext);
 
     useEffect(() => {
         const fetch = async () => {
             const data = await getDataOrders();
-            console.log(data);
-
             setOrders(data)
         }
         fetch();
-
     }, [])
 
     const personalOrders = orders.filter(o => o.idUser == user.id);
@@ -31,9 +28,6 @@ const MyOrders = () => {
         return (order.products)
     })
 
-
-
-    console.log(ids)
 
     //Search
 
@@ -63,7 +57,7 @@ const MyOrders = () => {
             />
             <div className="containerOrders">
 
-                {
+                    {
                     personalOrders.length > 0 ?
                         (personalOrders.map((order, i) => {
                             return (

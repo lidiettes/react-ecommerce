@@ -4,25 +4,17 @@ import { useContext } from 'react';
 import { UserDataContext } from '../../context/UserDataContext/UserDataContext';
 import { ApiContext } from '../../context/ApiContext/ApiContext';
 import { UserContext } from '../../context/UserContext/UserContext';
-import { useState } from 'react';
-
 import { useNavigate } from 'react-router-dom';
 import { LoggedInContext } from '../../context/LoggedInContext/LoggedInContext';
+// import bcrypt from 'bcryptjs' 
 
 
 const Login = () => {
-
-//
-
-
-
-
-
-
+    
     //fetch
     const { userData } = useContext(UserDataContext);
     const { fetchUser } = useContext(ApiContext);
-   
+    // const bcrypt = require('bcrypt');
 
     useEffect(() => {
         fetchUser()
@@ -31,14 +23,14 @@ const Login = () => {
     //LOGIN
     const navigate = useNavigate();
     const { user, setUser } = useContext(UserContext);
-    const {loggedIn, setLoggedIn} = useContext(LoggedInContext);
+    const { loggedIn, setLoggedIn } = useContext(LoggedInContext);
 
     useEffect(() => {
         sessionStorage.setItem("user", JSON.stringify(user))
     }, [user])
 
-       
-        const getDataForm = e => {
+
+    const getDataForm = e => {
         e.preventDefault();
 
         const target = e.target;
@@ -46,8 +38,6 @@ const Login = () => {
         const password = target.password.value;
         const authentic = userData.find(u => password === u.password) && userData.find(u => email === u.email)
 
-        // const bcrypt = require('bcrypt');
-        
         if (authentic) {
             setUser(authentic);
             setLoggedIn(true);
@@ -65,12 +55,15 @@ const Login = () => {
     const getUserRegister = (e) => {
         e.preventDefault();
 
+        // const password = target.password.value;
+        // const passwordHash = bcrypt.hashSync(password, 10);
+
         const newUser = {
             id: new Date().getTime(),
             name: e.target.name.value,
             lastName: e.target.lastName.value,
             email: e.target.email.value,
-            password: e.target.password.value
+            // password: passwordHash
         }
         fetch("http://localhost:3000/users", {
             method: "POST",

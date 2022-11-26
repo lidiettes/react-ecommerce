@@ -1,13 +1,4 @@
-.iconsHeader {
-   margin-left: 650px;
-    display: flex;
-    justify-content: flex-end;
-    font-size: large;
-    gap: 20px;
-    letter-spacing: 0.2em;
-    color: #5988f5c5;
-    line-height:40px;
-}
+
 .nav-link{
     text-decoration: none !important;
 }
@@ -18,7 +9,6 @@
     
     color:white;
 }
-
 
 ::after {
    color: white;
@@ -32,31 +22,40 @@
 .brand.navbar-brand {
     color: white;
     text-decoration: none !important;
+   margin-left: -200px;
+   margin-right: 1100px;
 }
 
 .navbar {
     height: 50px;
     letter-spacing: 0.2em;
-    background-color: #5988f5c5;
+    background-color:rgb(149, 195, 223);
     display: flex;
-    margin-right: 40px;
     width: 100vw;
-
-
-}
-
-.containerHeader {
-    font-size: 1.5rem;
-    margin: 0;
+    
 
 }
+
 
 a.nav-link {
     color: white;
     font-size: 1.5rem;
+    margin-right: 50px;
   
 
 }
 .me-auto{
-   margin:0 180px;
+   margin:0 100px;
 }
+
+.iconsHeader {
+    
+    display: flex;
+    justify-content: flex-end;
+    font-size: large;
+    gap: 20px;
+    letter-spacing: 0.2em;
+    color: #5988f5c5;
+    line-height:40px;
+}
+

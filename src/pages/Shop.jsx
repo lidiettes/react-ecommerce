@@ -6,8 +6,6 @@ import { CartContext } from '../context/CartContext/CartContext';
 import { WishListContext } from '../context/WishListContext/WishListContext';
 import toast from 'react-hot-toast';
 import { notify } from '../helpers/functions';
-
-
 import { UserContext } from '../context/UserContext/UserContext';
 import TitleShop from '../components/TitleShop/TitleShop';
 
@@ -17,7 +15,6 @@ const Shop = () => {
   const { items, setItems } = useContext(CartContext);
   const {user, setUser} = useContext(UserContext);
   
-
   function addToCart(product) {
     const index = items.find(e => e.id === product.id)
     if (index) {

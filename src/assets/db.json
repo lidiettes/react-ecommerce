@@ -70,6 +70,18 @@
       "lastName": "Solano",
       "email": "juan@gmail.com",
       "password": "juan"
+    },
+    {
+      "id": 1669503408954,
+      "name": "",
+      "lastName": "",
+      "email": ""
+    },
+    {
+      "id": 1669503413342,
+      "name": "",
+      "lastName": "",
+      "email": ""
     }
   ],
   "orders": [

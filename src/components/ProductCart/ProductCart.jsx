@@ -40,10 +40,9 @@ const ProductCart = ({removeCart,addToCart }) => {
                     ))
                     : <div className='containerEmpty '>
                         
-                        <h3><i className="fa fa-shopping-cart" aria-hidden="true"></i> Your bag is empty</h3>
-                        <h4>Items remain in your bag for 60 minutes, and then they're moved to your Saved Items.</h4>
-                        <p>   Sign in to see your bag
-                            and get shopping!</p>
+                        <h3> Your bag is empty</h3>
+                        
+                        <p>   Sign in to see your bag and get shopping!</p>
                     </div>
             }
         </div>
