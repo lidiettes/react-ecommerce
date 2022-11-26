@@ -31,7 +31,7 @@ Visualización del proyecto: Login, home page, página de detalle de producto, r
 ## Visual Sample
 
 ### Home Page
-![image](https://user-images.githubusercontent.com/Users/lidiafrias/Documents/Programación/react-ecommerce/public/img/HomePage.png)
+![image](https://raw.githubusercontent.com/lidiettes/react-ecommerce/developPrev/Users/lidiafrias/Documents/Programación/react-ecommerce/public/img/HomePage.png)
 
 ### Shop Page
 ![image](https://user-images.githubusercontent.com/90386446/196465101-7e19285b-e5bb-4d50-bd7c-59870e4ca30d.png)
