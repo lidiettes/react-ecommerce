@@ -1,3 +1,62 @@
+
+# REACT PROJECT ECOMMERCE
+
+Put into practice all the previous knowledge learned in the master to develop a project ecommerce using React.
+
+## General analysis
+
+ I have created an ecommerce site in which you can make purchases, save products as favourites and access through a login to purchase and consult orders.
+
+
+### Features
+
+- HTML, CSS and JS.
+- React
+
+### Hooks
+
+-UseState, useEffect, useContext, useReducer, useMemo, useParams, useNavigate 
+
+### Libraries
+
+-React-router-dom, create-react-app, react-hot-toast, react-bootstrap, 
+
+
+## Our project requirements were divided into the following bulletpoints
+
+#### 1. Frontend. 
+Visualización del proyecto: Login, home page, página de detalle de producto, rutas, carrito, checkout hasta la adquisición del producto, etc.
+
+
+## Visual Sample
+
+### Home Page
+![image](https://user-images.githubusercontent.com/90386446/196464610-72b92d3c-46d2-4f01-b946-cf1547e736b4.png)
+
+### Shop Page
+![image](https://user-images.githubusercontent.com/90386446/196465101-7e19285b-e5bb-4d50-bd7c-59870e4ca30d.png)
+
+## Wishlist Page
+![image](https://user-images.githubusercontent.com/90386446/196466236-5ccb32fc-eb5a-4055-a29c-9b188884f06b.png)
+
+### Check out Page
+![image](https://user-images.githubusercontent.com/90386446/196465327-9ca25e7b-d63d-44a0-b065-16cced218ff2.png)
+
+## Account Page
+![image](https://user-images.githubusercontent.com/90386446/196465601-214545c8-5346-4189-8d71-28148c182fa8.png)
+
+## Orders Page
+![image](https://user-images.githubusercontent.com/90386446/196465601-214545c8-5346-4189-8d71-28148c182fa8.png)
+
+#### 2. Future implementations
+
+
+
+## Authors
+- [@lidiettes](https://github.com/lidiettes)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
