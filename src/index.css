@@ -23,10 +23,18 @@ code {
   color: rgb(42, 39, 39);
 }
 .containerThankyou{
+  min-height: 100vh;
+  min-width: 100vw;
   display: inline-block;
   justify-content: inline-block;
   margin: 150px 150px 150px 150px
 }
+
+.containerMainThankyou{
+  background: url("https://www.domesticoshop.com/media/catalog/product/cache/1/image/738x/602f0fa2c1f0d1ba5e241f914e856ff9/w/a/wall_deco-cwc-gesture-wdge2201-pp-domesticoshop.jpg");
+
+}
+
 
 .containerThankyouProducts{
   margin-top: 50px;
@@ -91,6 +99,7 @@ color: rgb(71, 72, 72);
   margin-top: 10px;
   margin-left: 70px;
   margin-right: 40px;
+  margin-bottom: 10px;
   box-sizing: border-box;
   border: transparent;
   border-radius: 30px;

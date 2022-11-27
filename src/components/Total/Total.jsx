@@ -11,7 +11,7 @@ const Total = () => {
 
         <>
             <div className='containerTotal'>
-                <div><h3>Subtotal: {getTotal(items)} € </h3></div>
+                <div><h3>Total: {getTotal(items)} € </h3></div>
                 <div className='shippingContainer'>Shipping: Free </div>
 
                 

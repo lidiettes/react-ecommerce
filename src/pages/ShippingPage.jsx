@@ -38,7 +38,7 @@ useEffect(() => {
   return (
 
       <div className="mari" style={{display:"flex", margin:"50px"}}>
-        <div className="pili" >
+        <div className="pili" style={{margin:"100px"}} >
           
           <ProductCart 
           removeCart={removeCart}

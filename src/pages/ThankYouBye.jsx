@@ -12,13 +12,14 @@ const ThankYouBye = () => {
 
     return (
         <>
+        <div className='containerMainThankyou'>
             <div className='containerThankyou'>
                 <div className="TitleThankyou"> Thank you for your order {user.name}</div>
-                <p className='pThankyou'>Order number: {orders.id}</p>
-                <p className='pThankyou'>You will receive an email confirmation shortly at {user.email}</p>
+                <h1 className='pThankyou'>Order number: {orders.id}</h1>
+                <h2 className='pThankyou'>You will receive an email confirmation shortly at {user.email}</h2>
 
                 <div className='containerThankyouProducts'>
-                    {(items.map((item) => {   //incluyendo indice solventamos el error de las key iguales
+                    {/* {(items.map((item) => {   //incluyendo indice solventamos el error de las key iguales
                         return (
                             <div className="containerProductCart" key={item.id} >
                                 <img className="imgProductCart" src={item.img} alt={item.name} />
@@ -28,8 +29,9 @@ const ThankYouBye = () => {
                         )
                     }
                     ))
-                    }
+                    } */}
                 </div>
+            </div>
             </div>
         </>
 

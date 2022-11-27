@@ -62,7 +62,7 @@ const Header = () => {
 								<NavDropdown.Item href="/myorders">
 									My orders
 								</NavDropdown.Item>
-								<NavDropdown.Item href="/Something">Something</NavDropdown.Item>
+								
 								<NavDropdown.Divider />
 								<NavDropdown.Item>
 									<div onClick={logOut}>

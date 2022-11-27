@@ -2,7 +2,7 @@ footer {
 	position: relative;
 	bottom: 0;
 	width: 100%;
-	background-color: rgb(154, 172, 172);
+	background-color:#E4A96F;
 	color: rgb(119, 118, 118);
 	line-height: 1.5;
 	height: 400px;
@@ -121,7 +121,7 @@ input[type="submit"] {
 /* Footer legal */
 .ft-legal {
 	padding: 0.9375rem 1.875rem;
-	background-color: #ebd79c;
+	background-color:#FBE9D5;
 }
 
 .ft-legal-list {

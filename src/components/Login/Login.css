@@ -111,7 +111,7 @@
     margin-bottom: 1rem;
 }
 
-.btn-primary {
+.btn-login {
     background-color: #ebd79c ;
     display: inline-block;
     height: 30px;
@@ -130,8 +130,8 @@
     outline: none;
 }
 
-.btn-primary:hover {
+.btn-login:hover {
     background: #fff;
-    color: #559ee3;
-    border: 1px solid #1465d5;
+    background-color: #79b0a1;
+    
 }

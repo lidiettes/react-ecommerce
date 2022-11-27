@@ -41,6 +41,7 @@ const Login = () => {
         if (authentic) {
             setUser(authentic);
             setLoggedIn(true);
+            console.log(setLoggedIn)
             // const passwordHash = bcrypt.hashSync(password, 10);
 
             navigate("/shippingPage");
@@ -91,7 +92,7 @@ const Login = () => {
                     <input type="text" placeholder="email" id="email" name="email" className="email" />
                     <input type="password" placeholder="password" id="password" name="password" className="passwd" />
                     <a href="#" className="btn btn-forget">Forget your password?</a>
-                    <button href="#" type="submit" className="btn btn-primary">Sign in</button>
+                    <button href="#" type="submit" className="btn-login">Sign in</button>
                 </form>
 
                 <form onSubmit={getUserRegister} action="#" className="form-group-login">
@@ -101,13 +102,8 @@ const Login = () => {
                     <input type="text" placeholder="lastName" name="lastName" className="lastName" />
                     <input type="text" placeholder="email" name="email" className="email" />
                     <input type="password" placeholder="password" name="password" className="passwd" />
-                    <button href="#" type="submit" className="btn btn-primary">Register</button>
+                    <button href="#" type="submit" className="btn-login">Register</button>
                 </form>
-                {/* <div className="social">
-                    <p>Or sign in with... </p>
-                    <a href="#" className="social-links"><i className="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" className="social-links"><i className="fa-brands fa-twitter"></i></a>
-                </div> */}
             </div>
 
 

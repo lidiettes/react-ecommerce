@@ -57,7 +57,6 @@ const WishListPage = () => {
       <>
         
         <TitleWishes />
-        <h2>Saved Items</h2>
         <div className="WishListContainer"  >
 
           <WishList

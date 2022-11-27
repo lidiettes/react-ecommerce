@@ -59,53 +59,41 @@
     },
     {
       "id": 1668899817593,
-      "name": "alvaro",
-      "lastName": "Alonso",
+      "name": "Alvaro",
+      "lastName": "Irurita",
       "email": "alvaro@gmail.com",
       "password": "alvaro"
     },
     {
       "id": 1669106945336,
-      "name": "Juan",
+      "name": "juan",
       "lastName": "Solano",
       "email": "juan@gmail.com",
       "password": "juan"
-    },
-    {
-      "id": 1669503408954,
-      "name": "",
-      "lastName": "",
-      "email": ""
-    },
-    {
-      "id": 1669503413342,
-      "name": "",
-      "lastName": "",
-      "email": ""
     }
   ],
   "orders": [
     {
-      "id": 1669397463783,
+      "id": 1669550807337,
       "idUser": 1668899817593,
-      "name": "alvaro",
-      "lastName": "Alonso",
-      "address": "",
-      "country": "",
-      "zipcode": "",
-      "city": "",
-      "numberCard": "",
-      "nameCard": "",
-      "date": "",
-      "cvv": "",
-      "dateOrder": "25-11-2022",
+      "name": "Alvaro",
+      "lastName": "Irurita",
+      "address": "real 78",
+      "country": "spain",
+      "zipcode": "41006",
+      "city": "Granada",
+      "numberCard": "1234678967895678",
+      "nameCard": "alvaro irurita",
+      "date": "2022-11-01",
+      "cvv": "345",
+      "dateOrder": "27-11-2022",
       "products": [
         {
-          "id": 1,
-          "designer": "Verner Panton",
-          "name": "Pendant Lamp",
-          "price": 350,
-          "img": "/img/img01.jpeg",
+          "id": 2,
+          "designer": "Mia Hamborg",
+          "name": "Shuffle Table MH1",
+          "price": 557,
+          "img": "/img/img02.jpeg",
           "quantity": 1
         },
         {
@@ -117,20 +105,45 @@
           "quantity": 1
         },
         {
-          "id": 5,
-          "designer": "Space Copenhagen 2022",
-          "name": "Capture",
-          "price": 157,
-          "img": "/img/img05.jpeg",
+          "id": 1,
+          "designer": "Verner Panton",
+          "name": "Pendant Lamp",
+          "price": 350,
+          "img": "/img/img01.jpeg",
           "quantity": 1
         }
       ]
     },
     {
-      "id": 1669399511025,
+      "id": 1669550889994,
       "idUser": 1668899817593,
-      "name": "alvaro",
-      "lastName": "Alonso",
+      "name": "Alvaro",
+      "lastName": "Irurita",
+      "address": "real 78",
+      "country": "spain",
+      "zipcode": "45466",
+      "city": "granada",
+      "numberCard": "3454786978696787",
+      "nameCard": "alvaro irurita",
+      "date": "2022-11-10",
+      "cvv": "567",
+      "dateOrder": "16-11-2022",
+      "products": [
+        {
+          "id": 6,
+          "designer": "Anderssen & Voll",
+          "name": "Inland",
+          "price": 4599,
+          "img": "/img/img06.jpeg",
+          "quantity": 1
+        }
+      ]
+    },
+    {
+      "id": 1669551688564,
+      "idUser": 1668899817593,
+      "name": "Alvaro",
+      "lastName": "Irurita",
       "address": "",
       "country": "",
       "zipcode": "",
@@ -139,7 +152,7 @@
       "nameCard": "",
       "date": "",
       "cvv": "",
-      "dateOrder": "25-11-2022",
+      "dateOrder": "27-11-2022",
       "products": [
         {
           "id": 1,
@@ -147,14 +160,6 @@
           "name": "Pendant Lamp",
           "price": 350,
           "img": "/img/img01.jpeg",
-          "quantity": 2
-        },
-        {
-          "id": 2,
-          "designer": "Mia Hamborg",
-          "name": "Shuffle Table MH1",
-          "price": 557,
-          "img": "/img/img02.jpeg",
           "quantity": 1
         }
       ]

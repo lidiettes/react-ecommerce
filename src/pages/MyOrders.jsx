@@ -1,17 +1,22 @@
 import { isCursorAtEnd } from '@testing-library/user-event/dist/utils';
 import React, { useContext, useEffect } from 'react'
+import toast, { Toaster } from 'react-hot-toast';
 import { useSearchParams } from 'react-router-dom';
 import getDataOrders from '../api/apiOrders';
 import Search from '../components/Search/Search';
+import TitleOrders from '../components/TitleOrders/TitleOrders';
 import Title from '../components/TitleShop/TitleShop';
 import { CartContext } from '../context/CartContext/CartContext';
 import { OrdersContext } from '../context/OrdersContext/OrdersContext';
 import { UserContext } from '../context/UserContext/UserContext';
+import { notify } from '../helpers/functions';
 
 const MyOrders = () => {
     const { orders, setOrders } = useContext(OrdersContext);
     const { user } = useContext(UserContext);
     const { setItems } = useContext(CartContext);
+
+
 
     useEffect(() => {
         const fetch = async () => {
@@ -45,12 +50,13 @@ const MyOrders = () => {
         // const totalOrders = orders.map((order) => order.products)
         // console.log(totalOrders)
         
-        setItems(items)
+        setItems(items);
+        return notify();
     }
 
     return (
         <>
-            <Title />
+            <TitleOrders />
             <Search
                 handleFilter={handleFilter}
                 filter={filter}
@@ -93,7 +99,9 @@ const MyOrders = () => {
                                     </div>
                                     
                                     <button className="repeatYourOrder" onClick={() => { repeatOrder(order.products) }}>Repeat your order</button>
-
+                                    <Toaster
+                            position="top-right"
+                            reverseOrder={true} />
 
                                 </div>
                             )

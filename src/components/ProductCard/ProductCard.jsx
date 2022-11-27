@@ -51,10 +51,7 @@ const ProductCard = ({ designer, name, img, description, id, price, addToCart, h
                 <div className="product-info">
                     <div className='buttonContainer'>
                         {hearToggle()}
-                        {/* <button className='heartButton'type="submit" value='add' onClick={() => { handleAddWished(item) }}> <i className="fa fa-heart card" aria-hidden="true"></i> */}
-                        {/* <button className='heartButton'type="submit" value='add' onClick={() => { handleAddWished(item) }}><i class="fa-regular fa-heart"></i>
-                        <i class="fa-solid fa-heart"></i>
-                        </button> */}
+                    
 
 
 

@@ -65,7 +65,7 @@ hr {
     padding: 40px;
     display: block;
     justify-content: center;
-    width: 700px;
+    width: 1000px;
     height: 850px;
     background-color:rgba(240, 240, 240, 0.846);
     margin-top: 30px;
@@ -111,7 +111,7 @@ hr {
 }
 
 .field:focus-within {
-    border-color: rgb(209, 109, 109);
+    border-color: rgb(102, 189, 89);
 }
 
 
@@ -134,7 +134,7 @@ hr {
         background-color: #ebd79c;
         display: inline-block;
         height: 40px;
-        width: 566px;
+        width: 866px;
         margin: 20px 40px 0 16px;
         box-sizing: border-box;
         border: transparent;

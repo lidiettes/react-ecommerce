@@ -71,7 +71,5 @@
 }
 
 .btn-primary.profile:hover {
-    background: #fff;
-    color: #559ee3;
-    border: 1px solid #1465d5;
+    background-color: #79b0a1;
 }
