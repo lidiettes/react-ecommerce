@@ -29,9 +29,7 @@ Put into practice all the previous knowledge learned in the master to develop a 
 -React-router-dom, Create-react-app, React-hot-toast, React-bootstrap, ...
 
 
-## Our project requirements were divided into the following bulletpoints
-
-#### 1. Frontend. 
+## 1. Frontend
 
 ## Visual Sample
 
