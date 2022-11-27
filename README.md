@@ -70,8 +70,8 @@ Put into practice all the previous knowledge learned in the master to develop a 
 ### Check out Page
 
 
+![CheckOut](https://user-images.githubusercontent.com/96661791/204139137-1759e618-3f28-4c02-bc46-8f32c72c894e.png)
 
-![CheckOut](https://user-images.githubusercontent.com/96661791/204136809-0da893fe-17e5-4a12-a4a3-175026b33538.png)
 
 
 
