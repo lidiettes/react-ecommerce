@@ -5,8 +5,9 @@ Put into practice all the previous knowledge learned in the master to develop a 
 
 ## General analysis
 
- I have created an ecommerce site in which you can make purchases, save products as favourites and access through a login to purchase and consult orders.
-
+ -I have created an ecommerce site in which you can make purchases, save products as favourites and access through a login to purchase and consult orders.
+ 
+ -My proyect create a shop with a passionate approach to masterly design, preserving icons of the past whilst creating the classics of tomorrow, bringing you a collection infused with enduring qualities that work to connect people and places. Always made to last.
 
 ### Features
 
@@ -17,6 +18,11 @@ Put into practice all the previous knowledge learned in the master to develop a 
 
 -UseState, useEffect, useContext, useReducer, useMemo, useParams, useNavigate 
 
+### Extra
+
+-Private routes, 
+-Agile project Management Software by ClickUp
+
 ### Libraries
 
 -React-router-dom, create-react-app, react-hot-toast, react-bootstrap, 
@@ -25,35 +31,55 @@ Put into practice all the previous knowledge learned in the master to develop a 
 ## Our project requirements were divided into the following bulletpoints
 
 #### 1. Frontend. 
-Visualización del proyecto: Login, home page, página de detalle de producto, rutas, carrito, checkout hasta la adquisición del producto, etc.
-
 
 ## Visual Sample
 
 ### Home Page
-![HomePage](https://user-images.githubusercontent.com/96661791/204103884-fc77012c-de41-480d-b1a4-422a1c3442cf.png)
+
+![Home](https://user-images.githubusercontent.com/96661791/204136638-736c0106-3b13-410d-973f-9c9661dc6be0.png)
 
 
 ### Shop Page
-![image](https://user-images.githubusercontent.com/90386446/196465101-7e19285b-e5bb-4d50-bd7c-59870e4ca30d.png)
+
+![shop](https://user-images.githubusercontent.com/96661791/204136649-f97e65bd-c36a-49f3-8fbf-04ef2a6c8f49.png)
+
+
+### Cart Page
+
+![Cart](https://user-images.githubusercontent.com/96661791/204136706-843a805c-bcc2-4f01-acc6-8a3d402841c3.png)
+
 
 ## Wishlist Page
-![image](https://user-images.githubusercontent.com/90386446/196466236-5ccb32fc-eb5a-4055-a29c-9b188884f06b.png)
+![wishlist](https://user-images.githubusercontent.com/96661791/204136659-c73eadcb-705c-4b1f-84df-4fa6efe61c56.png)
+
 
 ### Check out Page
-![image](https://user-images.githubusercontent.com/90386446/196465327-9ca25e7b-d63d-44a0-b065-16cced218ff2.png)
+![CheckOut](https://user-images.githubusercontent.com/96661791/204136809-0da893fe-17e5-4a12-a4a3-175026b33538.png)
+
+
+### Login 
+
+![Login](https://user-images.githubusercontent.com/96661791/204136855-ae12eb71-f1e8-43e9-87f7-4bab0d8d050d.png)
+
 
 ## Account Page
-![image](https://user-images.githubusercontent.com/90386446/196465601-214545c8-5346-4189-8d71-28148c182fa8.png)
+
+![Profile](https://user-images.githubusercontent.com/96661791/204136731-ffc25c5d-8dc9-42d3-8633-6dc5e4c3c1ec.png)
+
 
 ## Orders Page
-![image](https://user-images.githubusercontent.com/90386446/196465601-214545c8-5346-4189-8d71-28148c182fa8.png)
+
+![Orders](https://user-images.githubusercontent.com/96661791/204136738-c8f2d3ab-6f08-4ebe-92aa-9504aa6370fd.png)
+
 
 #### 2. Future implementations
 
+- Responsive
+- React-Query
 
 
 ## Authors
+
 - [@lidiettes](https://github.com/lidiettes)
 
 
