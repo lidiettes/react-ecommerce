@@ -20,12 +20,13 @@ Put into practice all the previous knowledge learned in the master to develop a 
 
 ### Extra
 
--Private routes, 
--Agile project Management Software by ClickUp
+- Private routes
+- Agile methodology with Click up
+
 
 ### Libraries
 
--React-router-dom, create-react-app, react-hot-toast, react-bootstrap, 
+-React-router-dom, Create-react-app, React-hot-toast, React-bootstrap, ...
 
 
 ## Our project requirements were divided into the following bulletpoints
