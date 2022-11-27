@@ -40,37 +40,62 @@ Put into practice all the previous knowledge learned in the master to develop a 
 
 
 
+
 ### Shop Page
+
+
 
 ![shop](https://user-images.githubusercontent.com/96661791/204136649-f97e65bd-c36a-49f3-8fbf-04ef2a6c8f49.png)
 
 
+
+
 ### Cart Page
+
+
 
 ![Cart](https://user-images.githubusercontent.com/96661791/204136706-843a805c-bcc2-4f01-acc6-8a3d402841c3.png)
 
 
+
+
 ## Wishlist Page
+
+
+
 ![wishlist](https://user-images.githubusercontent.com/96661791/204136659-c73eadcb-705c-4b1f-84df-4fa6efe61c56.png)
 
 
+
+
 ### Check out Page
+
+
+
 ![CheckOut](https://user-images.githubusercontent.com/96661791/204136809-0da893fe-17e5-4a12-a4a3-175026b33538.png)
+
 
 
 ### Login 
 
+
 ![Login](https://user-images.githubusercontent.com/96661791/204136855-ae12eb71-f1e8-43e9-87f7-4bab0d8d050d.png)
+
 
 
 ## Account Page
 
+
 ![Profile](https://user-images.githubusercontent.com/96661791/204136731-ffc25c5d-8dc9-42d3-8633-6dc5e4c3c1ec.png)
+
 
 
 ## Orders Page
 
+
+
 ![Orders](https://user-images.githubusercontent.com/96661791/204136738-c8f2d3ab-6f08-4ebe-92aa-9504aa6370fd.png)
+
 
 
 #### 2. Future implementations
