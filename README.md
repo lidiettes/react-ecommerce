@@ -102,6 +102,11 @@ Put into practice all the previous knowledge learned in the master to develop a 
 - Responsive
 - React-Query
 
+#### 3. Advantages of using React
+
+- React requires less code compared to other development platforms.
+- Reusable components: This makes the application more scalable and easier to maintain as errors will occur in the component's own functionality or in its   communication with the rest.
+- Improves the user experience when navigating the web application, the speed at which pages load and facilitates the maintenance of the application. 
 
 ## Authors
 
