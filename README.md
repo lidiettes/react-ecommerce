@@ -16,12 +16,14 @@ Put into practice all the previous knowledge learned in the master to develop a 
 
 ### Hooks
 
--UseState, useEffect, useContext, useReducer, Memo, useParams, useNavigate 
+-UseState, useEffect, useContext, useReducer, Memo, ... 
 
 ### Extra
 
 - Private routes
+- UseParams, UseNavigate
 - Agile methodology with Click up
+
 
 
 ### Libraries
