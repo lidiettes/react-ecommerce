@@ -7,7 +7,7 @@ Put into practice all the previous knowledge learned in the master to develop a 
 
  -I have created an ecommerce site in which you can make purchases, save products as favourites and access through a login to purchase and consult orders.
  
- -My proyect create a shop with a passionate approach to masterly design, preserving icons of the past whilst creating the classics of tomorrow, bringing you a collection infused with enduring qualities that work to connect people and places. Always made to last.
+ -My proyect create a shop with a passionate approach to masterly design, preserving  danish icons of the past whilst creating the classics of tomorrow, bringing you a collection infused with enduring qualities that work to connect people and places. Always made to last.
 
 ### Features
 
