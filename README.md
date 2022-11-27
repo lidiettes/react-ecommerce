@@ -36,7 +36,8 @@ Put into practice all the previous knowledge learned in the master to develop a 
 
 ### Home Page
 
-![Home](https://user-images.githubusercontent.com/96661791/204136638-736c0106-3b13-410d-973f-9c9661dc6be0.png)
+![Home](https://user-images.githubusercontent.com/96661791/204138079-c45d3459-f980-4972-9a8a-b3bbc0e9d49f.png)
+
 
 
 ### Shop Page
