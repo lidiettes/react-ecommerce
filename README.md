@@ -31,7 +31,7 @@ Put into practice all the previous knowledge learned in the master to develop a 
 
 ## 1. Frontend
 
-## Visual Sample
+#### Visual Sample
 
 ### Home Page
 
