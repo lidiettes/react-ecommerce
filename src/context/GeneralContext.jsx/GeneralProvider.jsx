@@ -14,7 +14,6 @@ const GeneralProvider = ({ children }) => {
         <>
             <LoggedInProvider>
                 <OrdersProvider>
-           
                     <CartProvider>
                         <WishListProvider>
                             <UserProvider>
@@ -26,7 +25,6 @@ const GeneralProvider = ({ children }) => {
                             </UserProvider>
                         </WishListProvider>
                     </CartProvider>
-          
                 </OrdersProvider>
             </LoggedInProvider>
         </>

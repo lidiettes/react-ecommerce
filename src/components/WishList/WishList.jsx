@@ -1,4 +1,5 @@
 
+import { Toaster } from 'react-hot-toast';
 import './WishList.css';
 
 
@@ -14,6 +15,9 @@ const Wishlist = ({ removeCart, wishes, addWishToCart  }) => {
                                 <div >{wish.name}  {wish.price} €</div>
                                 <button className="buttonDeleteWish" type="submit" value='add' onClick={() => { removeCart(indice) }} ><i className="fa fa-trash" aria-hidden="true"></i></button>
                                 <button className="buttonMoveToBag" type="submit" value='add' onClick={() => { addWishToCart(wish, indice) }} >Move to bag</button>
+                                <Toaster
+                            position="top-right"
+                            reverseOrder={true} />
                             </div>
                             <hr />
                         </div>

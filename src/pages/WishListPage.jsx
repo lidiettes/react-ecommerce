@@ -5,6 +5,7 @@ import TitleWishes from '../components/TitleWishes/TitleWishes';
 import WishList from '../components/WishList/WishList'
 import { CartContext } from '../context/CartContext/CartContext';
 import { WishListContext } from '../context/WishListContext/WishListContext';
+import { notify } from '../helpers/functions';
 
 
 
@@ -29,6 +30,7 @@ const WishListPage = () => {
   }
 
   function addWishToCart(wish, id) {
+    
     const index = items.find(e => e.id === wish.id)
     if (index) {
       setItems(
@@ -47,6 +49,8 @@ const WishListPage = () => {
       payload: removesWishes,
     }
     dispatch(action);
+    return notify();
+    
   }
 
     useEffect(() => {

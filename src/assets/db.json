@@ -138,31 +138,6 @@
           "quantity": 1
         }
       ]
-    },
-    {
-      "id": 1669551688564,
-      "idUser": 1668899817593,
-      "name": "Alvaro",
-      "lastName": "Irurita",
-      "address": "",
-      "country": "",
-      "zipcode": "",
-      "city": "",
-      "numberCard": "",
-      "nameCard": "",
-      "date": "",
-      "cvv": "",
-      "dateOrder": "27-11-2022",
-      "products": [
-        {
-          "id": 1,
-          "designer": "Verner Panton",
-          "name": "Pendant Lamp",
-          "price": 350,
-          "img": "/img/img01.jpeg",
-          "quantity": 1
-        }
-      ]
     }
   ]
 }

@@ -18,7 +18,6 @@ function App() {
         <GeneralProvider>
           <Helper />
           <Header />
-     
           <Router />
           <Footer />
           </GeneralProvider>

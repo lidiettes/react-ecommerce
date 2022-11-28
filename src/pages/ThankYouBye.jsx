@@ -17,6 +17,8 @@ const ThankYouBye = () => {
                 <div className="TitleThankyou"> Thank you for your order {user.name}</div>
                 <h1 className='pThankyou'>Order number: {orders.id}</h1>
                 <h2 className='pThankyou'>You will receive an email confirmation shortly at {user.email}</h2>
+                <h2 className='pThankyou'>{user.name}, you will receive your order in 24-48 hours. </h2>
+
 
                 <div className='containerThankyouProducts'>
                     {/* {(items.map((item) => {   //incluyendo indice solventamos el error de las key iguales
