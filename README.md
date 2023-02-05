@@ -1,3 +1,4 @@
+<img width="832" alt="Captura de Pantalla 2023-02-05 a las 13 25 21" src="https://user-images.githubusercontent.com/96661791/216818524-66572614-7b60-46ac-b8c2-336cc491b735.png">
 
 # REACT PROJECT ECOMMERCE
 
