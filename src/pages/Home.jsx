@@ -7,16 +7,16 @@ import { UserContext } from '../context/UserContext/UserContext';
 
 const Home = () => {
 
-  const {user, setUser} = useContext(UserContext);
+  const { user, setUser } = useContext(UserContext);
   console.log(user);
 
   return (
     <>
-    <MainSlider />
-    <News />
-   
-    <GetInspo />
-    <Partners />
+      <MainSlider />
+      <News />
+
+      <GetInspo />
+      <Partners />
 
 
 

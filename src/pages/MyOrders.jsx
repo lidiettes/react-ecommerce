@@ -15,8 +15,6 @@ const MyOrders = () => {
     const { user } = useContext(UserContext);
     const { setItems } = useContext(CartContext);
 
-
-
     useEffect(() => {
         const fetch = async () => {
             const data = await getDataOrders();
