@@ -60,7 +60,7 @@
     {
       "id": 1668899817593,
       "name": "Alvaro",
-      "lastName": "Alonso",
+      "lastName": "Irurita",
       "email": "alvaro@gmail.com",
       "password": "alvaro"
     },
@@ -135,47 +135,6 @@
           "name": "Inland",
           "price": 4599,
           "img": "/img/img06.jpeg",
-          "quantity": 1
-        }
-      ]
-    },
-    {
-      "id": 1669638272503,
-      "idUser": 1668899817593,
-      "name": "Pepe",
-      "lastName": "Alonso",
-      "address": "real 78",
-      "country": "españa",
-      "zipcode": "56789",
-      "city": "granada",
-      "numberCard": "7898790878906789",
-      "nameCard": "alvaro alonso",
-      "date": "2022-11-23",
-      "cvv": "123",
-      "dateOrder": "28-11-2022",
-      "products": [
-        {
-          "id": 1,
-          "designer": "Verner Panton",
-          "name": "Pendant Lamp",
-          "price": 350,
-          "img": "/img/img01.jpeg",
-          "quantity": 2
-        },
-        {
-          "id": 2,
-          "designer": "Mia Hamborg",
-          "name": "Shuffle Table MH1",
-          "price": 557,
-          "img": "/img/img02.jpeg",
-          "quantity": 1
-        },
-        {
-          "id": 4,
-          "designer": "Luca Nichetto",
-          "name": "Lato",
-          "price": 250,
-          "img": "/img/img04.jpeg",
           "quantity": 1
         }
       ]

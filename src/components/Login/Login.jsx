@@ -64,7 +64,6 @@ const Login = () => {
             name: e.target.name.value,
             lastName: e.target.lastName.value,
             email: e.target.email.value,
-            password: e.target.password.value,
             // password: passwordHash
         }
         fetch("http://localhost:3000/users", {

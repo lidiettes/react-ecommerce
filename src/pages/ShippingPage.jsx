@@ -7,7 +7,7 @@ import { CartContext } from '../context/CartContext/CartContext'
 
 const ShippingPage = ({ removeCart, addToCart}) => {
 
-
+//trampita: tengo duplicado addtocart y delete
   const { items, setItems } = useContext(CartContext);
 
   function addToCart(product) {

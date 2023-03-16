@@ -5,6 +5,7 @@ import { useSearchParams } from 'react-router-dom';
 import getDataOrders from '../api/apiOrders';
 import Search from '../components/Search/Search';
 import TitleOrders from '../components/TitleOrders/TitleOrders';
+import Title from '../components/TitleShop/TitleShop';
 import { CartContext } from '../context/CartContext/CartContext';
 import { OrdersContext } from '../context/OrdersContext/OrdersContext';
 import { UserContext } from '../context/UserContext/UserContext';
