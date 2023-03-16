@@ -1,6 +1,7 @@
 import React from 'react'
 import { Routes, Route } from "react-router-dom";
 import Cart from '../pages/Cart';
+
 import LoginPage from '../pages/LoginPage';
 import ShippingPage from '../pages/ShippingPage';
 import WishListPage from '../pages/WishListPage';

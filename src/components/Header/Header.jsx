@@ -27,7 +27,9 @@ const Header = () => {
 	}
 
 	const logOut = () => {
-	
+		//esto de abajo da usuario undefi
+        // const deleteUser = localStorage.removeItem('user');
+		//pongo abajo unos corchetes vacios y lo soluciono, ya no sale undefined
 		setUser(false);
 		setLoggedIn(false);
 		navigate("/")
@@ -74,6 +76,9 @@ const Header = () => {
 					</Navbar.Collapse>
 				</Container>
 			</Navbar>
+		
+
+
 		</>
 	)
 };

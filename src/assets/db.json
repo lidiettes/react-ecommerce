@@ -57,20 +57,19 @@
       "email": "patata",
       "password": "patata"
     },
-
+    {
+      "id": 1668899817593,
+      "name": "Alvaro",
+      "lastName": "Alonso",
+      "email": "alvaro@gmail.com",
+      "password": "alvaro"
+    },
     {
       "id": 1669106945336,
       "name": "juan",
       "lastName": "Solano",
       "email": "juan@gmail.com",
       "password": "juan"
-    },
-    {
-      "id": 1675600641840,
-      "name": "lidia",
-      "lastName": "frias",
-      "email": "lidiafriasdorado@gmail.com",
-      "password": "123456"
     }
   ],
   "orders": [
